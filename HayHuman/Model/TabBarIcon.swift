@@ -11,7 +11,6 @@ struct TabBarIcon: View {
     
     @StateObject var viewRouter: ViewRouter
     let assignedPage: Page  
-    
     let width, height: CGFloat
     let icon, tabName: String
     
@@ -27,8 +26,7 @@ struct TabBarIcon: View {
             Spacer()
         }
         .foregroundColor(viewRouter.currentPage == assignedPage ? Color("TabBarHighlight") : .gray)
-        .onTapGesture {
-                         viewRouter.currentPage = assignedPage
+        .onTapGesture { viewRouter.currentPage = assignedPage
         }
     }
 }
