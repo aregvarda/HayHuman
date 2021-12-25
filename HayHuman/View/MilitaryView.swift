@@ -105,7 +105,7 @@ struct MilitaryCardView: View {
                     .font(.title3)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
-                    .padding(8)
+                    .padding(7)
                     .foregroundColor(.white)
             }
         }
