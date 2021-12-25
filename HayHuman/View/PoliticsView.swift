@@ -50,41 +50,41 @@ struct CardPolitics: Hashable {
 }
 
 let leftPoliticsCards: [CardPolitics] = [
-    .init(title: "orbeli",
-          imageName: "orbeli"),
-    .init(title: "ambartsumian",
-          imageName: "ambartsumian"),
-    .init(title: "artin",
-          imageName: "artin"),
-    .init(title: "iosifyan",
-          imageName: "iosifyan"),
-    .init(title: "damadian",
-          imageName: "damadian"),
-    .init(title: "ter-poghosyan",
-          imageName: "ter-poghosyan"),
-    .init(title: "rafaelants",
-          imageName: "rafaelants"),
-    .init(title: "gazandyan",
-          imageName: "gazandyan")
+    .init(title: "loris-melikov",
+          imageName: "loris-melikov"),
+    .init(title: "balladur",
+          imageName: "balladur"),
+    .init(title: "nubar",
+          imageName: "nubar"),
+    .init(title: "shaumian",
+          imageName: "shaumian"),
+    .init(title: "avanesov",
+          imageName: "avanesov"),
+    .init(title: "deukmejian",
+          imageName: "deukmejian"),
+    .init(title: "al-hafez",
+          imageName: "al-hafez"),
+    .init(title: "devedjian",
+          imageName: "devedjian")
 ]
 
 let rightPoliticsCards: [CardPolitics] = [
+    .init(title: "noradunkyan",
+          imageName: "noradunkyan"),
+    .init(title: "delyanov",
+          imageName: "delyanov"),
     .init(title: "mikoyan",
-          imageName: "mikoyan"),
-    .init(title: "alikhanian",
-          imageName: "alikhanian"),
-    .init(title: "oganessian",
-          imageName: "oganessian"),
-    .init(title: "adamian",
-          imageName: "adamian"),
-    .init(title: "babayan",
-          imageName: "babayan"),
-    .init(title: "sisakian",
-          imageName: "sisakian"),
-    .init(title: "bagian",
-          imageName: "bagian"),
-    .init(title: "baroian",
-          imageName: "baroian")
+          imageName: "amikoyan"),
+    .init(title: "darzi",
+          imageName: "darzi"),
+    .init(title: "mardian",
+          imageName: "mardian"),
+    .init(title: "derounian",
+          imageName: "derounian"),
+    .init(title: "menem",
+          imageName: "menem"),
+    .init(title: "sarkis",
+          imageName: "sarkis")
 ]
 
 struct PoliticsCardView: View {

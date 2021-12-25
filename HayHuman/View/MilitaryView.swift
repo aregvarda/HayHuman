@@ -80,8 +80,8 @@ let rightMilitaryCards: [CardMilitary] = [
           imageName: "arabo"),
     .init(title: "serob",
           imageName: "serob"),
-    .init(title: "chavush",
-          imageName: "chavush"),
+    .init(title: "argutinsky-dolgorukov",
+          imageName: "argutinsky-dolgorukov"),
     .init(title: "bek-pirumyan",
           imageName: "bek-pirumyan")
 ]
