@@ -11,7 +11,7 @@ struct BusinessCircleImage: View {
     var body: some View {
         Image("sir_paul")
             .resizable()
-            .frame(width: 200, height: 200)
+            .frame(width: 150, height: 150)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay {
                 Circle().stroke(.white, lineWidth: 4)
