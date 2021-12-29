@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct BusinessCircleImage: View {
+    let cardBusiness: CardBusiness
     var body: some View {
-        Image("sir_paul")
+        Image(cardBusiness.imageName)
             .resizable()
             .frame(width: 150, height: 150)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
@@ -22,6 +23,6 @@ struct BusinessCircleImage: View {
 
 struct BusinessCircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        BusinessCircleImage()
+        BusinessCircleImage(cardBusiness: businessCards[0])
     }
 }

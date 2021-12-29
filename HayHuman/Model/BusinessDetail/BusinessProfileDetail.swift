@@ -9,17 +9,24 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct ProfileDetail: Hashable, Codable {
+struct BusinessProfileDetail: Hashable, Codable {
 
-    var id: Int
+    var id = UUID()
     var name: String
-    var park: String
-    var state: String
+    var city: String
+    var title: String
     var description: String
+    var latitude: Double
+    var longitude: Double
 
     var imageName: String
     var image: Image {
         Image(imageName)
+    }
+    
+    struct Coordinates: Hashable, Codable {
+        var latitude: Double
+        var longitude: Double
     }
     
     var coordinates: Coordinates
@@ -28,10 +35,6 @@ struct ProfileDetail: Hashable, Codable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
-
-
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
 }
+
+
