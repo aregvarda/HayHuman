@@ -20,7 +20,6 @@
 		C863E9612774C84600411599 /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863E9602774C84600411599 /* BusinessView.swift */; };
 		C88705C8277C947500B34922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705C7277C947500B34922 /* Constants.swift */; };
 		C88705CD277CB96B00B34922 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705CC277CB96B00B34922 /* Detail.swift */; };
-		C88705D6277CF8F300B34922 /* try.json in Resources */ = {isa = PBXBuildFile; fileRef = C88705D5277CF8F300B34922 /* try.json */; };
 		C88705D8277CF90E00B34922 /* business.json in Resources */ = {isa = PBXBuildFile; fileRef = C88705D7277CF90E00B34922 /* business.json */; };
 		C88705DB277CFB2000B34922 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705DA277CFB2000B34922 /* Bundle.swift */; };
 		C8960B242778A63E00942F90 /* CultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B232778A63E00942F90 /* CultureView.swift */; };
@@ -45,7 +44,6 @@
 		C863E9602774C84600411599 /* BusinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
 		C88705C7277C947500B34922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C88705CC277CB96B00B34922 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
-		C88705D5277CF8F300B34922 /* try.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; name = try.json; path = "../../../../../Library/Mobile Documents/com~apple~TextEdit/Documents/try.json"; sourceTree = "<group>"; };
 		C88705D7277CF90E00B34922 /* business.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; name = business.json; path = ../../../../../Downloads/business.json; sourceTree = "<group>"; };
 		C88705DA277CFB2000B34922 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C8960B232778A63E00942F90 /* CultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureView.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				C88705D7277CF90E00B34922 /* business.json */,
-				C88705D5277CF8F300B34922 /* try.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -243,7 +240,6 @@
 				C863E942277487DE00411599 /* Preview Assets.xcassets in Resources */,
 				C88705D8277CF90E00B34922 /* business.json in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
-				C88705D6277CF8F300B34922 /* try.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
