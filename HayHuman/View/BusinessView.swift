@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 
 
@@ -39,8 +40,8 @@ struct BusinessView: View {
                                            
                                             
                                             
-                                        }
                                     }
+                            }
                                     
                                     .frame(height: 180)
                                     .cornerRadius(15)
@@ -50,7 +51,7 @@ struct BusinessView: View {
                     }.padding()
                     
             } else {
-                BusinessDetailList()
+                BusinessDetailList(cardBusiness: cardBusiness[0])
                 }
             }
         }
@@ -62,10 +63,22 @@ struct CardBusiness: Codable, Identifiable {
     var id: Int
     let title: String
     let imageName: String
+    fileprivate var coordinates: BusinessCoordinates
     var name: String
     var city: String
     var titleDetail: String
     var description: String
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
+}
+
+struct BusinessCoordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
 }
 
 let cardBusiness: [CardBusiness] = Bundle.main.decode("business.json")

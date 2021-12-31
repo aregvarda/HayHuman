@@ -27,6 +27,7 @@
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
 		C8960B2D2778AD9D00942F90 /* BusinessProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2C2778AD9D00942F90 /* BusinessProfileDetail.swift */; };
+		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
 		C8960B2C2778AD9D00942F90 /* BusinessProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileDetail.swift; sourceTree = "<group>"; };
+		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C88705DA277CFB2000B34922 /* Bundle.swift */,
+				C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
 				C8960B242778A63E00942F90 /* CultureView.swift in Sources */,
 				C88705CD277CB96B00B34922 /* Detail.swift in Sources */,
+				C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */,
 				C863E9612774C84600411599 /* BusinessView.swift in Sources */,
 				C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */,
 				C88705DB277CFB2000B34922 /* Bundle.swift in Sources */,
