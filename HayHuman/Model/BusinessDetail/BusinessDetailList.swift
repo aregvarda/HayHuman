@@ -10,7 +10,12 @@ import SwiftUI
 
 struct BusinessDetailList: View {
     @EnvironmentObject var businessDetail: BusinessDetail
+    @State var theColorScheme: ColorScheme = .light
     var cardBusiness: CardBusiness
+    
+    func toggleColorScheme() {
+        theColorScheme = (theColorScheme == .light) ? .dark : .light
+    }
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -43,18 +48,18 @@ struct BusinessDetailList: View {
                         .font(.title3)
                         .fontWeight(.bold)
                         .padding(4)
-                        
+                    
                     
                     Text(businessDetail.selectedBusinessProfile?.description ?? businessCards.description)
                         .font(.system(.body, design: .rounded))
                         .multilineTextAlignment(.leading)
-                    }
+                }
                 
                 .padding()
                 
                 Spacer()
                 
-            
+                
             }
         }.navigationBarTitle("")
             .navigationBarItems(leading: Button {
@@ -70,14 +75,23 @@ struct BusinessDetailList: View {
                     .shadow(color: .gray, radius: 5, x: 5, y: 5)
                 
                 
-            }).frame(alignment: .trailing)
-            
-            
+            }).navigationBarItems(trailing: Button {
+                self.toggleColorScheme()
+                
+                
+            } label: {
+                Image(systemName: "switch.2")
+
+                    .font(.title)
+                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
+                
+            }).preferredColorScheme(theColorScheme)
         
     }
     
     
 }
+
 
 
 struct BusinessDetailList_Previews: PreviewProvider {
