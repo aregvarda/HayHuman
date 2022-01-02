@@ -23,14 +23,14 @@
 		C88705D8277CF90E00B34922 /* business.json in Resources */ = {isa = PBXBuildFile; fileRef = C88705D7277CF90E00B34922 /* business.json */; };
 		C88705DB277CFB2000B34922 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705DA277CFB2000B34922 /* Bundle.swift */; };
 		C8960B242778A63E00942F90 /* CultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B232778A63E00942F90 /* CultureView.swift */; };
-		C8960B262778AD0A00942F90 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B252778AD0A00942F90 /* MapView.swift */; };
+		C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B252778AD0A00942F90 /* BusinessMapView.swift */; };
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
-		C8960B2D2778AD9D00942F90 /* BusinessProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2C2778AD9D00942F90 /* BusinessProfileDetail.swift */; };
 		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C85B7EFB2780AB0000C77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C863E937277487DB00411599 /* HayHuman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HayHuman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C863E93A277487DB00411599 /* HayHumanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HayHumanApp.swift; sourceTree = "<group>"; };
 		C863E93C277487DB00411599 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,10 +48,9 @@
 		C88705D7277CF90E00B34922 /* business.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; name = business.json; path = ../../../../../Downloads/business.json; sourceTree = "<group>"; };
 		C88705DA277CFB2000B34922 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C8960B232778A63E00942F90 /* CultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureView.swift; sourceTree = "<group>"; };
-		C8960B252778AD0A00942F90 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C8960B252778AD0A00942F90 /* BusinessMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapView.swift; sourceTree = "<group>"; };
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
-		C8960B2C2778AD9D00942F90 /* BusinessProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileDetail.swift; sourceTree = "<group>"; };
 		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +84,7 @@
 		C863E939277487DB00411599 /* HayHuman */ = {
 			isa = PBXGroup;
 			children = (
+				C85B7EFB2780AB0000C77555 /* Info.plist */,
 				C88705D9277CFB0F00B34922 /* Extensions */,
 				C863E94C27749E9D00411599 /* Model */,
 				C88705D0277CE67200B34922 /* Data */,
@@ -118,8 +118,6 @@
 		C863E94D27749EA300411599 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C863E93C277487DB00411599 /* ContentView.swift */,
-				C863E9562774BB7D00411599 /* TabViewPlace.swift */,
 				C863E9602774C84600411599 /* BusinessView.swift */,
 				C863E95E2774C83500411599 /* PoliticsView.swift */,
 				C863E95A2774C7E100411599 /* MilitaryView.swift */,
@@ -132,8 +130,8 @@
 		C863E94E27749EA700411599 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C863E93A277487DB00411599 /* HayHumanApp.swift */,
-				C8960B252778AD0A00942F90 /* MapView.swift */,
+				C863E9562774BB7D00411599 /* TabViewPlace.swift */,
+				C863E93C277487DB00411599 /* ContentView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +147,7 @@
 		C88705CB277CB94500B34922 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				C863E93A277487DB00411599 /* HayHumanApp.swift */,
 				C88705C7277C947500B34922 /* Constants.swift */,
 				C88705CC277CB96B00B34922 /* Detail.swift */,
 			);
@@ -175,9 +174,9 @@
 		C8960B272778AD3000942F90 /* BusinessDetail */ = {
 			isa = PBXGroup;
 			children = (
-				C8960B2C2778AD9D00942F90 /* BusinessProfileDetail.swift */,
 				C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */,
 				C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */,
+				C8960B252778AD0A00942F90 /* BusinessMapView.swift */,
 			);
 			path = BusinessDetail;
 			sourceTree = "<group>";
@@ -254,9 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C863E95127749EE400411599 /* ViewRouter.swift in Sources */,
-				C8960B262778AD0A00942F90 /* MapView.swift in Sources */,
+				C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */,
 				C863E93D277487DB00411599 /* ContentView.swift in Sources */,
-				C8960B2D2778AD9D00942F90 /* BusinessProfileDetail.swift in Sources */,
 				C863E95D2774C81E00411599 /* ScienceView.swift in Sources */,
 				C88705C8277C947500B34922 /* Constants.swift in Sources */,
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
@@ -404,9 +402,11 @@
 				DEVELOPMENT_TEAM = PZ4TJ9HJ8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HayHuman/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,9 +433,11 @@
 				DEVELOPMENT_TEAM = PZ4TJ9HJ8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HayHuman/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

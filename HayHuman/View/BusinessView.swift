@@ -20,45 +20,41 @@ struct BusinessView_Previews: PreviewProvider {
 struct BusinessView: View {
     
     @EnvironmentObject var businessDetail: BusinessDetail
-    @Namespace var namespace
-    @State var loadView = false
+    
     
     var body: some View {
-        ScrollView {
             if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
-                VStack() {
-                    HStack(spacing: 16) {
-                        LazyVGrid(columns: gridLayout, spacing: 25) {
-                            ForEach(cardBusiness) { cardbus in
-                                BusinessCardView(cardbus: cardbus)
-                                    .onTapGesture {
-                                        withAnimation(.easeOut(duration: 0.1)) {
-                                            feedback.impactOccurred()
-                                        }
-                                            businessDetail.selectedBusinessProfile = cardbus
-                                            businessDetail.showingBusinessProfile = true
-                                           
-                                            
-                                            
+                ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: 25) {
+                    ForEach(cardBusiness) { cardbus in
+                        VStack {
+                            BusinessCardView(cardbus: cardbus)
+                                .onTapGesture {
+                                    withAnimation(.easeOut(duration: 0.1)) {
+                                        feedback.impactOccurred()
                                     }
-                            }
-                                    
-                                    .frame(height: 180)
-                                    .cornerRadius(15)
-                                   
-                            }
+                                    businessDetail.selectedBusinessProfile = cardbus
+                                    businessDetail.showingBusinessProfile = true
+                                }
+                            
                         }
-                    }.padding()
-                    
+                        .frame(height: 180)
+                        .cornerRadius(15)
+                    }
+                }
+                .padding()
+                
+            }
             } else {
                 BusinessDetailList(cardBusiness: cardBusiness[0])
-                }
+                
             }
-        }
+        
     }
+}
 
 
-struct CardBusiness: Codable, Identifiable {
+struct CardBusiness: Hashable, Codable, Identifiable {
     
     var id: Int
     let title: String

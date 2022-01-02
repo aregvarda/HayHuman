@@ -14,3 +14,9 @@ var gridLayout: [GridItem] {
 }
 
 let feedback = UIImpactFeedbackGenerator(style: .medium)
+
+let keyWindow = UIApplication.shared.connectedScenes
+    .filter({$0.activationState == .foregroundInactive})
+    .compactMap({$0 as? UIWindowScene})
+    .first?.windows
+    .filter({$0.isKeyWindow}).first
