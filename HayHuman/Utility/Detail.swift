@@ -13,11 +13,6 @@ class BusinessDetail: ObservableObject {
     @Published var selectedBusinessProfile: CardBusiness? = nil
 }
 
-class PoliticsDetail: ObservableObject {
-    
-    @Published var showingPoliticsProfile: Bool = false
-    @Published var selectedPoliticsProfile: CardPolitics? = nil
-}
 
 class CultureDetail: ObservableObject {
     
@@ -25,3 +20,8 @@ class CultureDetail: ObservableObject {
     @Published var selectedCultureProfile: CultureCard? = nil
 }
 
+class PoliticsDetail: ObservableObject {
+    
+    @Published var showingPoliticsProfile: Bool = false
+    @Published var selectedPoliticsProfile: CardPolitics? = nil
+}

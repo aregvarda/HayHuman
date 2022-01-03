@@ -6,92 +6,81 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct CultureView_Previews: PreviewProvider {
     static var previews: some View {
         CultureView()
+            .environmentObject(CultureDetail())
     }
 }
 
 struct CultureView: View {
+    
+    @EnvironmentObject var cultureDetail: CultureDetail
+   
     var body: some View {
-        ScrollView {
-            HStack(spacing: 16) {
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(leftCards.enumerated()), id: \.element) { offset, card in
+        if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
+            ScrollView {
+            LazyVGrid(columns: gridLayout, spacing: 25) {
+                ForEach(cardCulture) { card in
+                    VStack {
                         CultureCardView(card: card)
-                            .frame(height: 180)
-                            .cornerRadius(15)
+                            .onTapGesture {
+                                withAnimation(.easeOut(duration: 0.1)) {
+                                    feedback.impactOccurred()
+                                }
+                                cultureDetail.selectedCultureProfile = card
+                                cultureDetail.showingCultureProfile = true
+                            }
+                        
                     }
+                    .frame(height: 180)
+                    .cornerRadius(15)
                 }
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(rightCards.enumerated()), id: \.element) { offset, card in
-                        CultureCardView(card: card)
-                            .frame(height: 180)
-                            .cornerRadius(15)
-                    }
-                }
-            }.padding()
-        }.navigationBarTitle("Culture")
-            .navigationBarItems(leading: Button {
-                
-            } label: {
-                Image(systemName: "arrow.backward")
-            }, trailing: Button {
-            } label: {
-                Image(systemName: "magnifyingglass")
-            })
+            }
+            .padding()
+            
+        }
+        } else {
+            CultureDetailList(cardCulture: cardCulture[0])
+            
+        }
+    
+}
+}
+
+struct CultureCard: Hashable, Codable, Identifiable {
+    
+    var id: Int
+    let title: String
+    let imageName: String
+    fileprivate var coordinates: CultureCoordinates
+    var name: String
+    var city: String
+    var titleDetail: String
+    var description: String
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
     }
 }
 
-struct CultureCard: Hashable, Codable {
-    let title: String
-    let imageName: String
+struct CultureCoordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
 }
 
-let leftCards: [CultureCard] = [
-    .init(title: "Khachaturian",
-          imageName: "khachaturyan"),
-    .init(title: "Komitas",
-          imageName: "komitas"),
-    .init(title: "Raffi",
-          imageName: "raffi"),
-    .init(title: "Sarian",
-          imageName: "sarian"),
-    .init(title: "Teryan",
-          imageName: "teryan"),
-    .init(title: "Charents",
-          imageName: "charents"),
-    .init(title: "Isahakyan",
-          imageName: "isahakyan"),
-    .init(title: "Sevak",
-          imageName: "sevak")
-]
-
-let rightCards: [CultureCard] = [
-    .init(title: "Tumanian",
-          imageName: "tumanian"),
-    .init(title: "Vakhtangov",
-          imageName: "vakhtangov"),
-    .init(title: "Saroyan",
-          imageName: "saroian"),
-    .init(title: "Abovian",
-          imageName: "abovian"),
-    .init(title: "Kaputikyan",
-          imageName: "kaputikyan"),
-    .init(title: "Tsaturyan",
-          imageName: "tsaturyan"),
-    .init(title: "Sahyan",
-          imageName: "sahyan"),
-    .init(title: "Adamov",
-          imageName: "adamov")
-]
+let cardCulture: [CultureCard] = Bundle.main.decode("culture.json")
+let cultureCards: CultureCard = cardCulture[0]
 
 struct CultureCardView: View {
     let card: CultureCard
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .bottom) {
                 Image(card.imageName)
                     .resizable()
                     .scaledToFill()
@@ -108,6 +97,7 @@ struct CultureCardView: View {
                     .multilineTextAlignment(.center)
                     .padding(7)
                     .foregroundColor(.white)
+                    .shadow(color: .gray, radius: 4, x: 0, y: 0)
             }
         }
     }

@@ -1,17 +1,16 @@
 //
-//  BusinessDetailList.swift
+//  CultureDetailList.swift
 //  HayHuman
 //
-//  Created by Геворг on 26.12.2021.
+//  Created by Геворг on 03.01.2022.
 //
 
 import SwiftUI
 
-
-struct BusinessDetailList: View {
-    @EnvironmentObject var businessDetail: BusinessDetail
+struct CultureDetailList: View {
+    @EnvironmentObject var cultureDetail: CultureDetail
     @State var theColorScheme: ColorScheme = .light
-    var cardBusiness: CardBusiness
+    var cardCulture: CultureCard
     
     func toggleColorScheme() {
         theColorScheme = (theColorScheme == .light) ? .dark : .light
@@ -20,23 +19,23 @@ struct BusinessDetailList: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
-                BusinessMapView(coordinate: businessDetail.selectedBusinessProfile?.locationCoordinate ?? cardBusiness.locationCoordinate)
+                CultureMapView(coordinate: cultureDetail.selectedCultureProfile?.locationCoordinate ?? cultureCards.locationCoordinate)
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 400)
                     .cornerRadius(10)
                 
                 
-                BusinessCircleImage()
+                CultureCircleImage()
                     .offset(y: -90)
                     .padding(.bottom, -100)
                 
                 
                 VStack(alignment: .leading) {
-                    Text(businessDetail.selectedBusinessProfile?.name ?? businessCards.name)
+                    Text(cultureDetail.selectedCultureProfile?.name ?? cultureCards.name)
                         .font(.title)
                     
                     HStack {
-                        Text(businessDetail.selectedBusinessProfile?.city ?? businessCards.city)
+                        Text(cultureDetail.selectedCultureProfile?.city ?? cultureCards.city)
                         Spacer()
                     }
                     .font(.subheadline)
@@ -44,13 +43,13 @@ struct BusinessDetailList: View {
                     
                     Divider()
                     
-                    Text(businessDetail.selectedBusinessProfile?.titleDetail ?? businessCards.titleDetail)
+                    Text(cultureDetail.selectedCultureProfile?.titleDetail ?? cultureCards.titleDetail)
                         .font(.title3)
                         .fontWeight(.bold)
                         .padding(4)
                     
                     
-                    Text(businessDetail.selectedBusinessProfile?.description ?? businessCards.description)
+                    Text(cultureDetail.selectedCultureProfile?.description ?? cultureCards.description)
                         .font(.system(.body, design: .rounded))
                         .multilineTextAlignment(.leading)
                 }
@@ -66,8 +65,8 @@ struct BusinessDetailList: View {
                 withAnimation(.easeIn(duration: 0.1)) {
                     feedback.impactOccurred()
                 }
-                businessDetail.selectedBusinessProfile = nil
-                businessDetail.showingBusinessProfile = false
+                cultureDetail.selectedCultureProfile = nil
+                cultureDetail.showingCultureProfile = false
             } label: {
                 Image(systemName: "chevron.backward.square.fill")
                     .foregroundColor(.white)
@@ -88,13 +87,10 @@ struct BusinessDetailList: View {
         }
     }
 
-
-
-struct BusinessDetailList_Previews: PreviewProvider {
+struct CultureDetailList_Previews: PreviewProvider {
     static var previews: some View {
-        BusinessDetailList(cardBusiness: cardBusiness[0])
-            .environmentObject(BusinessDetail())
+        CultureDetailList(cardCulture: cardCulture[0])
+            .environmentObject(CultureDetail())
             .edgesIgnoringSafeArea(.top)
     }
 }
-

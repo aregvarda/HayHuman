@@ -27,6 +27,10 @@
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
 		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
+		C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */; };
+		C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */; };
+		C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */; };
+		C8DFDB8F2782FCEE000D6071 /* culture.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB8E2782FCEE000D6071 /* culture.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
 		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
+		C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCircleImage.swift; sourceTree = "<group>"; };
+		C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDetailList.swift; sourceTree = "<group>"; };
+		C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureMapView.swift; sourceTree = "<group>"; };
+		C8DFDB8E2782FCEE000D6071 /* culture.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = culture.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		C863E94C27749E9D00411599 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFDB862782F495000D6071 /* CultureDetail */,
 				C8960B272778AD3000942F90 /* BusinessDetail */,
 				C863E94A27748C8E00411599 /* TabBarIcon.swift */,
 				C863E95027749EE400411599 /* ViewRouter.swift */,
@@ -119,10 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				C863E9602774C84600411599 /* BusinessView.swift */,
+				C8960B232778A63E00942F90 /* CultureView.swift */,
 				C863E95E2774C83500411599 /* PoliticsView.swift */,
 				C863E95A2774C7E100411599 /* MilitaryView.swift */,
 				C863E95C2774C81E00411599 /* ScienceView.swift */,
-				C8960B232778A63E00942F90 /* CultureView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 		C88705D0277CE67200B34922 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFDB8E2782FCEE000D6071 /* culture.json */,
 				C88705D7277CF90E00B34922 /* business.json */,
 			);
 			path = Data;
@@ -179,6 +189,16 @@
 				C8960B252778AD0A00942F90 /* BusinessMapView.swift */,
 			);
 			path = BusinessDetail;
+			sourceTree = "<group>";
+		};
+		C8DFDB862782F495000D6071 /* CultureDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */,
+				C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */,
+				C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */,
+			);
+			path = CultureDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C863E942277487DE00411599 /* Preview Assets.xcassets in Resources */,
+				C8DFDB8F2782FCEE000D6071 /* culture.json in Resources */,
 				C88705D8277CF90E00B34922 /* business.json in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +281,7 @@
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
 				C863E94B27748C8E00411599 /* TabBarIcon.swift in Sources */,
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
+				C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */,
 				C8960B242778A63E00942F90 /* CultureView.swift in Sources */,
 				C88705CD277CB96B00B34922 /* Detail.swift in Sources */,
 				C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */,
@@ -267,8 +289,10 @@
 				C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */,
 				C88705DB277CFB2000B34922 /* Bundle.swift in Sources */,
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
+				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
 				C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */,
 				C863E95F2774C83500411599 /* PoliticsView.swift in Sources */,
+				C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
