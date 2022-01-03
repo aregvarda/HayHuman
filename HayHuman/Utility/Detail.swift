@@ -25,3 +25,16 @@ class PoliticsDetail: ObservableObject {
     @Published var showingPoliticsProfile: Bool = false
     @Published var selectedPoliticsProfile: CardPolitics? = nil
 }
+
+class MilitaryDetail: ObservableObject {
+    
+    @Published var showingMilitaryProfile: Bool = false
+    @Published var selectedMilitaryProfile: CardMilitary? = nil
+}
+
+class ScienceDetail: ObservableObject {
+    
+    @Published var showingScienceProfile: Bool = false
+    @Published var selectedScienceProfile: ScienceCardView? = nil
+}
+

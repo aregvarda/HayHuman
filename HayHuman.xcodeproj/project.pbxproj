@@ -31,6 +31,12 @@
 		C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */; };
 		C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */; };
 		C8DFDB8F2782FCEE000D6071 /* culture.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB8E2782FCEE000D6071 /* culture.json */; };
+		C8DFDB922782FFF5000D6071 /* politics.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB912782FFF5000D6071 /* politics.json */; };
+		C8DFDB9827830284000D6071 /* military.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB9727830284000D6071 /* military.json */; };
+		C8DFDB9A2783048F000D6071 /* science.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB992783048F000D6071 /* science.json */; };
+		C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */; };
+		C8DFDB9E278305B8000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */; };
+		C8DFDBA0278305CA000D6071 /* PoliticsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDetailList.swift; sourceTree = "<group>"; };
 		C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureMapView.swift; sourceTree = "<group>"; };
 		C8DFDB8E2782FCEE000D6071 /* culture.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = culture.json; sourceTree = "<group>"; };
+		C8DFDB912782FFF5000D6071 /* politics.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = politics.json; sourceTree = "<group>"; };
+		C8DFDB9727830284000D6071 /* military.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = military.json; sourceTree = "<group>"; };
+		C8DFDB992783048F000D6071 /* science.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = science.json; sourceTree = "<group>"; };
+		C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsCircleImage.swift; sourceTree = "<group>"; };
+		C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDetailList.swift; sourceTree = "<group>"; };
+		C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 		C863E94C27749E9D00411599 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFDB902782FE7F000D6071 /* PoliticsDetail */,
 				C8DFDB862782F495000D6071 /* CultureDetail */,
 				C8960B272778AD3000942F90 /* BusinessDetail */,
 				C863E94A27748C8E00411599 /* TabBarIcon.swift */,
@@ -166,6 +179,9 @@
 		C88705D0277CE67200B34922 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFDB992783048F000D6071 /* science.json */,
+				C8DFDB9727830284000D6071 /* military.json */,
+				C8DFDB912782FFF5000D6071 /* politics.json */,
 				C8DFDB8E2782FCEE000D6071 /* culture.json */,
 				C88705D7277CF90E00B34922 /* business.json */,
 			);
@@ -199,6 +215,16 @@
 				C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */,
 			);
 			path = CultureDetail;
+			sourceTree = "<group>";
+		};
+		C8DFDB902782FE7F000D6071 /* PoliticsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */,
+				C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */,
+				C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */,
+			);
+			path = PoliticsDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +285,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DFDB922782FFF5000D6071 /* politics.json in Resources */,
 				C863E942277487DE00411599 /* Preview Assets.xcassets in Resources */,
 				C8DFDB8F2782FCEE000D6071 /* culture.json in Resources */,
+				C8DFDB9A2783048F000D6071 /* science.json in Resources */,
 				C88705D8277CF90E00B34922 /* business.json in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
+				C8DFDB9827830284000D6071 /* military.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +319,12 @@
 				C88705DB277CFB2000B34922 /* Bundle.swift in Sources */,
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
 				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
+				C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */,
 				C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */,
 				C863E95F2774C83500411599 /* PoliticsView.swift in Sources */,
 				C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */,
+				C8DFDBA0278305CA000D6071 /* PoliticsMapView.swift in Sources */,
+				C8DFDB9E278305B8000D6071 /* CultureDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

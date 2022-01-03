@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct PoliticsView_Previews: PreviewProvider {
     static var previews: some View {
@@ -14,6 +15,9 @@ struct PoliticsView_Previews: PreviewProvider {
 }
 
 struct PoliticsView: View {
+    
+    @EnvironmentObject var politicsDetail: PoliticsDetail
+    
     var body: some View {
         ScrollView {
             HStack(spacing: 16) {
