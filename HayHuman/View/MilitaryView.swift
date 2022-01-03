@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct MilitaryView_Previews: PreviewProvider {
     static var previews: some View {
@@ -13,84 +14,70 @@ struct MilitaryView_Previews: PreviewProvider {
     }
 }
 struct MilitaryView: View {
+    @EnvironmentObject var militaryDetail: MilitaryDetail
+    
     var body: some View {
-        ScrollView {
-            HStack(spacing: 16) {
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(leftMilitaryCards.enumerated()), id: \.element) { offset, cardmil in
-                        MilitaryCardView(cardmil: cardmil)
-                            .frame(height: 180)
-                            .cornerRadius(15)
+        if militaryDetail.showingMilitaryProfile == false && militaryDetail.selectedMilitaryProfile == nil {
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: 25) {
+                    ForEach(cardMilitary) { cardmil in
+                        VStack {
+                            MilitaryCardView(cardmil: cardmil)
+                                .onTapGesture {
+                                    withAnimation(.easeOut(duration: 0.1)) {
+                                        feedback.impactOccurred()
+                                    }
+                                    militaryDetail.selectedMilitaryProfile = cardmil
+                                    militaryDetail.showingMilitaryProfile = true
+                                }
+                            
+                        }
+                        .frame(height: 180)
+                        .cornerRadius(15)
                     }
                 }
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(rightMilitaryCards.enumerated()), id: \.element) { offset, cardmil in
-                        MilitaryCardView(cardmil: cardmil)
-                            .frame(height: 180)
-                            .cornerRadius(15)
-                    }
-                }
-            }.padding()
-        }.navigationBarTitle("Military")
-            .navigationBarItems(leading: Button {
+                .padding()
                 
-            } label: {
-                Image(systemName: "arrow.backward")
-            }, trailing: Button {
-            } label: {
-                Image(systemName: "magnifyingglass")
-            })
+            }
+        } else {
+            MilitaryDetailList(cardMilitary: cardMilitary[0])
+            
+        }
+        
     }
 }
 
-struct CardMilitary: Hashable {
+struct CardMilitary: Hashable, Codable, Identifiable {
+    
+    var id: Int
     let title: String
     let imageName: String
+    fileprivate var coordinates: PoliticsCoordinates
+    var name: String
+    var city: String
+    var titleDetail: String
+    var description: String
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
 }
 
-let leftMilitaryCards: [CardMilitary] = [
-    .init(title: "Isakov",
-          imageName: "isakov"),
-    .init(title: "Bagramyan",
-          imageName: "bagramyan"),
-    .init(title: "Manouchian",
-          imageName: "manouchian"),
-    .init(title: "tehlirian",
-          imageName: "tehlirian"),
-    .init(title: "nzhdeh",
-          imageName: "nzhdeh"),
-    .init(title: "yerganian",
-          imageName: "yerganian"),
-    .init(title: "khudyakov",
-          imageName: "khudyakov"),
-    .init(title: "vartanyan",
-          imageName: "vartanyan")
-]
+struct MilitaryCoordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
+}
 
-let rightMilitaryCards: [CardMilitary] = [
-    .init(title: "ozanian",
-          imageName: "ozanian"),
-    .init(title: "shirakian",
-          imageName: "shirakian"),
-    .init(title: "silikyan",
-          imageName: "silikyan"),
-    .init(title: "yanigian",
-          imageName: "yanigian"),
-    .init(title: "arabo",
-          imageName: "arabo"),
-    .init(title: "serob",
-          imageName: "serob"),
-    .init(title: "argutinsky-dolgorukov",
-          imageName: "argutinsky-dolgorukov"),
-    .init(title: "bek-pirumyan",
-          imageName: "bek-pirumyan")
-]
+let cardMilitary: [CardMilitary] = Bundle.main.decode("military.json")
+let militaryCards: CardMilitary = cardMilitary[0]
 
 struct MilitaryCardView: View {
     let cardmil: CardMilitary
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .bottom) {
                 Image(cardmil.imageName)
                     .resizable()
                     .scaledToFill()
@@ -107,6 +94,7 @@ struct MilitaryCardView: View {
                     .multilineTextAlignment(.center)
                     .padding(7)
                     .foregroundColor(.white)
+                    .shadow(color: .gray, radius: 4, x: 0, y: 0)
             }
         }
     }

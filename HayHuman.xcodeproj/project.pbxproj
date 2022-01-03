@@ -37,6 +37,12 @@
 		C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */; };
 		C8DFDB9E278305B8000D6071 /* PoliticsDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9D278305B8000D6071 /* PoliticsDetailList.swift */; };
 		C8DFDBA0278305CA000D6071 /* PoliticsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */; };
+		C8DFDBA327830C8B000D6071 /* MilitaryCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA227830C8B000D6071 /* MilitaryCircleImage.swift */; };
+		C8DFDBA527830CA0000D6071 /* MilitaryDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA427830CA0000D6071 /* MilitaryDetailList.swift */; };
+		C8DFDBA727830CAD000D6071 /* MilitaryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA627830CAD000D6071 /* MilitaryMapView.swift */; };
+		C8DFDBAA27831159000D6071 /* ScienceCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */; };
+		C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */; };
+		C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAD27831176000D6071 /* ScienceMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +78,12 @@
 		C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsCircleImage.swift; sourceTree = "<group>"; };
 		C8DFDB9D278305B8000D6071 /* PoliticsDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsDetailList.swift; sourceTree = "<group>"; };
 		C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsMapView.swift; sourceTree = "<group>"; };
+		C8DFDBA227830C8B000D6071 /* MilitaryCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryCircleImage.swift; sourceTree = "<group>"; };
+		C8DFDBA427830CA0000D6071 /* MilitaryDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryDetailList.swift; sourceTree = "<group>"; };
+		C8DFDBA627830CAD000D6071 /* MilitaryMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryMapView.swift; sourceTree = "<group>"; };
+		C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceCircleImage.swift; sourceTree = "<group>"; };
+		C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceDetailList.swift; sourceTree = "<group>"; };
+		C8DFDBAD27831176000D6071 /* ScienceMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,8 @@
 		C863E94C27749E9D00411599 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFDBA82783112C000D6071 /* ScienceDetail */,
+				C8DFDBA127830C71000D6071 /* MilitaryDetail */,
 				C8DFDB902782FE7F000D6071 /* PoliticsDetail */,
 				C8DFDB862782F495000D6071 /* CultureDetail */,
 				C8960B272778AD3000942F90 /* BusinessDetail */,
@@ -227,6 +241,26 @@
 			path = PoliticsDetail;
 			sourceTree = "<group>";
 		};
+		C8DFDBA127830C71000D6071 /* MilitaryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFDBA227830C8B000D6071 /* MilitaryCircleImage.swift */,
+				C8DFDBA427830CA0000D6071 /* MilitaryDetailList.swift */,
+				C8DFDBA627830CAD000D6071 /* MilitaryMapView.swift */,
+			);
+			path = MilitaryDetail;
+			sourceTree = "<group>";
+		};
+		C8DFDBA82783112C000D6071 /* ScienceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */,
+				C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */,
+				C8DFDBAD27831176000D6071 /* ScienceMapView.swift */,
+			);
+			path = ScienceDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +339,7 @@
 				C863E95127749EE400411599 /* ViewRouter.swift in Sources */,
 				C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */,
 				C863E93D277487DB00411599 /* ContentView.swift in Sources */,
+				C8DFDBA527830CA0000D6071 /* MilitaryDetailList.swift in Sources */,
 				C863E95D2774C81E00411599 /* ScienceView.swift in Sources */,
 				C88705C8277C947500B34922 /* Constants.swift in Sources */,
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
@@ -312,11 +347,16 @@
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
 				C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */,
 				C8960B242778A63E00942F90 /* CultureView.swift in Sources */,
+				C8DFDBAA27831159000D6071 /* ScienceCircleImage.swift in Sources */,
 				C88705CD277CB96B00B34922 /* Detail.swift in Sources */,
 				C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */,
+				C8DFDBA327830C8B000D6071 /* MilitaryCircleImage.swift in Sources */,
+				C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */,
+				C8DFDBA727830CAD000D6071 /* MilitaryMapView.swift in Sources */,
 				C863E9612774C84600411599 /* BusinessView.swift in Sources */,
 				C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */,
 				C88705DB277CFB2000B34922 /* Bundle.swift in Sources */,
+				C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */,
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
 				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
 				C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */,

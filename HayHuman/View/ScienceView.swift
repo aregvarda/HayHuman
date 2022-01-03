@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ScienceView_Previews: PreviewProvider {
     static var previews: some View {
@@ -14,84 +15,71 @@ struct ScienceView_Previews: PreviewProvider {
 }
 
 struct ScienceView: View {
+    @EnvironmentObject var scienceDetail: ScienceDetail
+
     var body: some View {
-        ScrollView {
-            HStack(spacing: 16) {
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(leftScienceCards.enumerated()), id: \.element) { offset, cardsci in
-                        ScienceCardView(cardsci: cardsci)
-                            .frame(height: 180)
-                            .cornerRadius(15)
+        if scienceDetail.showingScienceProfile == false && scienceDetail.selectedScienceProfile == nil {
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: 25) {
+                    ForEach(cardScience) { cardsci in
+                        VStack {
+                            ScienceCardView(cardsci: cardsci)
+                                .onTapGesture {
+                                    withAnimation(.easeOut(duration: 0.1)) {
+                                        feedback.impactOccurred()
+                                    }
+                                    scienceDetail.selectedScienceProfile = cardsci
+                                    scienceDetail.showingScienceProfile = true
+                                }
+                            
+                        }
+                        .frame(height: 180)
+                        .cornerRadius(15)
                     }
                 }
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(rightScienceCards.enumerated()), id: \.element) { offset, cardsci in
-                        ScienceCardView(cardsci: cardsci)
-                            .frame(height: 180)
-                            .cornerRadius(15)
-                    }
-                }
-            }.padding()
-        }.navigationBarTitle("Science")
-            .navigationBarItems(leading: Button {
+                .padding()
                 
-            } label: {
-                Image(systemName: "arrow.backward")
-            }, trailing: Button {
-            } label: {
-                Image(systemName: "magnifyingglass")
-            })
+            }
+        } else {
+            ScienceDetailList(cardScience: cardScience[0])
+            
+        }
+        
     }
 }
 
-struct CardScience: Hashable {
+struct CardScience: Hashable, Codable, Identifiable {
+    
+    var id: Int
     let title: String
     let imageName: String
+    fileprivate var coordinates: ScienceCoordinates
+    var name: String
+    var city: String
+    var titleDetail: String
+    var description: String
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
 }
 
-let leftScienceCards: [CardScience] = [
-    .init(title: "orbeli",
-          imageName: "orbeli"),
-    .init(title: "ambartsumian",
-          imageName: "ambartsumian"),
-    .init(title: "artin",
-          imageName: "artin"),
-    .init(title: "iosifyan",
-          imageName: "iosifyan"),
-    .init(title: "damadian",
-          imageName: "damadian"),
-    .init(title: "ter-poghosyan",
-          imageName: "ter-poghosyan"),
-    .init(title: "rafaelants",
-          imageName: "rafaelants"),
-    .init(title: "gazandyan",
-          imageName: "gazandyan")
-]
+struct ScienceCoordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
+}
 
-let rightScienceCards: [CardScience] = [
-    .init(title: "mikoyan",
-          imageName: "mikoyan"),
-    .init(title: "alikhanian",
-          imageName: "alikhanian"),
-    .init(title: "oganessian",
-          imageName: "oganessian"),
-    .init(title: "adamian",
-          imageName: "adamian"),
-    .init(title: "babayan",
-          imageName: "babayan"),
-    .init(title: "sisakian",
-          imageName: "sisakian"),
-    .init(title: "bagian",
-          imageName: "bagian"),
-    .init(title: "baroian",
-          imageName: "baroian")
-]
+let cardScience: [CardScience] = Bundle.main.decode("science.json")
+let scienceCards: CardScience = cardScience[0]
+
 
 struct ScienceCardView: View {
     let cardsci: CardScience
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .bottom) {
                 Image(cardsci.imageName)
                     .resizable()
                     .scaledToFill()
@@ -108,6 +96,7 @@ struct ScienceCardView: View {
                     .multilineTextAlignment(.center)
                     .padding(7)
                     .foregroundColor(.white)
+                    .shadow(color: .gray, radius: 4, x: 0, y: 0)
             }
         }
     }
