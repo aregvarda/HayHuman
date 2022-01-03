@@ -35,7 +35,7 @@
 		C8DFDB9827830284000D6071 /* military.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB9727830284000D6071 /* military.json */; };
 		C8DFDB9A2783048F000D6071 /* science.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DFDB992783048F000D6071 /* science.json */; };
 		C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */; };
-		C8DFDB9E278305B8000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */; };
+		C8DFDB9E278305B8000D6071 /* PoliticsDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9D278305B8000D6071 /* PoliticsDetailList.swift */; };
 		C8DFDBA0278305CA000D6071 /* PoliticsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,7 @@
 		C8DFDB9727830284000D6071 /* military.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = military.json; sourceTree = "<group>"; };
 		C8DFDB992783048F000D6071 /* science.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = science.json; sourceTree = "<group>"; };
 		C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsCircleImage.swift; sourceTree = "<group>"; };
-		C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDetailList.swift; sourceTree = "<group>"; };
+		C8DFDB9D278305B8000D6071 /* PoliticsDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsDetailList.swift; sourceTree = "<group>"; };
 		C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				C8DFDB9B278305A3000D6071 /* PoliticsCircleImage.swift */,
-				C8DFDB9D278305B8000D6071 /* CultureDetailList.swift */,
+				C8DFDB9D278305B8000D6071 /* PoliticsDetailList.swift */,
 				C8DFDB9F278305CA000D6071 /* PoliticsMapView.swift */,
 			);
 			path = PoliticsDetail;
@@ -324,7 +324,7 @@
 				C863E95F2774C83500411599 /* PoliticsView.swift in Sources */,
 				C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */,
 				C8DFDBA0278305CA000D6071 /* PoliticsMapView.swift in Sources */,
-				C8DFDB9E278305B8000D6071 /* CultureDetailList.swift in Sources */,
+				C8DFDB9E278305B8000D6071 /* PoliticsDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

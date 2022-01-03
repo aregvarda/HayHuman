@@ -19,83 +19,68 @@ struct PoliticsView: View {
     @EnvironmentObject var politicsDetail: PoliticsDetail
     
     var body: some View {
-        ScrollView {
-            HStack(spacing: 16) {
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(leftPoliticsCards.enumerated()), id: \.element) { offset, cardpol in
-                        PoliticsCardView(cardpol: cardpol)
-                            .frame(height: 180)
-                            .cornerRadius(15)
+        if politicsDetail.showingPoliticsProfile == false && politicsDetail.selectedPoliticsProfile == nil {
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: 25) {
+                    ForEach(cardPolitics) { cardpol in
+                        VStack {
+                            PoliticsCardView(cardpol: cardpol)
+                                .onTapGesture {
+                                    withAnimation(.easeOut(duration: 0.1)) {
+                                        feedback.impactOccurred()
+                                    }
+                                    politicsDetail.selectedPoliticsProfile = cardpol
+                                    politicsDetail.showingPoliticsProfile = true
+                                }
+                            
+                        }
+                        .frame(height: 180)
+                        .cornerRadius(15)
                     }
                 }
-                VStack(alignment: .leading, spacing: 25) {
-                    ForEach(Array(rightPoliticsCards.enumerated()), id: \.element) { offset, cardpol in
-                        PoliticsCardView(cardpol: cardpol)
-                            .frame(height: 180)
-                            .cornerRadius(15)
-                    }
-                }
-            }.padding()
-        }.navigationBarTitle("Politics")
-            .navigationBarItems(leading: Button {
+                .padding()
                 
-            } label: {
-                Image(systemName: "arrow.backward")
-            }, trailing: Button {
-            } label: {
-                Image(systemName: "magnifyingglass")
-            })
+            }
+        } else {
+            PoliticsDetailList(cardPolitics: cardPolitics[0])
+            
+        }
+        
     }
 }
 
-struct CardPolitics: Hashable {
+struct CardPolitics: Hashable, Codable, Identifiable {
+    
+    var id: Int
     let title: String
     let imageName: String
+    fileprivate var coordinates: PoliticsCoordinates
+    var name: String
+    var city: String
+    var titleDetail: String
+    var description: String
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
 }
 
-let leftPoliticsCards: [CardPolitics] = [
-    .init(title: "loris-melikov",
-          imageName: "loris-melikov"),
-    .init(title: "balladur",
-          imageName: "balladur"),
-    .init(title: "nubar",
-          imageName: "nubar"),
-    .init(title: "shaumian",
-          imageName: "shaumian"),
-    .init(title: "avanesov",
-          imageName: "avanesov"),
-    .init(title: "deukmejian",
-          imageName: "deukmejian"),
-    .init(title: "al-hafez",
-          imageName: "al-hafez"),
-    .init(title: "devedjian",
-          imageName: "devedjian")
-]
+struct PoliticsCoordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
+}
 
-let rightPoliticsCards: [CardPolitics] = [
-    .init(title: "noradunkyan",
-          imageName: "noradunkyan"),
-    .init(title: "delyanov",
-          imageName: "delyanov"),
-    .init(title: "mikoyan",
-          imageName: "amikoyan"),
-    .init(title: "darzi",
-          imageName: "darzi"),
-    .init(title: "mardian",
-          imageName: "mardian"),
-    .init(title: "derounian",
-          imageName: "derounian"),
-    .init(title: "menem",
-          imageName: "menem"),
-    .init(title: "sarkis",
-          imageName: "sarkis")
-]
+let cardPolitics: [CardPolitics] = Bundle.main.decode("politics.json")
+let politicsCards: CardPolitics = cardPolitics[0]
+
 
 struct PoliticsCardView: View {
     let cardpol: CardPolitics
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .bottom) {
                 Image(cardpol.imageName)
                     .resizable()
                     .scaledToFill()
@@ -112,6 +97,7 @@ struct PoliticsCardView: View {
                     .multilineTextAlignment(.center)
                     .padding(7)
                     .foregroundColor(.white)
+                    .shadow(color: .gray, radius: 4, x: 0, y: 0)
             }
         }
     }

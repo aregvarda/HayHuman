@@ -35,6 +35,6 @@ class MilitaryDetail: ObservableObject {
 class ScienceDetail: ObservableObject {
     
     @Published var showingScienceProfile: Bool = false
-    @Published var selectedScienceProfile: ScienceCardView? = nil
+    @Published var selectedScienceProfile: CardScience? = nil
 }
 

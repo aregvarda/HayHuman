@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct PoliticsCircleImage: View {
+    @EnvironmentObject var politicsDetail: PoliticsDetail
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(politicsDetail.selectedPoliticsProfile?.imageName ?? politicsCards.imageName)
+            .resizable()
+            .frame(width: 150, height: 150)
+            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4)
+            }
+            .shadow(radius: 7)
     }
 }
 

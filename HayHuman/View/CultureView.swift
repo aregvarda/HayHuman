@@ -18,36 +18,36 @@ struct CultureView_Previews: PreviewProvider {
 struct CultureView: View {
     
     @EnvironmentObject var cultureDetail: CultureDetail
-   
+    
     var body: some View {
         if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
             ScrollView {
-            LazyVGrid(columns: gridLayout, spacing: 25) {
-                ForEach(cardCulture) { card in
-                    VStack {
-                        CultureCardView(card: card)
-                            .onTapGesture {
-                                withAnimation(.easeOut(duration: 0.1)) {
-                                    feedback.impactOccurred()
+                LazyVGrid(columns: gridLayout, spacing: 25) {
+                    ForEach(cardCulture) { card in
+                        VStack {
+                            CultureCardView(card: card)
+                                .onTapGesture {
+                                    withAnimation(.easeOut(duration: 0.1)) {
+                                        feedback.impactOccurred()
+                                    }
+                                    cultureDetail.selectedCultureProfile = card
+                                    cultureDetail.showingCultureProfile = true
                                 }
-                                cultureDetail.selectedCultureProfile = card
-                                cultureDetail.showingCultureProfile = true
-                            }
-                        
+                            
+                        }
+                        .frame(height: 180)
+                        .cornerRadius(15)
                     }
-                    .frame(height: 180)
-                    .cornerRadius(15)
                 }
+                .padding()
+                
             }
-            .padding()
-            
-        }
         } else {
             CultureDetailList(cardCulture: cardCulture[0])
             
         }
-    
-}
+        
+    }
 }
 
 struct CultureCard: Hashable, Codable, Identifiable {
