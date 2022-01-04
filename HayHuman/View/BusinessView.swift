@@ -45,6 +45,14 @@ struct BusinessView: View {
                 .padding()
                 
             }
+                .navigationBarTitleDisplayMode(.inline)
+                    .toolbar(content: {
+                        ToolbarItem(placement: .navigationBarLeading, content: {
+                         Text("Business")
+                         .fontWeight(.bold)
+                         .font(.title)
+                         
+                      })})
             } else {
                 BusinessDetailList(cardBusiness: cardBusiness[0])
                 

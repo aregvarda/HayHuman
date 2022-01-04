@@ -12,6 +12,7 @@ struct HayHumanApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(viewRouter: ViewRouter())
+//            ContentView()
         }
     }
 }

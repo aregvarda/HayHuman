@@ -60,7 +60,18 @@ struct CultureDetailList: View {
                 
                 
             }
-        }.navigationBarTitle("")
+            
+        }
+//        .navigationBarTitleDisplayMode(.inline)
+//            .toolbar(content: {
+//                ToolbarItem(placement: .principal, content: {
+//                 Text(cultureDetail.selectedCultureProfile?.title ?? cultureCards.title)
+//                 .fontWeight(.bold)
+//                 .font(.title2)
+//                 .foregroundColor(.secondary)
+//                 
+//              })})
+        .navigationBarTitle("")
             .navigationBarItems(leading: Button {
                 withAnimation(.easeIn(duration: 0.1)) {
                     feedback.impactOccurred()
@@ -68,20 +79,20 @@ struct CultureDetailList: View {
                 cultureDetail.selectedCultureProfile = nil
                 cultureDetail.showingCultureProfile = false
             } label: {
-                Image(systemName: "chevron.backward.square.fill")
-                    .foregroundColor(.white)
+                Image(systemName: "arrow.backward.square.fill")
+                    .foregroundColor(.secondary)
                     .font(.title)
-                    .shadow(color: .gray, radius: 5, x: 5, y: 5)
+//                    .shadow(color: .gray, radius: 5, x: 3, y: 0)
             })
             
             .navigationBarItems(trailing: Button {
                 self.toggleColorScheme()
                 
             } label: {
-                Image(systemName: "switch.2")
-
+                Image(systemName: "moon.stars.fill")
+                    .foregroundColor(.secondary)
                     .font(.title)
-                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
+//                    .shadow(color: .gray, radius: 5, x: 0, y: 5)
                 
             }).preferredColorScheme(theColorScheme)
         }
@@ -92,5 +103,6 @@ struct CultureDetailList_Previews: PreviewProvider {
         CultureDetailList(cardCulture: cardCulture[0])
             .environmentObject(CultureDetail())
             .edgesIgnoringSafeArea(.top)
+            
     }
 }

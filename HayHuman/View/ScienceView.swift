@@ -40,6 +40,14 @@ struct ScienceView: View {
                 .padding()
                 
             }
+            .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                     Text("Science")
+                     .fontWeight(.bold)
+                     .font(.title)
+                     
+                  })})
         } else {
             ScienceDetailList(cardScience: cardScience[0])
             

@@ -39,6 +39,14 @@ struct MilitaryView: View {
                 .padding()
                 
             }
+            .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                     Text("Military")
+                     .fontWeight(.bold)
+                     .font(.title)
+                     
+                  })})
         } else {
             MilitaryDetailList(cardMilitary: cardMilitary[0])
             

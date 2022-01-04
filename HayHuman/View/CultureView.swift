@@ -18,10 +18,46 @@ struct CultureView_Previews: PreviewProvider {
 struct CultureView: View {
     
     @EnvironmentObject var cultureDetail: CultureDetail
+    @State var search = ""
+    @State var index = 0
     
     var body: some View {
         if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
-            ScrollView {
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                TextField("Search", text: $search)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal)
+                    .background(Color.black.opacity(0.07))
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+                    .padding(.top, 25)
+                // Carousel List
+                TabView(selection: $index) {
+                    ForEach(0...5, id: \.self) { index in
+                        Image("p\(index)")
+                            .resizable()
+                            // adding animations
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width - 35)
+                            //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
+                            .cornerRadius(15)
+                            .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                            .scaleEffect(self.index == index ? 1.0 : 0.85)
+                            .padding(.horizontal)
+                            // for identifying current index
+                            .tag(index)
+                            
+                           
+                            
+                    }
+                }
+                .frame(height: 230)
+                .padding(.top, 25)
+                .tabViewStyle(PageTabViewStyle())
+                .animation(.easeOut, value: 1)
+                
+                
                 LazyVGrid(columns: gridLayout, spacing: 25) {
                     ForEach(cardCulture) { card in
                         VStack {
@@ -42,6 +78,14 @@ struct CultureView: View {
                 .padding()
                 
             }
+            .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                     Text("Culture")
+                     .fontWeight(.bold)
+                     .font(.title)
+                     
+                  })})
         } else {
             CultureDetailList(cardCulture: cardCulture[0])
             

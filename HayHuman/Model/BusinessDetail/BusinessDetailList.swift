@@ -61,7 +61,18 @@ struct BusinessDetailList: View {
                 
                 
             }
-        }.navigationBarTitle("")
+        }
+        
+//        .navigationBarTitleDisplayMode(.inline)
+//            .toolbar(content: {
+//                ToolbarItem(placement: .principal, content: {
+//                 Text(businessDetail.selectedBusinessProfile?.title ?? businessCards.title)
+//                 .fontWeight(.bold)
+//                 .font(.title2)
+//                 .foregroundColor(.secondary)
+//
+//              })})
+        .navigationBarTitle("")
             .navigationBarItems(leading: Button {
                 withAnimation(.easeIn(duration: 0.1)) {
                     feedback.impactOccurred()
@@ -69,20 +80,21 @@ struct BusinessDetailList: View {
                 businessDetail.selectedBusinessProfile = nil
                 businessDetail.showingBusinessProfile = false
             } label: {
-                Image(systemName: "chevron.backward.square.fill")
-                    .foregroundColor(.white)
+                Image(systemName: "arrow.backward.square.fill")
+                    .foregroundColor(.secondary)
                     .font(.title)
-                    .shadow(color: .gray, radius: 5, x: 5, y: 5)
+//                    .shadow(color: .gray, radius: 5, x: 5, y: 5)
             })
             
             .navigationBarItems(trailing: Button {
                 self.toggleColorScheme()
                 
             } label: {
-                Image(systemName: "switch.2")
+                Image(systemName: "moon.stars.fill")
 
+                    .foregroundColor(.secondary)
                     .font(.title)
-                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
+//                    .shadow(color: .gray, radius: 5, x: 0, y: 5)
                 
             }).preferredColorScheme(theColorScheme)
         }

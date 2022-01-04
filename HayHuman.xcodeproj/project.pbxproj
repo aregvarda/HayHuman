@@ -43,6 +43,7 @@
 		C8DFDBAA27831159000D6071 /* ScienceCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */; };
 		C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */; };
 		C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAD27831176000D6071 /* ScienceMapView.swift */; };
+		C8DFDBB02783644A000D6071 /* AlternativeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceCircleImage.swift; sourceTree = "<group>"; };
 		C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceDetailList.swift; sourceTree = "<group>"; };
 		C8DFDBAD27831176000D6071 /* ScienceMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceMapView.swift; sourceTree = "<group>"; };
+		C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				C863E9562774BB7D00411599 /* TabViewPlace.swift */,
 				C863E93C277487DB00411599 /* ContentView.swift */,
+				C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
 				C863E94B27748C8E00411599 /* TabBarIcon.swift in Sources */,
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
+				C8DFDBB02783644A000D6071 /* AlternativeTab.swift in Sources */,
 				C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */,
 				C8960B242778A63E00942F90 /* CultureView.swift in Sources */,
 				C8DFDBAA27831159000D6071 /* ScienceCircleImage.swift in Sources */,

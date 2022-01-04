@@ -41,6 +41,14 @@ struct PoliticsView: View {
                 .padding()
                 
             }
+            .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                     Text("Politics")
+                     .fontWeight(.bold)
+                     .font(.title)
+                     
+                  })})
         } else {
             PoliticsDetailList(cardPolitics: cardPolitics[0])
             

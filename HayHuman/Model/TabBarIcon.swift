@@ -23,6 +23,7 @@ struct TabBarIcon: View {
                 .padding(.top, 10)
             Text(tabName)
                 .font(.footnote)
+                .fontWeight(.bold)
             Spacer()
         }
         .foregroundColor(viewRouter.currentPage == assignedPage ? Color("TabBarHighlight") : .gray)
