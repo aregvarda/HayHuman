@@ -44,6 +44,7 @@
 		C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */; };
 		C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAD27831176000D6071 /* ScienceMapView.swift */; };
 		C8DFDBB02783644A000D6071 /* AlternativeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */; };
+		C8EE28872784886C00CC039C /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE28862784886900CC039C /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceDetailList.swift; sourceTree = "<group>"; };
 		C8DFDBAD27831176000D6071 /* ScienceMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceMapView.swift; sourceTree = "<group>"; };
 		C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeTab.swift; sourceTree = "<group>"; };
+		C8EE28862784886900CC039C /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				C863E93A277487DB00411599 /* HayHumanApp.swift */,
 				C88705C7277C947500B34922 /* Constants.swift */,
 				C88705CC277CB96B00B34922 /* Detail.swift */,
+				C8EE28862784886900CC039C /* Keyboard.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */,
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
 				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
+				C8EE28872784886C00CC039C /* Keyboard.swift in Sources */,
 				C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */,
 				C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */,
 				C863E95F2774C83500411599 /* PoliticsView.swift in Sources */,
