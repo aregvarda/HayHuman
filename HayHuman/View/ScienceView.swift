@@ -16,20 +16,31 @@ struct ScienceView_Previews: PreviewProvider {
 
 struct ScienceView: View {
     @EnvironmentObject var scienceDetail: ScienceDetail
-    @State var search = ""
+    @State var searchText = ""
+    @State var searching = false
     @State var index = 0
 
     var body: some View {
         if scienceDetail.showingScienceProfile == false && scienceDetail.selectedScienceProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
                 
-                TextField("Search", text: $search)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
-                    .background(Color.black.opacity(0.07))
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                    .padding(.top, 25)
+                SearchBar(searchText: $searchText, searching: $searching)
+                    .toolbar {
+                        if searching {
+                            Button("Cancel") {
+                                searchText = ""
+                                withAnimation {
+                                   searching = false
+                                   UIApplication.shared.dismissKeyboard()
+                                }
+                            }
+                        }
+                    }
+                    .gesture(DragGesture()
+                                .onChanged({ _ in
+                        UIApplication.shared.dismissKeyboard()
+                                })
+                    )
                 
                 // Carousel List
                 TabView(selection: $index) {
@@ -56,7 +67,7 @@ struct ScienceView: View {
                     .animation(.easeOut, value: 1)
                 
                 LazyVGrid(columns: gridLayout, spacing: 25) {
-                    ForEach(cardScience) { cardsci in
+                    ForEach(cardScience.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { cardsci in
                         VStack {
                             ScienceCardView(cardsci: cardsci)
                                 .onTapGesture {
@@ -78,7 +89,7 @@ struct ScienceView: View {
             .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
-                     Text("Science")
+                        Text(searching ? "Searching" : "Science")
                      .fontWeight(.bold)
                      .font(.title)
                      

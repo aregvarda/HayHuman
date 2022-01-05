@@ -17,20 +17,31 @@ struct PoliticsView_Previews: PreviewProvider {
 struct PoliticsView: View {
     
     @EnvironmentObject var politicsDetail: PoliticsDetail
-    @State var search = ""
+    @State var searchText = ""
+    @State var searching = false
     @State var index = 0
     
     var body: some View {
         if politicsDetail.showingPoliticsProfile == false && politicsDetail.selectedPoliticsProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
                 
-                TextField("Search", text: $search)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
-                    .background(Color.black.opacity(0.07))
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                    .padding(.top, 25)
+                SearchBar(searchText: $searchText, searching: $searching)
+                    .toolbar {
+                        if searching {
+                            Button("Cancel") {
+                                searchText = ""
+                                withAnimation {
+                                   searching = false
+                                   UIApplication.shared.dismissKeyboard()
+                                }
+                            }
+                        }
+                    }
+                    .gesture(DragGesture()
+                                .onChanged({ _ in
+                        UIApplication.shared.dismissKeyboard()
+                                })
+                    )
                 
                 // Carousel List
                 TabView(selection: $index) {
@@ -57,7 +68,7 @@ struct PoliticsView: View {
                     .animation(.easeOut, value: 1)
                 
                 LazyVGrid(columns: gridLayout, spacing: 25) {
-                    ForEach(cardPolitics) { cardpol in
+                    ForEach(cardPolitics.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { cardpol in
                         VStack {
                             PoliticsCardView(cardpol: cardpol)
                                 .onTapGesture {
@@ -79,7 +90,7 @@ struct PoliticsView: View {
             .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
-                     Text("Politics")
+                        Text(searching ? "Searching" : "Politics")
                      .fontWeight(.bold)
                      .font(.title)
                      

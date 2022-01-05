@@ -70,7 +70,7 @@ struct CultureView: View {
                 
                 
                 LazyVGrid(columns: gridLayout, spacing: 25) {
-                    ForEach(cardCulture) { card in
+                    ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in
                         VStack {
                             CultureCardView(card: card)
                                 .onTapGesture {

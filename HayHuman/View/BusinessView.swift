@@ -20,7 +20,8 @@ struct BusinessView_Previews: PreviewProvider {
 struct BusinessView: View {
     
     @EnvironmentObject var businessDetail: BusinessDetail
-    @State var search = ""
+    @State var searchText = ""
+    @State var searching = false
     @State var index = 0
     
     
@@ -28,13 +29,23 @@ struct BusinessView: View {
             if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
                 ScrollView(.vertical, showsIndicators: false) {
                     
-                    TextField("Search", text: $search)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal)
-                        .background(Color.black.opacity(0.07))
-                        .cornerRadius(10)
-                        .padding(.horizontal)
-                        .padding(.top, 25)
+                    SearchBar(searchText: $searchText, searching: $searching)
+                        .toolbar {
+                            if searching {
+                                Button("Cancel") {
+                                    searchText = ""
+                                    withAnimation {
+                                       searching = false
+                                       UIApplication.shared.dismissKeyboard()
+                                    }
+                                }
+                            }
+                        }
+                        .gesture(DragGesture()
+                                    .onChanged({ _ in
+                            UIApplication.shared.dismissKeyboard()
+                                    })
+                        )
                     
                     // Carousel List
                     TabView(selection: $index) {
@@ -60,7 +71,7 @@ struct BusinessView: View {
                         .tabViewStyle(PageTabViewStyle())
                         .animation(.easeOut, value: 1)
                 LazyVGrid(columns: gridLayout, spacing: 25) {
-                    ForEach(cardBusiness) { cardbus in
+                    ForEach(cardBusiness.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { cardbus in
                         VStack {
                             BusinessCardView(cardbus: cardbus)
                                 .onTapGesture {
@@ -82,7 +93,7 @@ struct BusinessView: View {
                 .navigationBarTitleDisplayMode(.inline)
                     .toolbar(content: {
                         ToolbarItem(placement: .navigationBarLeading, content: {
-                         Text("Business")
+                            Text(searching ? "Searching" : "Business")
                          .fontWeight(.bold)
                          .font(.title)
                          
