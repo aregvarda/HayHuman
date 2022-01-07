@@ -21,6 +21,8 @@ struct PoliticsView: View {
     @State var searching = false
     @State var index = 0
     
+    @State var showSheetView = false
+    
     var body: some View {
         if politicsDetail.showingPoliticsProfile == false && politicsDetail.selectedPoliticsProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
@@ -86,7 +88,22 @@ struct PoliticsView: View {
                 }
                 .padding()
                 
+            }.navigationBarItems(trailing: Button {
+                
+                self.showSheetView.toggle()
+            } label: {
+                Image(systemName: "line.horizontal.3.decrease")
+                    .foregroundColor(.secondary)
+                    .font(.title)
+            }).halfSheet(showSheetView: $showSheetView) {
+                
+                PoliticsSheetView()
+                
+                    .ignoresSafeArea()
             }
+        onEnd: {
+            
+        }
             .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {

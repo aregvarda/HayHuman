@@ -24,52 +24,55 @@ struct BusinessView: View {
     @State var searching = false
     @State var index = 0
     
+    @State var showSheetView = false
+
+    
     
     var body: some View {
-            if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
-                ScrollView(.vertical, showsIndicators: false) {
-                    
-                    SearchBar(searchText: $searchText, searching: $searching)
-                        .toolbar {
-                            if searching {
-                                Button("Cancel") {
-                                    searchText = ""
-                                    withAnimation {
-                                       searching = false
-                                       UIApplication.shared.dismissKeyboard()
-                                    }
+        if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                SearchBar(searchText: $searchText, searching: $searching)
+                    .toolbar {
+                        if searching {
+                            Button("Cancel") {
+                                searchText = ""
+                                withAnimation {
+                                    searching = false
+                                    UIApplication.shared.dismissKeyboard()
                                 }
                             }
                         }
-                        .gesture(DragGesture()
-                                    .onChanged({ _ in
-                            UIApplication.shared.dismissKeyboard()
-                                    })
-                        )
-                    
-                    // Carousel List
-                    TabView(selection: $index) {
-                        ForEach(0...5, id: \.self) { index in
-                            Image("b\(index)")
-                                .resizable()
-                            // adding animations
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: UIScreen.main.bounds.width - 35)
-                            //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
-                                .cornerRadius(15)
-                                .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
-                                .scaleEffect(self.index == index ? 1.0 : 0.85)
-                                .padding(.horizontal)
-                            // for identifying current index
-                                .tag(index)
-                            
-                            
-                            
-                        }
-                    }.frame(height: 230)
-                        .padding(.top, 25)
-                        .tabViewStyle(PageTabViewStyle())
-                        .animation(.easeOut, value: 1)
+                    }
+                    .gesture(DragGesture()
+                                .onChanged({ _ in
+                        UIApplication.shared.dismissKeyboard()
+                    })
+                    )
+                
+                // Carousel List
+                TabView(selection: $index) {
+                    ForEach(0...5, id: \.self) { index in
+                        Image("b\(index)")
+                            .resizable()
+                        // adding animations
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width - 35)
+                        //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
+                            .cornerRadius(15)
+                            .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                            .scaleEffect(self.index == index ? 1.0 : 0.85)
+                            .padding(.horizontal)
+                        // for identifying current index
+                            .tag(index)
+                        
+                        
+                        
+                    }
+                }.frame(height: 230)
+                    .padding(.top, 25)
+                    .tabViewStyle(PageTabViewStyle())
+                    .animation(.easeOut, value: 1)
                 LazyVGrid(columns: gridLayout, spacing: 25) {
                     ForEach(cardBusiness.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { cardbus in
                         VStack {
@@ -89,19 +92,34 @@ struct BusinessView: View {
                 }
                 .padding()
                 
-            }
-                .navigationBarTitleDisplayMode(.inline)
-                    .toolbar(content: {
-                        ToolbarItem(placement: .navigationBarLeading, content: {
-                            Text(searching ? "Searching" : "Business")
-                         .fontWeight(.bold)
-                         .font(.title)
-                         
-                      })})
-            } else {
-                BusinessDetailList(cardBusiness: cardBusiness[0])
+            }.navigationBarItems(trailing: Button {
                 
+                self.showSheetView.toggle()
+            } label: {
+                Image(systemName: "line.horizontal.3.decrease")
+                    .foregroundColor(.secondary)
+                    .font(.title)
+            }).halfSheet(showSheetView: $showSheetView) {
+                
+                BusinessSheetView()
+                
+                    .ignoresSafeArea()
             }
+        onEnd: {
+            
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarLeading, content: {
+                Text(searching ? "Searching" : "Business")
+                    .fontWeight(.bold)
+                    .font(.title)
+                
+            })})
+        } else {
+            BusinessDetailList(cardBusiness: cardBusiness[0])
+            
+        }
         
     }
 }

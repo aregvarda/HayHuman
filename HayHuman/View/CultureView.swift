@@ -22,7 +22,11 @@ struct CultureView: View {
     @State var searching = false
     @State var index = 0
     
+    @State var showSheetView = false
+    
+    
     var body: some View {
+        ZStack {
         if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
                 
@@ -32,8 +36,8 @@ struct CultureView: View {
                             Button("Cancel") {
                                 searchText = ""
                                 withAnimation {
-                                   searching = false
-                                   UIApplication.shared.dismissKeyboard()
+                                    searching = false
+                                    UIApplication.shared.dismissKeyboard()
                                 }
                             }
                         }
@@ -41,26 +45,26 @@ struct CultureView: View {
                     .gesture(DragGesture()
                                 .onChanged({ _ in
                         UIApplication.shared.dismissKeyboard()
-                                })
+                    })
                     )
                 // Carousel List
                 TabView(selection: $index) {
                     ForEach(0...5, id: \.self) { index in
                         Image("p\(index)")
                             .resizable()
-                            // adding animations
+                        // adding animations
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width - 35)
-                            //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
+                        //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
                             .cornerRadius(15)
                             .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
                             .scaleEffect(self.index == index ? 1.0 : 0.85)
                             .padding(.horizontal)
-                            // for identifying current index
+                        // for identifying current index
                             .tag(index)
-                            
-                           
-                            
+                        
+                        
+                        
                     }
                 }
                 .frame(height: 230)
@@ -85,23 +89,40 @@ struct CultureView: View {
                         .frame(height: 180)
                         .cornerRadius(15)
                     }
+                
                 }
                 .padding()
+            
+            }.navigationBarItems(trailing: Button {
+                
+                self.showSheetView.toggle()
+            } label: {
+                Image(systemName: "line.horizontal.3.decrease")
+                    .foregroundColor(.secondary)
+                    .font(.title)
+            }).halfSheet(showSheetView: $showSheetView) {
+
+                    CultureSheetView()
+
+                .ignoresSafeArea()
+            }
+        onEnd: {
                 
             }
-            .navigationBarTitleDisplayMode(.inline)
+            
+                .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
-                     Text(searching ? "Searching" : "Culture")
-                     .fontWeight(.bold)
-                     .font(.title)
-                     
-                  })})
+                        Text(searching ? "Searching" : "Culture")
+                            .fontWeight(.bold)
+                            .font(.title)
+                        
+                    })})
         } else {
             CultureDetailList(cardCulture: cardCulture[0])
             
         }
-        
+        }
     }
 }
 
