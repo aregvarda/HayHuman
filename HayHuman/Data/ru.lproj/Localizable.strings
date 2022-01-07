@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  HayHuman
+
+  Created by Геворг on 07.01.2022.
+  
+*/
+
+"Info" = "ИНФОРМАЦИЯ";
+"Help" = "ПОМОЩЬ";
+"Report a Problem" = "СООБЩИТЬ О ПРОБЛЕМЕ";
+"Armenian churches" = "АРМЯНСКИЕ ЦЕРКВИ";
+"Cancel" = "Отмена";
+"Search .." = "Поиск ..";
+
+

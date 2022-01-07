@@ -13,12 +13,7 @@ struct CultureSheetView: View {
             
         NavigationView {
             ZStack {
-                Image("ayvazyan_back")
-                    .resizable()
-                    .frame(width: 900, height: 850, alignment: .center)
-                    .scaledToFit()
-                    .cornerRadius(15)
-                    .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                Color(.white)
                 SheetNavigation()
                 
             }
@@ -28,10 +23,10 @@ struct CultureSheetView: View {
                         Text("Menu")
                             .fontWeight(.bold)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     })})
             
-        }
+        }.mask(Color.black.opacity(0.9))
     }
 }
 
@@ -40,12 +35,7 @@ struct MilitarySheetView: View {
             
         NavigationView {
             ZStack {
-                Image("delyanov_back")
-                    .resizable()
-                    .frame(width: 900, height: 850, alignment: .center)
-                    .scaledToFit()
-                    .cornerRadius(15)
-                    .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                Color(.white)
                 SheetNavigation()
                 
             }
@@ -59,7 +49,7 @@ struct MilitarySheetView: View {
                         
                     })})
             
-        }
+        }.mask(Color.black.opacity(0.9))
     }
 }
 
@@ -68,12 +58,7 @@ struct ScienceSheetView: View {
             
         NavigationView {
             ZStack {
-                Image("luka_back")
-                    .resizable()
-                    .frame(width: 900, height: 850, alignment: .center)
-                    .scaledToFit()
-                    .cornerRadius(15)
-                    .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                Color(.white)
                 SheetNavigation()
                 
             }
@@ -84,10 +69,9 @@ struct ScienceSheetView: View {
                             .fontWeight(.bold)
                             .font(.title)
                             .foregroundColor(.white)
-                        
                     })})
             
-        }
+        }.mask(Color.black.opacity(0.9))
     }
 }
 
@@ -96,12 +80,7 @@ struct BusinessSheetView: View {
             
         NavigationView {
             ZStack {
-                Image("lazarev_back")
-                    .resizable()
-                    .frame(width: 900, height: 850, alignment: .center)
-                    .scaledToFit()
-                    .cornerRadius(15)
-                    .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                Color(.white)
                 SheetNavigation()
                 
             }
@@ -115,7 +94,7 @@ struct BusinessSheetView: View {
                         
                     })})
             
-        }
+        }.mask(Color.black.opacity(0.9))
     }
 }
 
@@ -143,7 +122,7 @@ struct PoliticsSheetView: View {
                         
                     })})
             
-        }
+        }.mask(Color.black.opacity(0.9))
     }
 }
 
@@ -152,77 +131,58 @@ struct PoliticsSheetView: View {
 
 struct SheetNavigation: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 25) {
+        ZStack {
+
+            VStack(alignment: .leading, spacing: 30) {
             NavigationLink(destination: About()) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 7, style: .continuous)
-                        .frame(width: 100, height: 40)
-                        .cornerRadius(7)
-                        .overlay(RoundedRectangle(cornerRadius: 7).fill(Color(.white)))
-                HStack {
-                    Image("info")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24.0, height: 24.0)
-                    Text("About")
-                        .foregroundColor(.gray)
-                        .font(.headline)
+                    HStack {
+                    Image(systemName: "info.circle")
+                            .foregroundColor(.black)
+                    Text("Info")
+                        .foregroundColor(.black)
+                        .font(.title2).fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
+                        
                 }
                 }
                 
-            }
+
             NavigationLink(destination: Help()) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 7, style: .continuous)
-                        .frame(width: 100, height: 40)
-                        .cornerRadius(7)
-                        .overlay(RoundedRectangle(cornerRadius: 7).fill(Color(.white)))
                 HStack {
-                    Image("question-mark")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24.0, height: 24.0)
+                    Image(systemName: "questionmark.circle")
+                        .foregroundColor(.black)
                     Text("Help")
-                        .foregroundColor(.gray)
-                        .font(.headline)
+                        .foregroundColor(.black)
+                        .font(.title2).fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
                         }
-                }
+
             }
             NavigationLink(destination: Report_a_Problem()) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 7, style: .continuous)
-                        .frame(width: 200, height: 40)
-                        .cornerRadius(7)
-                        .overlay(RoundedRectangle(cornerRadius: 7).fill(Color(.white)))
                 HStack {
-                    Image("error")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24.0, height: 24.0)
+                    Image(systemName: "exclamationmark.circle")
+                        .foregroundColor(.black)
                     Text("Report a Problem")
-                        .foregroundColor(.gray)
-                        .font(.headline)
+                        .foregroundColor(.black)
+                        .font(.title2).fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
                         }
-                }
+
             }
             NavigationLink(destination: ChurchesList()) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 7, style: .continuous)
-                        .frame(width: 270, height: 40)
-                        .cornerRadius(7)
-                        .overlay(RoundedRectangle(cornerRadius: 7).fill(Color(.white)))
+
                 HStack {
-                    Image("church")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24.0, height: 24.0)
-                    Text("List of Armenian churches")
-                        .foregroundColor(.gray)
-                        .font(.headline)
+                    Image(systemName: "map")
+                        .foregroundColor(.black)
+                    Text("Armenian churches")
+                        .foregroundColor(.black)
+                        .font(.title2).fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
                         }
                 }
             }
         }
     }
 }
+
 

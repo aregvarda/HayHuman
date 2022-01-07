@@ -37,6 +37,7 @@
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
 		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
+		C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D55DE82788BF08005D4C19 /* Localizable.strings */; };
 		C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */; };
 		C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */; };
 		C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */; };
@@ -103,6 +104,10 @@
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
 		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
+		C8D55DE72788BF08005D4C19 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8D55DE92788BF66005D4C19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8D55DEA2788BF67005D4C19 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8D55DEB2788BF68005D4C19 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCircleImage.swift; sourceTree = "<group>"; };
 		C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureDetailList.swift; sourceTree = "<group>"; };
 		C8DFDB8C2782F7E0000D6071 /* CultureMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureMapView.swift; sourceTree = "<group>"; };
@@ -251,6 +256,7 @@
 				C82C56C42785FF30008E8E1D /* politics.json */,
 				C82C56BE2785FF1C008E8E1D /* culture.json */,
 				C82C56C12785FF2A008E8E1D /* business.json */,
+				C8D55DE82788BF08005D4C19 /* Localizable.strings */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				C82C56BC2785FF1C008E8E1D /* culture.json in Resources */,
 				C82C56C82785FF3C008E8E1D /* science.json in Resources */,
 				C82C56BF2785FF2A008E8E1D /* business.json in Resources */,
+				C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
 				C82C56C52785FF37008E8E1D /* military.json in Resources */,
 			);
@@ -503,6 +510,17 @@
 				C82C56D52785FF8E008E8E1D /* es */,
 			);
 			name = science.json;
+			sourceTree = "<group>";
+		};
+		C8D55DE82788BF08005D4C19 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D55DE72788BF08005D4C19 /* ru */,
+				C8D55DE92788BF66005D4C19 /* en */,
+				C8D55DEA2788BF67005D4C19 /* fr */,
+				C8D55DEB2788BF68005D4C19 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
