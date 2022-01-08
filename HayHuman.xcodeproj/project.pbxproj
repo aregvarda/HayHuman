@@ -36,6 +36,13 @@
 		C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B252778AD0A00942F90 /* BusinessMapView.swift */; };
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
+		C8B01CC627899B6F00590F72 /* ChurchesLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CC527899B6F00590F72 /* ChurchesLocations.swift */; };
+		C8B01CC927899DCA00590F72 /* ChurchLocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CC827899DCA00590F72 /* ChurchLocationsDataService.swift */; };
+		C8B01CCB27899F7700590F72 /* ChurchesData.json in Resources */ = {isa = PBXBuildFile; fileRef = C8B01CCA27899F7700590F72 /* ChurchesData.json */; };
+		C8B01CCD2789A11E00590F72 /* ChurchLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CCC2789A11E00590F72 /* ChurchLocationsView.swift */; };
+		C8B01CD02789A8D400590F72 /* ChurchLocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CCF2789A8D400590F72 /* ChurchLocationsViewModel.swift */; };
+		C8B01CD22789C64500590F72 /* ChurchLocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CD12789C64500590F72 /* ChurchLocationsListView.swift */; };
+		C8B01CD42789DF1600590F72 /* ChurchLocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CD32789DF1600590F72 /* ChurchLocationPreviewView.swift */; };
 		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
 		C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D55DE82788BF08005D4C19 /* Localizable.strings */; };
 		C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */; };
@@ -103,6 +110,13 @@
 		C8960B252778AD0A00942F90 /* BusinessMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapView.swift; sourceTree = "<group>"; };
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
+		C8B01CC527899B6F00590F72 /* ChurchesLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocations.swift; sourceTree = "<group>"; };
+		C8B01CC827899DCA00590F72 /* ChurchLocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchLocationsDataService.swift; sourceTree = "<group>"; };
+		C8B01CCA27899F7700590F72 /* ChurchesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChurchesData.json; sourceTree = "<group>"; };
+		C8B01CCC2789A11E00590F72 /* ChurchLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationsView.swift; sourceTree = "<group>"; };
+		C8B01CCF2789A8D400590F72 /* ChurchLocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationsViewModel.swift; sourceTree = "<group>"; };
+		C8B01CD12789C64500590F72 /* ChurchLocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationsListView.swift; sourceTree = "<group>"; };
+		C8B01CD32789DF1600590F72 /* ChurchLocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationPreviewView.swift; sourceTree = "<group>"; };
 		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 		C8D55DE72788BF08005D4C19 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C8D55DE92788BF66005D4C19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -174,11 +188,11 @@
 				C863E94C27749E9D00411599 /* Model */,
 				C88705D0277CE67200B34922 /* Data */,
 				C863E94D27749EA300411599 /* View */,
+				C8B01CCE2789A8A200590F72 /* ViewModel */,
 				C88705CB277CB94500B34922 /* Utility */,
 				C863E94E27749EA700411599 /* Controller */,
 				C863E94F27749EC600411599 /* Helpers */,
 				C863E940277487DE00411599 /* Preview Content */,
-				C84625B9278856790066FECD /* Screens */,
 			);
 			path = HayHuman;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 				C8960B272778AD3000942F90 /* BusinessDetail */,
 				C863E94A27748C8E00411599 /* TabBarIcon.swift */,
 				C863E95027749EE400411599 /* ViewRouter.swift */,
+				C8B01CC727899D5F00590F72 /* ChurchData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,7 +228,7 @@
 				C863E95E2774C83500411599 /* PoliticsView.swift */,
 				C863E95A2774C7E100411599 /* MilitaryView.swift */,
 				C863E95C2774C81E00411599 /* ScienceView.swift */,
-				C84625B527884EE30066FECD /* SheetNavigation.swift */,
+				C84625B9278856790066FECD /* Screens */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +266,7 @@
 		C88705D0277CE67200B34922 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C8B01CCA27899F7700590F72 /* ChurchesData.json */,
 				C82C56CA2785FF3C008E8E1D /* science.json */,
 				C82C56C72785FF37008E8E1D /* military.json */,
 				C82C56C42785FF30008E8E1D /* politics.json */,
@@ -278,6 +294,27 @@
 				C8960B252778AD0A00942F90 /* BusinessMapView.swift */,
 			);
 			path = BusinessDetail;
+			sourceTree = "<group>";
+		};
+		C8B01CC727899D5F00590F72 /* ChurchData */ = {
+			isa = PBXGroup;
+			children = (
+				C8B01CC827899DCA00590F72 /* ChurchLocationsDataService.swift */,
+				C8B01CC527899B6F00590F72 /* ChurchesLocations.swift */,
+				C8B01CCC2789A11E00590F72 /* ChurchLocationsView.swift */,
+				C8B01CD12789C64500590F72 /* ChurchLocationsListView.swift */,
+				C8B01CD32789DF1600590F72 /* ChurchLocationPreviewView.swift */,
+			);
+			path = ChurchData;
+			sourceTree = "<group>";
+		};
+		C8B01CCE2789A8A200590F72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C84625B527884EE30066FECD /* SheetNavigation.swift */,
+				C8B01CCF2789A8D400590F72 /* ChurchLocationsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C8DFDB862782F495000D6071 /* CultureDetail */ = {
@@ -401,6 +438,7 @@
 				C82C56BF2785FF2A008E8E1D /* business.json in Resources */,
 				C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
+				C8B01CCB27899F7700590F72 /* ChurchesData.json in Resources */,
 				C82C56C52785FF37008E8E1D /* military.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +454,12 @@
 				C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */,
 				C84625BB278857430066FECD /* Help.swift in Sources */,
 				C863E93D277487DB00411599 /* ContentView.swift in Sources */,
+				C8B01CC927899DCA00590F72 /* ChurchLocationsDataService.swift in Sources */,
 				C8DFDBA527830CA0000D6071 /* MilitaryDetailList.swift in Sources */,
 				C863E95D2774C81E00411599 /* ScienceView.swift in Sources */,
+				C8B01CCD2789A11E00590F72 /* ChurchLocationsView.swift in Sources */,
+				C8B01CD22789C64500590F72 /* ChurchLocationsListView.swift in Sources */,
+				C8B01CD42789DF1600590F72 /* ChurchLocationPreviewView.swift in Sources */,
 				C88705C8277C947500B34922 /* Constants.swift in Sources */,
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
 				C863E94B27748C8E00411599 /* TabBarIcon.swift in Sources */,
@@ -430,6 +472,7 @@
 				C88705CD277CB96B00B34922 /* Detail.swift in Sources */,
 				C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */,
 				C8DFDBA327830C8B000D6071 /* MilitaryCircleImage.swift in Sources */,
+				C8B01CD02789A8D400590F72 /* ChurchLocationsViewModel.swift in Sources */,
 				C84625B627884EE30066FECD /* SheetNavigation.swift in Sources */,
 				C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */,
 				C8DFDBA727830CAD000D6071 /* MilitaryMapView.swift in Sources */,
@@ -437,6 +480,7 @@
 				C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */,
 				C88705DB277CFB2000B34922 /* Bundle.swift in Sources */,
 				C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */,
+				C8B01CC627899B6F00590F72 /* ChurchesLocations.swift in Sources */,
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
 				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
 				C82C56BB2785FE07008E8E1D /* Keyboard.swift in Sources */,

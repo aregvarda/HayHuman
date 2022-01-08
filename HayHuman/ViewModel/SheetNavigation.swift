@@ -45,7 +45,7 @@ struct MilitarySheetView: View {
                         Text("Menu")
                             .fontWeight(.bold)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                     })})
             
@@ -68,7 +68,7 @@ struct ScienceSheetView: View {
                         Text("Menu")
                             .fontWeight(.bold)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     })})
             
         }.mask(Color.black.opacity(0.9))
@@ -90,7 +90,7 @@ struct BusinessSheetView: View {
                         Text("Menu")
                             .fontWeight(.bold)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                     })})
             
@@ -103,12 +103,7 @@ struct PoliticsSheetView: View {
             
         NavigationView {
             ZStack {
-                Image("loris_back")
-                    .resizable()
-                    .frame(width: 900, height: 850, alignment: .center)
-                    .scaledToFit()
-                    .cornerRadius(15)
-                    .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                Color(.white)
                 SheetNavigation()
                 
             }
@@ -118,7 +113,7 @@ struct PoliticsSheetView: View {
                         Text("Menu")
                             .fontWeight(.bold)
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                     })})
             

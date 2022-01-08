@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ChurchesList: View {
+    @StateObject private var vm = ChurchLocationsViewModel()
     var body: some View{
-        Text("Welcome to the Leaderbaord Page!")
-            .navigationBarTitle("Armenian churches")
-            .frame(maxWidth:.infinity,maxHeight: .infinity)
+        ChurchLocationsView()
+            .environmentObject(vm)
     }
 }
 
@@ -22,3 +23,7 @@ struct ChurchesList_Previews: PreviewProvider {
         }
     }
 }
+
+//struct ChurchesMapView: UIViewRepresentable {
+//
+//}

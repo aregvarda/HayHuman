@@ -20,6 +20,7 @@ struct HalfSheetHelper<SheetView: View>: UIViewControllerRepresentable {
     
     var sheetView: SheetView
     @Binding var showSheetView: Bool
+    
     var onEnd: ()->()
     
     let controller = UIViewController()

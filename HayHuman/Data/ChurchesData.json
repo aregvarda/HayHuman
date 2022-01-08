@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Colosseum",
+    "churchName": "Rome",
+    "description": "Vatche Manoukian",
+    "city": "Lebanon, Beirut",
+    "imageNames": [
+      "rome-colosseum-1",
+      "rome-colosseum-2",
+      "rome-colosseum-3"
+    ],
+    "coordinates": {
+      "latitude": 41.8902,
+      "longitude": 12.4922
+    },
+    "link": "https://en.wikipedia.org/wiki/Colosseum"
+  }
+]

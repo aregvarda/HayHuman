@@ -97,18 +97,22 @@ struct CultureView: View {
                 
                 self.showSheetView.toggle()
             } label: {
-                Image(systemName: "line.horizontal.3.decrease")
+                Image(systemName: "map")
                     .foregroundColor(.secondary)
                     .font(.title)
-            }).halfSheet(showSheetView: $showSheetView) {
+            }).sheet(isPresented: $showSheetView, content: {
+                ChurchesList()
+            })
 
-                    CultureSheetView()
-
-                .ignoresSafeArea()
-            }
-        onEnd: {
-                
-            }
+//                .halfSheet(showSheetView: $showSheetView) {
+//
+//                    CultureSheetView()
+//
+//                .ignoresSafeArea()
+//            }
+//        onEnd: {
+//
+//            }
             
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
