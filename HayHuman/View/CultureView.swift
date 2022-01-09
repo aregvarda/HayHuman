@@ -23,109 +23,118 @@ struct CultureView: View {
     @State var index = 0
     
     @State var showSheetView = false
+    @State var churchShowSheetView = false
     
     
     var body: some View {
         ZStack {
-        if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
-            ScrollView(.vertical, showsIndicators: false) {
-                
-                SearchBar(searchText: $searchText, searching: $searching)
-                    .toolbar {
-                        if searching {
-                            Button("Cancel") {
-                                searchText = ""
-                                withAnimation {
-                                    searching = false
-                                    UIApplication.shared.dismissKeyboard()
+            if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
+                ScrollView(.vertical, showsIndicators: false) {
+                    
+                    SearchBar(searchText: $searchText, searching: $searching)
+                        .toolbar {
+                            if searching {
+                                Button("Cancel") {
+                                    searchText = ""
+                                    withAnimation {
+                                        searching = false
+                                        UIApplication.shared.dismissKeyboard()
+                                    }
                                 }
                             }
                         }
-                    }
-                    .gesture(DragGesture()
-                                .onChanged({ _ in
-                        UIApplication.shared.dismissKeyboard()
-                    })
-                    )
-                // Carousel List
-                TabView(selection: $index) {
-                    ForEach(0...5, id: \.self) { index in
-                        Image("p\(index)")
-                            .resizable()
-                        // adding animations
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: UIScreen.main.bounds.width - 35)
-                        //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
-                            .cornerRadius(15)
-                            .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
-                            .scaleEffect(self.index == index ? 1.0 : 0.85)
-                            .padding(.horizontal)
-                        // for identifying current index
-                            .tag(index)
-                        
-                        
-                        
-                    }
-                }
-                .frame(height: 230)
-                .padding(.top, 25)
-                .tabViewStyle(PageTabViewStyle())
-                .animation(.easeOut, value: 1)
-                
-                
-                LazyVGrid(columns: gridLayout, spacing: 25) {
-                    ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in
-                        VStack {
-                            CultureCardView(card: card)
-                                .onTapGesture {
-                                    withAnimation(.easeOut(duration: 0.1)) {
-                                        feedback.impactOccurred()
-                                    }
-                                    cultureDetail.selectedCultureProfile = card
-                                    cultureDetail.showingCultureProfile = true
-                                }
+                        .gesture(DragGesture()
+                                    .onChanged({ _ in
+                            UIApplication.shared.dismissKeyboard()
+                        })
+                        )
+                    // Carousel List
+                    TabView(selection: $index) {
+                        ForEach(0...5, id: \.self) { index in
+                            Image("p\(index)")
+                                .resizable()
+                            // adding animations
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: UIScreen.main.bounds.width - 35)
+                            //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
+                                .cornerRadius(15)
+                                .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
+                                .scaleEffect(self.index == index ? 1.0 : 0.85)
+                                .padding(.horizontal)
+                            // for identifying current index
+                                .tag(index)
+                            
+                            
                             
                         }
-                        .frame(height: 180)
-                        .cornerRadius(15)
                     }
-                
+                    .frame(height: 230)
+                    .padding(.top, 25)
+                    .tabViewStyle(PageTabViewStyle())
+                    .animation(.easeOut, value: 1)
+                    
+                    
+                    LazyVGrid(columns: gridLayout, spacing: 25) {
+                        ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in
+                            VStack {
+                                CultureCardView(card: card)
+                                    .onTapGesture {
+                                        withAnimation(.easeOut(duration: 0.1)) {
+                                            feedback.impactOccurred()
+                                        }
+                                        cultureDetail.selectedCultureProfile = card
+                                        cultureDetail.showingCultureProfile = true
+                                    }
+                                
+                            }
+                            .frame(height: 180)
+                            .cornerRadius(15)
+                        }
+                        
+                    }
+                    .padding()
+                    
                 }
-                .padding()
-            
-            }.navigationBarItems(trailing: Button {
                 
-                self.showSheetView.toggle()
+                .navigationBarItems(trailing: Button {
+                    self.showSheetView.toggle()
+                } label: {
+                    Image(systemName: "line.horizontal.3.circle")
+                        .foregroundColor(.secondary)
+                        .font(.title)
+                }).halfSheet(showSheetView: $showSheetView) {
+                    CultureSheetView()
+                        .ignoresSafeArea()
+                }
+            onEnd: {
+            }
+                
+            .navigationBarItems(trailing: Button {
+                
+                self.churchShowSheetView.toggle()
             } label: {
-                Image(systemName: "map")
-                    .foregroundColor(.secondary)
-                    .font(.title)
-            }).sheet(isPresented: $showSheetView, content: {
+                Image("church")
+//                    .foregroundColor(.secondary)
+//                    .font(.title)
+                    .resizable()
+                    .frame(width: 35, height: 35)
+                    .offset(x: 10)
+            }).sheet(isPresented: $churchShowSheetView, content: {
                 ChurchesList()
             })
-
-//                .halfSheet(showSheetView: $showSheetView) {
-//
-//                    CultureSheetView()
-//
-//                .ignoresSafeArea()
-//            }
-//        onEnd: {
-//
-//            }
-            
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar(content: {
-                    ToolbarItem(placement: .navigationBarLeading, content: {
-                        Text(searching ? "Searching" : "Culture")
-                            .fontWeight(.bold)
-                            .font(.title)
-                        
-                    })})
-        } else {
-            CultureDetailList(cardCulture: cardCulture[0])
-            
-        }
+                
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar(content: {
+                        ToolbarItem(placement: .navigationBarLeading, content: {
+                            Text(searching ? "Searching" : "Culture")
+                                .fontWeight(.bold)
+                                .font(.title)
+                            
+                        })})
+            } else {
+                CultureDetailList(cardCulture: cardCulture[0])
+                
+            }
         }
     }
 }
