@@ -21,6 +21,8 @@ struct ChurchLocationsView: View {
                 Spacer()
                 locationsPreviewStack
             }
+        }.sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
+            ChurchLocationDetailView(location: location)
         }
     }
 }
@@ -36,8 +38,8 @@ extension ChurchLocationsView {
     private var header: some View {
         VStack {
             Button(action: vm.toggleLocationsList) {
-                Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
-                    .font(.title2)
+                Text(vm.mapLocation.name)
+                    .font(.title3)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
                     .frame(height: 55)

@@ -25,5 +25,7 @@ struct ChurchesLocations: Identifiable, Equatable {
     static func == (lhs: ChurchesLocations, rhs: ChurchesLocations) -> Bool {
         lhs.id == rhs.id
     }
+    
+    
 }
 

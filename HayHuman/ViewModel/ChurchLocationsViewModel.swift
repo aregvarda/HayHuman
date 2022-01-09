@@ -24,6 +24,8 @@ class ChurchLocationsViewModel: ObservableObject {
     //Show list of locations
     @Published var showLocationsList: Bool = false
     
+    @Published var sheetLocation: ChurchesLocations? = nil
+    
     init() {
         let locations = ChurchLocationsDataService.locations
         self.locations = locations
