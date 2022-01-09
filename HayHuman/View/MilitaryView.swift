@@ -91,7 +91,7 @@ struct MilitaryView: View {
                 
                 self.showSheetView.toggle()
             } label: {
-                Image(systemName: "line.horizontal.3.decrease")
+                Image(systemName: "line.horizontal.3.circle")
                     .foregroundColor(.secondary)
                     .font(.title)
             }).halfSheet(showSheetView: $showSheetView) {

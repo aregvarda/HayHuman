@@ -10,10 +10,29 @@ import SwiftUI
 struct ChurchLocationsListView: View {
     
     @EnvironmentObject private var vm: ChurchLocationsViewModel
+    @State var searchText = ""
+    @State var searching = false
     
     var body: some View {
         List {
-            ForEach(vm.locations) { location in
+            SearchBar(searchText: $searchText, searching: $searching)
+                .toolbar {
+                    if searching {
+                        Button("Cancel") {
+                            searchText = ""
+                            withAnimation {
+                                searching = false
+                                UIApplication.shared.dismissKeyboard()
+                            }
+                        }
+                    }
+                }
+                .gesture(DragGesture()
+                            .onChanged({ _ in
+                    UIApplication.shared.dismissKeyboard()
+                })
+                )
+            ForEach(vm.locations.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { location in
                 Button {
                     vm.showNextLocation(location: location)
                 } label: {
