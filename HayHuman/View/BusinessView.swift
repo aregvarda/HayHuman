@@ -25,7 +25,7 @@ struct BusinessView: View {
     @State var index = 0
     
     @State var showSheetView = false
-
+    @State var churchShowSheetView = false
     
     
     var body: some View {
@@ -101,21 +101,31 @@ struct BusinessView: View {
                     .font(.title)
             }).halfSheet(showSheetView: $showSheetView) {
                 
-                BusinessSheetView()
+                BaseSheetView()
                 
                     .ignoresSafeArea()
             }
         onEnd: {
             
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar(content: {
-            ToolbarItem(placement: .navigationBarLeading, content: {
-                Text(searching ? "Searching" : "Business")
-                    .fontWeight(.bold)
-                    .font(.title)
-                
-            })})
+        }.navigationBarItems(trailing: Button {
+            
+            self.churchShowSheetView.toggle()
+        } label: {
+            Image("church")
+                .resizable()
+                .frame(width: 35, height: 35)
+                .offset(x: 10)
+        }).sheet(isPresented: $churchShowSheetView, content: {
+            ChurchesList()
+        })
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                        Text(searching ? "Searching" : "Business")
+                            .fontWeight(.bold)
+                            .font(.title)
+                        
+                    })})
         } else {
             BusinessDetailList(cardBusiness: cardBusiness[0])
             

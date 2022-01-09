@@ -21,7 +21,8 @@ struct ScienceView: View {
     @State var index = 0
     
     @State var showSheetView = false
-
+    @State var churchShowSheetView = false
+    
     var body: some View {
         if scienceDetail.showingScienceProfile == false && scienceDetail.selectedScienceProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
@@ -32,8 +33,8 @@ struct ScienceView: View {
                             Button("Cancel") {
                                 searchText = ""
                                 withAnimation {
-                                   searching = false
-                                   UIApplication.shared.dismissKeyboard()
+                                    searching = false
+                                    UIApplication.shared.dismissKeyboard()
                                 }
                             }
                         }
@@ -41,7 +42,7 @@ struct ScienceView: View {
                     .gesture(DragGesture()
                                 .onChanged({ _ in
                         UIApplication.shared.dismissKeyboard()
-                                })
+                    })
                     )
                 
                 // Carousel List
@@ -96,21 +97,31 @@ struct ScienceView: View {
                     .font(.title)
             }).halfSheet(showSheetView: $showSheetView) {
                 
-                ScienceSheetView()
+                BaseSheetView()
                 
                     .ignoresSafeArea()
             }
         onEnd: {
             
-        }
-            .navigationBarTitleDisplayMode(.inline)
+        }.navigationBarItems(trailing: Button {
+            
+            self.churchShowSheetView.toggle()
+        } label: {
+            Image("church")
+                .resizable()
+                .frame(width: 35, height: 35)
+                .offset(x: 10)
+        }).sheet(isPresented: $churchShowSheetView, content: {
+            ChurchesList()
+        })
+                .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
                         Text(searching ? "Searching" : "Science")
-                     .fontWeight(.bold)
-                     .font(.title)
-                     
-                  })})
+                            .fontWeight(.bold)
+                            .font(.title)
+                        
+                    })})
         } else {
             ScienceDetailList(cardScience: cardScience[0])
             

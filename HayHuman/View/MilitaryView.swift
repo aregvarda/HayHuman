@@ -20,6 +20,7 @@ struct MilitaryView: View {
     @State var index = 0
     
     @State var showSheetView = false
+    @State var churchShowSheetView = false
     
     var body: some View {
         if militaryDetail.showingMilitaryProfile == false && militaryDetail.selectedMilitaryProfile == nil {
@@ -31,8 +32,8 @@ struct MilitaryView: View {
                             Button("Cancel") {
                                 searchText = ""
                                 withAnimation {
-                                   searching = false
-                                   UIApplication.shared.dismissKeyboard()
+                                    searching = false
+                                    UIApplication.shared.dismissKeyboard()
                                 }
                             }
                         }
@@ -40,7 +41,7 @@ struct MilitaryView: View {
                     .gesture(DragGesture()
                                 .onChanged({ _ in
                         UIApplication.shared.dismissKeyboard()
-                                })
+                    })
                     )
                 
                 // Carousel List
@@ -95,21 +96,31 @@ struct MilitaryView: View {
                     .font(.title)
             }).halfSheet(showSheetView: $showSheetView) {
                 
-                MilitarySheetView()
+                BaseSheetView()
                 
                     .ignoresSafeArea()
             }
         onEnd: {
             
-        }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar(content: {
-                ToolbarItem(placement: .navigationBarLeading, content: {
-                    Text(searching ? "Searching" : "Military")
-                        .fontWeight(.bold)
-                        .font(.title)
-                    
-                })})
+        }.navigationBarItems(trailing: Button {
+            
+            self.churchShowSheetView.toggle()
+        } label: {
+            Image("church")
+                .resizable()
+                .frame(width: 35, height: 35)
+                .offset(x: 10)
+        }).sheet(isPresented: $churchShowSheetView, content: {
+            ChurchesList()
+        })
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                        Text(searching ? "Searching" : "Military")
+                            .fontWeight(.bold)
+                            .font(.title)
+                        
+                    })})
         } else {
             MilitaryDetailList(cardMilitary: cardMilitary[0])
             

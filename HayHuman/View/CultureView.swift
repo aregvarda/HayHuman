@@ -103,7 +103,7 @@ struct CultureView: View {
                         .foregroundColor(.secondary)
                         .font(.title)
                 }).halfSheet(showSheetView: $showSheetView) {
-                    CultureSheetView()
+                    BaseSheetView()
                         .ignoresSafeArea()
                 }
             onEnd: {
@@ -114,8 +114,6 @@ struct CultureView: View {
                 self.churchShowSheetView.toggle()
             } label: {
                 Image("church")
-//                    .foregroundColor(.secondary)
-//                    .font(.title)
                     .resizable()
                     .frame(width: 35, height: 35)
                     .offset(x: 10)
