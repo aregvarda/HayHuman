@@ -66,6 +66,7 @@ class ChurchLocationsDataService {
                 "moscow_3",
             ],
             link: "https://museumstudiesabroad.org/armenian-temple-moscow/"),
+        
     ]
     
 }

@@ -64,7 +64,7 @@ struct ScienceView: View {
                         
                         
                     }
-                }.frame(height: 230)
+                }.frame(height: UIDevice.current.userInterfaceIdiom == .pad ? 400 :  230)
                     .padding(.top, 25)
                     .tabViewStyle(PageTabViewStyle())
                     .animation(.easeOut, value: 1)
@@ -82,7 +82,7 @@ struct ScienceView: View {
                                 }
                             
                         }
-                        .frame(height: 180)
+                        .frame(height: UIDevice.current.userInterfaceIdiom == .pad ? 320 : 180)
                         .cornerRadius(15)
                     }
                 }

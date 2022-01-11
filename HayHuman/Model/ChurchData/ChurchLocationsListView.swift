@@ -15,24 +15,25 @@ struct ChurchLocationsListView: View {
     
     var body: some View {
         List {
-            ChurchSearchBar(searchChurchText: $searchChurchText, searchingChurch: $searchingChurch)
-                .toolbar {
-                    if searchingChurch {
-                        Button("Cancel") {
-                            searchChurchText = ""
-                            withAnimation {
-                                searchingChurch = false
-                                UIApplication.shared.dismissChurchKeyboard()
-                            }
-                        }
-                    }
-                }
-                .gesture(DragGesture()
-                            .onChanged({ _ in
-                    UIApplication.shared.dismissChurchKeyboard()
-                })
-                )
-                .padding(.bottom)
+//            ChurchSearchBar(searchChurchText: $searchChurchText, searchingChurch: $searchingChurch)
+//                .toolbar {
+//                    if searchingChurch {
+//                        Button("Cancel") {
+//                            searchChurchText = ""
+//                            withAnimation {
+//                                searchingChurch = false
+//                                UIApplication.shared.dismissChurchKeyboard()
+//                            }
+//                        }
+//                    }
+//                }
+//                .gesture(DragGesture()
+//                            .onChanged({ _ in
+//                    UIApplication.shared.dismissChurchKeyboard()
+//                })
+//                )
+//                .padding(.bottom)
+
             ForEach(vm.locations.filter({ "\($0)".contains(searchChurchText) || searchChurchText.isEmpty})) { location in
                 Button {
                     vm.showNextLocation(location: location)
@@ -73,4 +74,5 @@ extension ChurchLocationsListView {
             .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
+    
 }

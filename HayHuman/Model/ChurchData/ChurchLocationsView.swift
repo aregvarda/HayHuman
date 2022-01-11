@@ -11,7 +11,8 @@ import MapKit
 struct ChurchLocationsView: View {
     @EnvironmentObject private var vm: ChurchLocationsViewModel
     @Environment(\.presentationMode) var presentationMode
-
+    let maxWidthForIpad: CGFloat = 800
+    
     
     var body: some View {
         ZStack {
@@ -19,8 +20,11 @@ struct ChurchLocationsView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 0) {
+                
                 header
                     .padding()
+                    .frame(maxWidth: maxWidthForIpad)
+                
                 Spacer()
                 locationsPreviewStack
             }.overlay(backButton, alignment: .topTrailing)
@@ -90,6 +94,7 @@ extension ChurchLocationsView {
                     ChurchLocationPreviewView(location: location)
                         .shadow(color: Color.black.opacity(0.3), radius: 20)
                         .padding()
+                        .frame(maxWidth: maxWidthForIpad)
                         .transition(.asymmetric(
                             insertion: .move(edge: .trailing),
                             removal: .move(edge: .leading)))
@@ -108,7 +113,7 @@ extension ChurchLocationsView {
                 .background(.thickMaterial)
                 .cornerRadius(10)
                 .padding()
-                .offset(x: -3, y: 4)
+                .offset(x: -10, y: 4)
         }
     }
     func close() {

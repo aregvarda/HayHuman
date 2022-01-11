@@ -9,12 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
-//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
-    @State var shouldShowOnboarding: Bool = true
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+//    @State var shouldShowOnboarding: Bool = true
     
     var body: some View {
         TabViewPlace(viewRouter: ViewRouter())
-        //        AlternativeTab()
             .fullScreenCover(isPresented: $shouldShowOnboarding) {
                 OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
             }
