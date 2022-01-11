@@ -26,11 +26,23 @@ class ChurchLocationsViewModel: ObservableObject {
     @Published var sheetLocation: ChurchesLocations? = nil
     
     init() {
-        let locations = ChurchLocationsDataService.locations
-        self.locations = locations
-        self.mapLocation = locations.first!
-        self.updateMapRegion(location: locations.first!)
+        self.locations = ChurchLocationsDataService.locations
+        // If locations.first fails, you can simply use some default
+        let firstLocation = ChurchLocationsDataService.locations.first ?? ChurchesLocations(
+            name: "Etchmiadzin Cathedral",
+            cityName: "Etchmiadzin, Armenia",
+            coordinates: CLLocationCoordinate2D(latitude: 40.161929370372455, longitude: 44.29111529751223),
+            description: "Etchmiadzin Cathedral (Armenian: Էջմիածնի մայր տաճար) is the mother church of the Armenian Apostolic Church, located in the city of Vagharshapat (Etchmiadzin), Armenia. According to most scholars it was the first cathedral built in ancient Armenia, and is often considered the oldest cathedral in the world.",
+            imageNames: [
+                "echmiadzin_1",
+                "echmiadzin_2",
+                "echmiadzin_3",
+            ],
+            link: "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral")
+        self.mapLocation = firstLocation
+        self.updateMapRegion(location: firstLocation)
     }
+
     
     private func updateMapRegion(location: ChurchesLocations) {
         withAnimation(.easeOut) {

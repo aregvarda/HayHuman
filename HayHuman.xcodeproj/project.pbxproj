@@ -36,6 +36,12 @@
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
 		C89F0E92278D9CB400050A32 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89F0E91278D9CB400050A32 /* OnboardingView.swift */; };
+		C89F0E9B278DCC1000050A32 /* Business.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9A278DCC1000050A32 /* Business.xcassets */; };
+		C89F0E9D278DCCBA00050A32 /* Military.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9C278DCCBA00050A32 /* Military.xcassets */; };
+		C89F0E9F278DCCC500050A32 /* Science.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9E278DCCC500050A32 /* Science.xcassets */; };
+		C89F0EA1278DCCD400050A32 /* Culture.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0EA0278DCCD400050A32 /* Culture.xcassets */; };
+		C89F0EA3278DCCE900050A32 /* Politics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0EA2278DCCE900050A32 /* Politics.xcassets */; };
+		C89F0EA5278DCCF300050A32 /* Church.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0EA4278DCCF300050A32 /* Church.xcassets */; };
 		C8B01CC627899B6F00590F72 /* ChurchesLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CC527899B6F00590F72 /* ChurchesLocations.swift */; };
 		C8B01CC927899DCA00590F72 /* ChurchLocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CC827899DCA00590F72 /* ChurchLocationsDataService.swift */; };
 		C8B01CCD2789A11E00590F72 /* ChurchLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CCC2789A11E00590F72 /* ChurchLocationsView.swift */; };
@@ -56,7 +62,6 @@
 		C8DFDBAA27831159000D6071 /* ScienceCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */; };
 		C8DFDBAC27831169000D6071 /* ScienceDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */; };
 		C8DFDBAE27831176000D6071 /* ScienceMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAD27831176000D6071 /* ScienceMapView.swift */; };
-		C8DFDBB02783644A000D6071 /* AlternativeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */; };
 		C8EB12492786F7BA00A5E080 /* SheetSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB12482786F7BA00A5E080 /* SheetSettings.swift */; };
 		C8EB124E27873AE900A5E080 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C8EB124D27873AE900A5E080 /* PartialSheet */; };
 /* End PBXBuildFile section */
@@ -108,6 +113,12 @@
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
 		C89F0E91278D9CB400050A32 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C89F0E9A278DCC1000050A32 /* Business.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Business.xcassets; sourceTree = "<group>"; };
+		C89F0E9C278DCCBA00050A32 /* Military.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Military.xcassets; sourceTree = "<group>"; };
+		C89F0E9E278DCCC500050A32 /* Science.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Science.xcassets; sourceTree = "<group>"; };
+		C89F0EA0278DCCD400050A32 /* Culture.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Culture.xcassets; sourceTree = "<group>"; };
+		C89F0EA2278DCCE900050A32 /* Politics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Politics.xcassets; sourceTree = "<group>"; };
+		C89F0EA4278DCCF300050A32 /* Church.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Church.xcassets; sourceTree = "<group>"; };
 		C8B01CC527899B6F00590F72 /* ChurchesLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocations.swift; sourceTree = "<group>"; };
 		C8B01CC827899DCA00590F72 /* ChurchLocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchLocationsDataService.swift; sourceTree = "<group>"; };
 		C8B01CCC2789A11E00590F72 /* ChurchLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationsView.swift; sourceTree = "<group>"; };
@@ -131,7 +142,6 @@
 		C8DFDBA927831159000D6071 /* ScienceCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceCircleImage.swift; sourceTree = "<group>"; };
 		C8DFDBAB27831169000D6071 /* ScienceDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceDetailList.swift; sourceTree = "<group>"; };
 		C8DFDBAD27831176000D6071 /* ScienceMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceMapView.swift; sourceTree = "<group>"; };
-		C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeTab.swift; sourceTree = "<group>"; };
 		C8EB12482786F7BA00A5E080 /* SheetSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,7 +242,6 @@
 			children = (
 				C863E9562774BB7D00411599 /* TabViewPlace.swift */,
 				C863E93C277487DB00411599 /* ContentView.swift */,
-				C8DFDBAF2783644A000D6071 /* AlternativeTab.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +250,12 @@
 			isa = PBXGroup;
 			children = (
 				C863E93E277487DE00411599 /* Assets.xcassets */,
+				C89F0E9A278DCC1000050A32 /* Business.xcassets */,
+				C89F0E9C278DCCBA00050A32 /* Military.xcassets */,
+				C89F0E9E278DCCC500050A32 /* Science.xcassets */,
+				C89F0EA0278DCCD400050A32 /* Culture.xcassets */,
+				C89F0EA2278DCCE900050A32 /* Politics.xcassets */,
+				C89F0EA4278DCCF300050A32 /* Church.xcassets */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -433,14 +448,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89F0EA1278DCCD400050A32 /* Culture.xcassets in Resources */,
 				C82C56C22785FF30008E8E1D /* politics.json in Resources */,
 				C863E942277487DE00411599 /* Preview Assets.xcassets in Resources */,
+				C89F0E9D278DCCBA00050A32 /* Military.xcassets in Resources */,
+				C89F0EA5278DCCF300050A32 /* Church.xcassets in Resources */,
+				C89F0E9B278DCC1000050A32 /* Business.xcassets in Resources */,
 				C82C56BC2785FF1C008E8E1D /* culture.json in Resources */,
 				C82C56C82785FF3C008E8E1D /* science.json in Resources */,
 				C82C56BF2785FF2A008E8E1D /* business.json in Resources */,
 				C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */,
 				C863E93F277487DE00411599 /* Assets.xcassets in Resources */,
 				C82C56C52785FF37008E8E1D /* military.json in Resources */,
+				C89F0EA3278DCCE900050A32 /* Politics.xcassets in Resources */,
+				C89F0E9F278DCCC500050A32 /* Science.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +486,6 @@
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
 				C863E94B27748C8E00411599 /* TabBarIcon.swift in Sources */,
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
-				C8DFDBB02783644A000D6071 /* AlternativeTab.swift in Sources */,
 				C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */,
 				C84625B82788565E0066FECD /* About.swift in Sources */,
 				C8960B242778A63E00942F90 /* CultureView.swift in Sources */,
