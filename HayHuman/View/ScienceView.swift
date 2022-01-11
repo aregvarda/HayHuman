@@ -92,19 +92,14 @@ struct ScienceView: View {
                 
                 self.showSheetView.toggle()
             } label: {
-                Image(systemName: "line.horizontal.3.circle")
+                Image(systemName: "info.circle")
                     .foregroundColor(.secondary)
                     .font(.title)
-            }).halfSheet(showSheetView: $showSheetView) {
+            }).sheet(isPresented: $showSheetView, content: {
+                About()
+            })
                 
-                BaseSheetView()
-                
-                    .ignoresSafeArea()
-            }
-        onEnd: {
-            
-        }.navigationBarItems(trailing: Button {
-            
+            .navigationBarItems(trailing: Button {
             self.churchShowSheetView.toggle()
         } label: {
             Image("church")

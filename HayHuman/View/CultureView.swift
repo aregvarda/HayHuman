@@ -99,15 +99,12 @@ struct CultureView: View {
                 .navigationBarItems(trailing: Button {
                     self.showSheetView.toggle()
                 } label: {
-                    Image(systemName: "line.horizontal.3.circle")
+                    Image(systemName: "info.circle")
                         .foregroundColor(.secondary)
                         .font(.title)
-                }).halfSheet(showSheetView: $showSheetView) {
-                    BaseSheetView()
-                        .ignoresSafeArea()
-                }
-            onEnd: {
-            }
+                }).sheet(isPresented: $showSheetView, content: {
+                    About()
+                })
                 
             .navigationBarItems(trailing: Button {
                 

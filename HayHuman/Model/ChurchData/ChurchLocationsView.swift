@@ -10,17 +10,20 @@ import MapKit
 
 struct ChurchLocationsView: View {
     @EnvironmentObject private var vm: ChurchLocationsViewModel
+    @Environment(\.presentationMode) var presentationMode
+
     
     var body: some View {
         ZStack {
             mapLayer
                 .ignoresSafeArea()
+            
             VStack(spacing: 0) {
                 header
                     .padding()
                 Spacer()
                 locationsPreviewStack
-            }
+            }.overlay(backButton, alignment: .topTrailing)
         }.sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
             ChurchLocationDetailView(location: location)
         }
@@ -40,7 +43,7 @@ extension ChurchLocationsView {
             Button(action: vm.toggleLocationsList) {
                 Text(vm.mapLocation.name)
                     .font(.title3)
-                    .fontWeight(.black)
+                    .fontWeight(.bold)
                     .foregroundColor(.primary)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
@@ -94,4 +97,22 @@ extension ChurchLocationsView {
             }
         }
     }
+    private var backButton: some View {
+        Button {
+            close()
+        } label: {
+            Image(systemName: "xmark")
+                .font(.headline)
+                .padding(16)
+                .foregroundColor(.primary)
+                .background(.thickMaterial)
+                .cornerRadius(10)
+                .padding()
+                .offset(x: -3, y: 4)
+        }
+    }
+    func close() {
+        presentationMode.wrappedValue.dismiss()
+    }
 }
+

@@ -6,17 +6,16 @@
 //
 
 import MapKit
-import Foundation
 import SwiftUI
 
 class ChurchLocationsViewModel: ObservableObject {
+    
     @Published var locations: [ChurchesLocations]
     @Published var mapLocation: ChurchesLocations {
         didSet {
             updateMapRegion(location: mapLocation)
         }
     }
-    
     //Current region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
@@ -30,7 +29,6 @@ class ChurchLocationsViewModel: ObservableObject {
         let locations = ChurchLocationsDataService.locations
         self.locations = locations
         self.mapLocation = locations.first!
-        
         self.updateMapRegion(location: locations.first!)
     }
     
