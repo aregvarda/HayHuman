@@ -10,6 +10,7 @@ import SwiftUI
 
 class ChurchLocationsViewModel: ObservableObject {
     
+    @Published var searchText: String = ""
     @Published var locations: [ChurchesLocations]
     @Published var mapLocation: ChurchesLocations {
         didSet {

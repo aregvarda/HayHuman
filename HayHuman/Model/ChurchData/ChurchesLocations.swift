@@ -7,6 +7,8 @@
 
 import Foundation
 import MapKit
+import SwiftUI
+
 
 struct ChurchesLocations: Identifiable, Equatable {
     
@@ -28,4 +30,6 @@ struct ChurchesLocations: Identifiable, Equatable {
     
     
 }
+
+
 

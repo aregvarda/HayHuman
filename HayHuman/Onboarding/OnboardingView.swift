@@ -13,23 +13,23 @@ struct OnboardingView: View {
 
     var body: some View {
         TabView {
-            PageView(title: "Step One",
-                     subtitle: "It will be written here about the contribution of ethnic Armenians to world history",
+            PageView(title: "Шаг первый",
+                     subtitle: "Познакомьтесь с армянским историческим наследием и биографиями выдающихся этнических армян сделавших вклад в историю Армении и Мира.",
                      imageName: "biography",
-                     showsDismissButton: false,
+                     showsDismissButton: true,
                      shouldShowOnboarding: $shouldShowOnboarding
             )
             
-            PageView(title: "Step Two",
-                     subtitle: "It will be written here about the study of churches",
+            PageView(title: "Шаг второй",
+                     subtitle: "Исследуйте армянские церкви со всего мира",
                      imageName: "church(10)",
-                     showsDismissButton: false,
+                     showsDismissButton: true,
                      shouldShowOnboarding: $shouldShowOnboarding
 
             )
             
-            PageView(title: "Step Three",
-                     subtitle: "It will be written about modern ethnic Armenians",
+            PageView(title: "Шаг третий",
+                     subtitle: "Узнайте про видных армянских деятелей современности.",
                      imageName: "chemistry",
                      showsDismissButton: true,
                      shouldShowOnboarding: $shouldShowOnboarding
@@ -79,6 +79,7 @@ struct PageView: View {
                         .frame(width: 200, height: 50)
                         .background(Color.orange)
                         .cornerRadius(6)
+                        .offset(y: 50)
                 }
 
             }

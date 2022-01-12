@@ -11,6 +11,7 @@ import MapKit
 struct ChurchLocationsView: View {
     @EnvironmentObject private var vm: ChurchLocationsViewModel
     @Environment(\.presentationMode) var presentationMode
+    
     let maxWidthForIpad: CGFloat = 800
     
     
@@ -51,6 +52,7 @@ extension ChurchLocationsView {
                     .foregroundColor(.primary)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
+                    
                     .animation(.none, value: vm.mapLocation)
                     .overlay(alignment: .leading) {
                         Image(systemName: "arrow.down")
