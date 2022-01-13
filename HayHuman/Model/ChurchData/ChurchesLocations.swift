@@ -21,6 +21,7 @@ struct ChurchesLocations: Identifiable, Equatable {
     
     
     
+    
     var id: String {
         name + cityName
     }

@@ -35,7 +35,6 @@
 		C8960B262778AD0A00942F90 /* BusinessMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B252778AD0A00942F90 /* BusinessMapView.swift */; };
 		C8960B292778AD4C00942F90 /* BusinessCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */; };
 		C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */; };
-		C89F0E92278D9CB400050A32 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89F0E91278D9CB400050A32 /* OnboardingView.swift */; };
 		C89F0E9B278DCC1000050A32 /* Business.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9A278DCC1000050A32 /* Business.xcassets */; };
 		C89F0E9D278DCCBA00050A32 /* Military.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9C278DCCBA00050A32 /* Military.xcassets */; };
 		C89F0E9F278DCCC500050A32 /* Science.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89F0E9E278DCCC500050A32 /* Science.xcassets */; };
@@ -114,7 +113,6 @@
 		C8960B252778AD0A00942F90 /* BusinessMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapView.swift; sourceTree = "<group>"; };
 		C8960B282778AD4C00942F90 /* BusinessCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCircleImage.swift; sourceTree = "<group>"; };
 		C8960B2A2778AD6D00942F90 /* BusinessDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailList.swift; sourceTree = "<group>"; };
-		C89F0E91278D9CB400050A32 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C89F0E9A278DCC1000050A32 /* Business.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Business.xcassets; sourceTree = "<group>"; };
 		C89F0E9C278DCCBA00050A32 /* Military.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Military.xcassets; sourceTree = "<group>"; };
 		C89F0E9E278DCCC500050A32 /* Science.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Science.xcassets; sourceTree = "<group>"; };
@@ -269,7 +267,7 @@
 		C882D3CC278C81B4009E6309 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				C89F0E91278D9CB400050A32 /* OnboardingView.swift */,
+				C8CAB5E52790504C00635A9E /* OnboardingTest.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -343,7 +341,6 @@
 		C8CAB5DE2790433400635A9E /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				C8CAB5E52790504C00635A9E /* OnboardingTest.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -521,7 +518,6 @@
 				C863E93B277487DB00411599 /* HayHumanApp.swift in Sources */,
 				C8DFDB8D2782F7E0000D6071 /* CultureMapView.swift in Sources */,
 				C82C56BB2785FE07008E8E1D /* Keyboard.swift in Sources */,
-				C89F0E92278D9CB400050A32 /* OnboardingView.swift in Sources */,
 				C8EB12492786F7BA00A5E080 /* SheetSettings.swift in Sources */,
 				C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */,
 				C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */,
