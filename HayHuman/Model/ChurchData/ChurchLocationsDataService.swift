@@ -168,6 +168,82 @@ class ChurchLocationsDataService {
                 "dadivank-1",
             ],
             link: "https://en.wikipedia.org/wiki/Dadivank"),
+        //Ани:
+        ChurchesLocations(
+            name: "Horomos Monastery",
+            cityName: "near Ani, Turkey (the monastery is almost destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 40.52061096498222, longitude: 43.628770598090775),
+            description: "Horomos (Armenian: Հոռոմոս), also known as Horomosivank or Ghoshavank, is an abandoned and ruined medieval Armenian monastic complex about 15 kilometers northeast of the ruins of Ani (the capital of Bagratid Armenia) in present-day eastern Turkey. With its collection of churches, chapels and tombs, Horomos has been described as one of the most significant spiritual and cultural religious centers in medieval Armenia and one of the largest in all the Christian East.",
+            imageNames: [
+                "hromos-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Horomos"),
+        //Ван:
+        ChurchesLocations(
+            name: "Varagavank",
+            cityName: "Van Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 38.451046255725316, longitude: 43.46078158316967),
+            description: "Varagavank (Armenian: Վարագավանք, 'Monastery of Varag'; Turkish: Yedi Kilise, 'Seven Churches') was an Armenian monastery on the slopes of Mount Erek, 9 km (5.6 mi) southeast of the city of Van, in eastern Turkey.\n\nThe monastery was founded in the early 11th century by Senekerim-Hovhannes Artsruni, the Armenian King of Vaspurakan, on a preexisting religious site. Initially serving as the necropolis of the Artsruni kings, it eventually became the seat of the archbishop of the Armenian Church in Van.[5] The monastery has been described as one of the great monastic centers of the Armenian church by Ara Sarafian and the richest and most celebrated monastery of the Lake Van area by Robert H. Hewsen.",
+            imageNames: [
+                "vargavank-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Varagavank"),
+        ChurchesLocations(
+            name: "Narekavank",
+            cityName: "Van Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 38.296875, longitude: 42.928256),
+            description: "Narekavank (Armenian: Նարեկավանք, 'Monastery of Narek', Western Armenian: Nareg) was a tenth-century Armenian monastery in the historic province of Vaspurakan, near the southern shores of Lake Van, in present-day Gevaş district in the Van Province in eastern Turkey. The monastery was one of the most prominent in medieval Armenia and had a major school. The poet Gregory of Narek (Grigor Narekatsi) notably flourished at the monastery. It was abandoned in 1915 during the Armenian genocide, and reportedly demolished around 1951. A mosque now stands on its location.",
+            imageNames: [
+                "narekavank-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Narekavank"),
+        ChurchesLocations(
+            name: "Saint Bartholomew Monastery",
+            cityName: "Van Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 38.149942, longitude: 44.212925),
+            description: "Saint Bartholomew Monastery (Armenian: Սուրբ Բարդուղիմեոսի վանք, Surb Barduğimeosi vank' ; Western Armenian: Surp Part'uğimeosi vank' ) was a medieval Armenian monastery in the historic province of Vaspurakan, 23 km north-east from the town of Başkale, in present-day Turkey's Van Province, near the Iranian border. The monastery was built on the traditional site of martyrdom of Bartholomew the Apostle, who is reputed to have brought Christianity to Armenia in the first century. Along with Thaddeus the Apostle, Bartholomew is considered the patron saint of the Armenian Apostolic Church. It was a prominent pilgrimage site prior to the Armenian genocide. Today, it is heavily ruined and the dome entirely gone.",
+            imageNames: [
+                "baartholomeuVan-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Saint_Bartholomew_Monastery"),
+        ChurchesLocations(
+            name: "Lim Monastery",
+            cityName: "Van Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 38.866667, longitude: 43.35),
+            description: "Adır Island (Turkish: Adır Adası) or Lim Island (Armenian: Լիմ կղզի Lim kghzi, Kurdish: Girava Lîm), is the largest island in Lake Van, located in the North East part of the lake. During the Armenian genocide upwards of 12,000 Armenian women and children, crossed to the isle over a period of three days while a few dozen men covered their retreat from Hamidiye regiments. The Situation became soon critical because of a lack of food.\n\nThe Armenian Monastery on the island was called St. George or Sourp Kevork. It was built in 1305 and expanded in 1621 and 1766. The Monastery is currently in ruins. The island also contains a cemetery of Armenian khachkars.",
+            imageNames: [
+                "lim-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Ad%C4%B1r_Island"),
+        ChurchesLocations(
+            name: "Cathedral of the Holy Cross",
+            cityName: "Van Province, Turkey",
+            coordinates: CLLocationCoordinate2D(latitude: 38.3403, longitude: 43.0369),
+            description: "The Cathedral of the Holy Cross (Armenian: Սուրբ Խաչ եկեղեցի, romanized: Surp Khachʿ egeghetsʿi, Turkish: Akdamar Kilisesi or Surp Haç Kilisesi) on Aghtamar Island, in Lake Van in eastern Turkey, is a medieval Armenian Apostolic cathedral, built as a palatine church for the kings of Vaspurakan and later serving as the seat of the Catholicosate of Aghtamar.",
+            imageNames: [
+                "akhtamar-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Cathedral_of_the_Holy_Cross,_Aghtamar"),
+        //Муш:
+        ChurchesLocations(
+            name: "Surb Karapet Monastery",
+            cityName: "Muş Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 38.960779092034585, longitude: 41.19182255514805),
+            description: "Surb Karapet Monastery (Armenian: Մշո Սուրբ Կարապետ վանք, Msho Surb Karapet vank, also known by other names) was an Armenian Apostolic monastery in the historic province of Taron, about 30 km (19 mi) northwest of Mush (Muş), in present-day eastern Turkey.\n\nSurb Karapet translates to 'Holy Precursor' and refers to John the Baptist, whose remains are believed to have been stored at the site by Gregory the Illuminator in the early fourth century. The monastery subsequently served as a stronghold of the Mamikonians—the princely house of Taron, who claimed to be the holy warriors of John the Baptist, their patron saint. It was expanded and renovated many times in later centuries. By the 20th century, it was a large fort-like enclosure with four chapels.",
+            imageNames: [
+                "mush-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Surb_Karapet_Monastery"),
+        //Сивас
+        ChurchesLocations(
+            name: "Surb Nshan Monastery",
+            cityName: "Sivas Province, Turkey (the monastery was destroyed)",
+            coordinates: CLLocationCoordinate2D(latitude: 39.840861, longitude: 36.942373),
+            description: "Sourb Nshan monastery was established by prince Atom-Ashot, the son of King Senekerim. The monastery was named after a celebrated relic that Senekerim had brought from Varagavank monastery, and which was returned there after his death. This was one of notable center of enlightenment and scholarship of Lesser Armenia during Byzantine, Seljuk Sultanate of Rum and Ottoman reigns until the Armenian genocide in 1915. In 1915 Sourb Nshan monastery was the main repository of medieval Armenian manuscripts in the Sebastia region and at least 283 manuscripts are recorded. The library was not destroyed during the Armenian Genocide and most of the manuscripts survived. In 1918 about 100 of them were transferred to the Armenian Patriarchate in Jerusalem. ",
+            imageNames: [
+                "sivas-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Surb_Nshan_Monastery"),
         //Москва:
         ChurchesLocations(
             name: "Armenian Temple Complex",
