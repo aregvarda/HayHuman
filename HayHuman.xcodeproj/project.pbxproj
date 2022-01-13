@@ -50,6 +50,7 @@
 		C8B01CD42789DF1600590F72 /* ChurchLocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B01CD32789DF1600590F72 /* ChurchLocationPreviewView.swift */; };
 		C8B25D39277F1F7600E87168 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */; };
 		C8C0738B278F11C9004FD881 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0738A278F11C9004FD881 /* Letter.swift */; };
+		C8CAB5E62790504C00635A9E /* OnboardingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CAB5E52790504C00635A9E /* OnboardingTest.swift */; };
 		C8D55DE62788BF08005D4C19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D55DE82788BF08005D4C19 /* Localizable.strings */; };
 		C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB882782F7B3000D6071 /* CultureCircleImage.swift */; };
 		C8DFDB8B2782F7C9000D6071 /* CultureDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DFDB8A2782F7C9000D6071 /* CultureDetailList.swift */; };
@@ -128,6 +129,7 @@
 		C8B01CD32789DF1600590F72 /* ChurchLocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationPreviewView.swift; sourceTree = "<group>"; };
 		C8B25D38277F1F7600E87168 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 		C8C0738A278F11C9004FD881 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		C8CAB5E52790504C00635A9E /* OnboardingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTest.swift; sourceTree = "<group>"; };
 		C8D55DE72788BF08005D4C19 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C8D55DE92788BF66005D4C19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C8D55DEA2788BF67005D4C19 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		C863E939277487DB00411599 /* HayHuman */ = {
 			isa = PBXGroup;
 			children = (
+				C8CAB5DE2790433400635A9E /* Test */,
 				C882D3CC278C81B4009E6309 /* Onboarding */,
 				C85B7EFB2780AB0000C77555 /* Info.plist */,
 				C88705D9277CFB0F00B34922 /* Extensions */,
@@ -335,6 +338,14 @@
 				C8B01CCF2789A8D400590F72 /* ChurchLocationsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8CAB5DE2790433400635A9E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C8CAB5E52790504C00635A9E /* OnboardingTest.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		C8DFDB862782F495000D6071 /* CultureDetail */ = {
@@ -489,6 +500,7 @@
 				C8C0738B278F11C9004FD881 /* Letter.swift in Sources */,
 				C863E95B2774C7E200411599 /* MilitaryView.swift in Sources */,
 				C863E94B27748C8E00411599 /* TabBarIcon.swift in Sources */,
+				C8CAB5E62790504C00635A9E /* OnboardingTest.swift in Sources */,
 				C863E9572774BB7D00411599 /* TabViewPlace.swift in Sources */,
 				C8DFDB892782F7B3000D6071 /* CultureCircleImage.swift in Sources */,
 				C84625B82788565E0066FECD /* About.swift in Sources */,

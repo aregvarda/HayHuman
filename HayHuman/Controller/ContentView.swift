@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
-    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
-//    @State var shouldShowOnboarding: Bool = true
+//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @State var shouldShowOnboarding: Bool = true
     
     var body: some View {
+//        IntroScreen()
+        GeometryReader{proxy in
+            let size = proxy.size
         TabViewPlace(viewRouter: ViewRouter())
             .fullScreenCover(isPresented: $shouldShowOnboarding) {
-                OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+//                OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+                Home(screenSize: size, shouldShowOnboarding: $shouldShowOnboarding, showsDismissButton: shouldShowOnboarding)
+                    .preferredColorScheme(.dark)
             }
+        }
         
     }
 }
