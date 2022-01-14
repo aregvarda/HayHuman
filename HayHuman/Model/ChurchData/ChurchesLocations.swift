@@ -18,6 +18,7 @@ struct ChurchesLocations: Identifiable, Equatable {
     let description: String
     let imageNames: [String]
     let link: String
+    let imageName: String
     
     
     

@@ -10,6 +10,7 @@ import SwiftUI
 
 class ChurchLocationsViewModel: ObservableObject {
     
+    
     @Published var searchText: String = ""
     @Published var locations: [ChurchesLocations]
     @Published var mapLocation: ChurchesLocations {
@@ -17,9 +18,10 @@ class ChurchLocationsViewModel: ObservableObject {
             updateMapRegion(location: mapLocation)
         }
     }
+    
     //Current region on map
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
-    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7)
     
     //Show list of locations
     @Published var showLocationsList: Bool = false
@@ -39,7 +41,7 @@ class ChurchLocationsViewModel: ObservableObject {
                 "echmiadzin_2",
                 "echmiadzin_3",
             ],
-            link: "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral")
+            link: "https://en.wikipedia.org/wiki/Etchmiadzin_Cathedral", imageName: "churchPin")
         self.mapLocation = firstLocation
         self.updateMapRegion(location: firstLocation)
     }

@@ -49,11 +49,16 @@ extension ChurchLocationPreviewView {
     private var imageSection: some View {
         ZStack {
             if let imageName = location.imageNames.first {
-                Image(imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 100)
-                    .cornerRadius(10)
+                Button {
+                    vm.sheetLocation = location
+                } label: {
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                    
+                }
             }
         }
         .padding(6)
