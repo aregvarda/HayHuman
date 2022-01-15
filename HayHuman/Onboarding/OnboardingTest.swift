@@ -32,7 +32,6 @@ struct Home: View {
     var screenSize: CGSize
     @State var offset: CGFloat = 0
     @Binding var shouldShowOnboarding: Bool
-    let showsDismissButton: Bool
     
     var body: some View {
         

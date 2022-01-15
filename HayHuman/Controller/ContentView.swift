@@ -19,7 +19,7 @@ struct ContentView: View {
         TabViewPlace(viewRouter: ViewRouter())
             .fullScreenCover(isPresented: $shouldShowOnboarding) {
 //                OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-                Home(screenSize: size, shouldShowOnboarding: $shouldShowOnboarding, showsDismissButton: shouldShowOnboarding)
+                Home(screenSize: size, shouldShowOnboarding: $shouldShowOnboarding)
                     .preferredColorScheme(.dark)
             }
         }

@@ -456,6 +456,56 @@ class ChurchLocationsDataService {
                 "syria_aleppo-1",
             ],
             link: "https://en.wikipedia.org/wiki/Surb_Nshan_Monastery", imageName: "churchPin"),
+        //Эфиопия:
+        ChurchesLocations(
+            name: "St. George's Church",
+            cityName: "Addis Ababa, Ethiopia",
+            coordinates: CLLocationCoordinate2D(latitude: 9.037832186963678, longitude: 38.75735386317782),
+            description: "The Church of St. George (Gevorg) (Սուրբ Գևորգ եկեղեցի) is a temple of the Armenian Apostolic Church in the city of Addis, Ethiopia.",
+            imageNames: [
+                "ethiopea-1",
+            ],
+            link: "https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D1%8F_(%D0%90%D0%B4%D0%B4%D0%B8%D1%81-%D0%90%D0%B1%D0%B5%D0%B1%D0%B0)", imageName: "churchPin"),
+        //Свазиленд:
+        ChurchesLocations(
+            name: "Forty Martyrs Cathedral",
+            cityName: "Mbabane, Eswatini",
+            coordinates: CLLocationCoordinate2D(latitude: -26.320821727606813, longitude: 31.16167040998827),
+            description: "The Church of the Holy Resurrection (Սուրբ Հարություն եկեղեցի) is an Armenian apostolic church in the African city of Mbabane, the capital of Esvatini.",
+            imageNames: [
+                "africa-1",
+            ],
+            link: "https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%9C%D0%B1%D0%B0%D0%B1%D0%B0%D0%BD%D0%B5)", imageName: "churchPin"),
+        //Кипр:
+        ChurchesLocations(
+            name: "Sourp Kevork Church",
+            cityName: "Limassol, Cyprus",
+            coordinates: CLLocationCoordinate2D(latitude: 34.69, longitude: 33.0714),
+            description: "Sourp Kevork (Armenian: Սուրբ Գէորգ; Saint George) is the Armenian Apostolic church in Limassol, Cyprus.\n\nThe church is located near the town centre of Limassol and was built in 1939 on land purchased and donated by Mrs Satenig Soultanian, in memory of her father, Hampartsoum Kevorkian. The first official liturgy took place in 1940 and the consecration took place in 1948 by Archbishop Ghevont Chebeyian.",
+            imageNames: [
+                "cyprus-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Sourp_Kevork_Church,_Limassol", imageName: "churchPin"),
+        //Стамбул:
+        ChurchesLocations(
+            name: "Surp Krikor Lusavoriç",
+            cityName: "Istanbul, Turkey",
+            coordinates: CLLocationCoordinate2D(latitude: 41.036667, longitude: 29.030278),
+            description: "Surp Krikor Lusavoriç Armenian Church (Armenian: Սուրբ Գրիգոր Լուսաւորիչ եկեղեցի, Turkish: Surp Krikor Lusavoriç Ermeni Kilisesi) is an Armenian Apostolic church dedicated to Saint Gregory the Illuminator in Kuzguncuk, Üsküdar, Istanbul, Turkey. It was rebuilt in 1861.",
+            imageNames: [
+                "stambul-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Surp_Krikor_Lusavori%C3%A7_Armenian_Church,_Kuzguncuk", imageName: "churchPin"),
+        //Болгария:
+        ChurchesLocations(
+            name: "St. Sarkis Armenian church",
+            cityName: "Varna, Bulgaria ",
+            coordinates: CLLocationCoordinate2D(latitude: 43.20245433773986, longitude: 27.91786642441508),
+            description: "There is an Armenian church in Varna, consecrated in honor of Saint Sarkis (Armenian Orthodox Church). It is considered a historical and cultural landmark and attracts attention with its elegant architecture. The structure was built in 1842 and is still in operation.",
+            imageNames: [
+                "varna-1",
+            ],
+            link: "https://commons.wikimedia.org/wiki/Category:St._Sarkis_Armenian_church,_Varna", imageName: "churchPin"),
         //Австрия:
         ChurchesLocations(
             name: "Mekhitarist Monastery",
@@ -466,6 +516,108 @@ class ChurchLocationsDataService {
                 "austria-1",
             ],
             link: "https://en.wikipedia.org/wiki/Mekhitarist_Monastery,_Vienna", imageName: "churchPin"),
+        //Бельгия:
+        ChurchesLocations(
+            name: "Church of St. Mary Magdalene",
+            cityName: "Ixelles, Belgium",
+            coordinates: CLLocationCoordinate2D(latitude: 50.82297113825674, longitude: 4.365780676878307),
+            description: "The first stone was laid on 14 November 1986, the church was only blessed and officially opened on 6 May 1990. The central plan building is in fact a tetraconch with side chapels. Like its famous model, which was built between 915 and 921 AD at the instigation of King Gagik I Artsruni, it is dominated by an octagonal bell tower. The facing is also inspired by the pink-coloured volcanic stone used in Armenia for the construction of religious buildings.",
+            imageNames: [
+                "brussel-1",
+            ],
+            link: "http://twopos.be/et/9124/54476", imageName: "churchPin"),
+        //Франция:
+        ChurchesLocations(
+            name: "Holy Cross of Paris",
+            cityName: "Paris, France",
+            coordinates: CLLocationCoordinate2D(latitude: 48.84499057889769, longitude: 2.3488819829903034),
+            description: "The Armenian Catholic Eparchy of Sainte-Croix-de-Paris (Sainte-Croix-de-Paris of the Armenians , Holy Cross of Paris of the Armenians or France of the Armenians ) is an eparchy (Eastern Catholic diocese) for the faithful in France of the Armenian Catholic Church sui iuris, which uses the Armenian Rite in Armenian, in full communion with the universal Pope of Rome.",
+            imageNames: [
+                "paris-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Armenian_Catholic_Eparchy_of_Sainte-Croix-de-Paris", imageName: "churchPin"),
+        //Англия:
+        ChurchesLocations(
+            name: "St Sarkis, Kensington",
+            cityName: "London, United Kingdom",
+            coordinates: CLLocationCoordinate2D(latitude: 51.49963, longitude: -0.19365),
+            description: "St Sarkis (Armenian: Սուրբ Սարգիս եկեղեցի) is an Armenian Apostolic church and a Grade II* listed building in Iverna Gardens, Kensington, London. It was constructed in 1922–23 by Calouste Gulbenkian as a memorial to his parents, and the architect was Arthur Davis.[1] It is the only church in England to have been built in the traditional Armenian style. Its design is inspired by the 13th century freestanding bell tower of Haghpat Monastery. It is the seat of the Diocese of the United Kingdom of the Armenian Apostolic Church.",
+            imageNames: [
+                "england-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/St_Sarkis,_Kensington", imageName: "churchPin"),
+        //Испания:
+        ChurchesLocations(
+            name: "Sant Jordi de Treumal",
+            cityName: "Calonge, Spain",
+            coordinates: CLLocationCoordinate2D(latitude: 41.827906, longitude: 3.082949),
+            description: "La capella ortodoxa del Comtat de Sant Jordi de Treumal (rus: Приход в честь святого великомученика Георгия и святой мученицы Анастасии, armeni: Կալոնժեի Սուրբ Գևորգ հայկական եկեղեցի) és una capella ortodoxa de Calonge (Baix Empordà) protegida com a Bé Cultural d'Interès Local.",
+            imageNames: [
+                "spain-1",
+            ],
+            link: "https://ca.wikipedia.org/wiki/Sant_Jordi_de_Treumal", imageName: "churchPin"),
+        //Италия:
+        ChurchesLocations(
+            name: "San Lazzaro degli Armeni",
+            cityName: "Venice, Italy",
+            coordinates: CLLocationCoordinate2D(latitude: 45.411979, longitude: 12.361422),
+            description: "San Lazzaro degli Armeni (Italian: [san ˈladdzaro deʎʎ arˈmɛːni], lit. 'Saint Lazarus of the Armenians'; called Saint Lazarus Island in English sources; Armenian: Սուրբ Ղազար, romanized: Surb Ghazar) is a small island in the Venetian Lagoon which has been home to the monastery of the Mekhitarists, an Armenian Catholic congregation, since 1717. It is the primary center of the Mekhitarists, while the Mekhitarist Monastery of Vienna is their primary abbey.",
+            imageNames: [
+                "lazaro-1",
+                "lazaro-2",
+            ],
+            link: "https://en.wikipedia.org/wiki/San_Lazzaro_degli_Armeni", imageName: "churchPin"),
+        ChurchesLocations(
+            name: "San Lazzaro degli Armeni",
+            cityName: "Milan, Italy",
+            coordinates: CLLocationCoordinate2D(latitude: 45.486842463853066, longitude: 9.225525764088282),
+            description: "The Armenian Church of Italy is under the jurisdiction of the Catholicossate of all Armenians in the World Holy See of Echmiadzin. In Milan, Armenians began to have their religious services immediately after the first World War, first in the Evangelical Church of via Solferino and then, starting from 1958, in a church of their own, which stands in viaomm This church, dedicated to the Holy Forty Martyrs of Sebaste and built according to the canons of the most classic Armenian style, was commissioned by two brothers Onnik and Sarkis Diarbekirean, who lived in Milan in the 1920s fleeing the massacres. Then moved to Argentina, they provided for the construction of the Church of the milanese see. The Armenian community of Lombardy today consists of over 1000 people, mostly freelancers, industrialists, representatives, merchants, artists and some artisans.",
+            imageNames: [
+                "milan-1",
+            ],
+            link: "https://www.chiesaarmena.org/", imageName: "churchPin"),
+        //Швейцария
+        ChurchesLocations(
+            name: "St. Hakob's Church",
+            cityName: "Geneva, Switzerland",
+            coordinates: CLLocationCoordinate2D(latitude: 46.165576, longitude: 6.146017),
+            description: "The Surb Hakob Church was built in 1967-1969 by the descendants of the Armenian Genocide survivors from Western Armenia; the initial capital for the construction in the amount of 400 thousand francs was provided by the Italian merchant Hakob Topalian (Hagop Topalian; 1897-1985). The authors of the project are architects Frederic Gauthier and Eduard Utudjian. The church was consecrated on September 14, 1969 by the Armenian Archbishop of Paris Serovpe Manukyan.",
+            imageNames: [
+                "geneva-1",
+            ],
+            link: "https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%90%D0%BA%D0%BE%D0%BF%D0%B0_(%D0%96%D0%B5%D0%BD%D0%B5%D0%B2%D0%B0)", imageName: "churchPin"),
+        //Латвия:
+        ChurchesLocations(
+            name: "St. Gregory the Illuminator",
+            cityName: "Riga, Latvia",
+            coordinates: CLLocationCoordinate2D(latitude: 56.93585591954235, longitude: 24.146650869292834),
+            description: "In 1993, the Armenian Apostolic Church in Latvia was registered. The decision to allocate land to the community was made in 1997, on December 17, 1997, the foundation of the temple was laid. However, only in 2005 the decision was amended, according to which the Armenian community will lease land from the local government until 2047 at a price of 11 centimes (approximately 22 US cents) per m2 per year. Later, the territory of the church was privatized in the name of the AAC. The Church of St. Gregory the Illuminator in Riga was built with the collected people's money, according to a project agreed with St. Echmiadzin.",
+            imageNames: [
+                "latvia-1",
+            ],
+            link: "https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_%D0%9F%D1%80%D0%BE%D1%81%D0%B2%D0%B5%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8F_(%D0%A0%D0%B8%D0%B3%D0%B0)", imageName: "churchPin"),
+        //Украина:
+        ChurchesLocations(
+            name: "Cathedral of the Assumption of Mary",
+            cityName: "Lviv, Ukraine",
+            coordinates: CLLocationCoordinate2D(latitude: 49.843333, longitude: 24.030833),
+            description: "The Armenian Cathedral of the Assumption of Mary (Armenian: Հայկական տաճար, Ukrainian: Вірменський собор, Polish: Katedra ormiańska) in Lviv, Ukraine is located in the city's Old Town, north of the market square. Until 1945 it was the cathedral of the Armenian Catholic Archdiocese of Lviv, since 2000 it serves as a cathedral of the Eparchy of Ukraine of the Armenian Apostolic Church. ",
+            imageNames: [
+                "lviv-1",
+                "lviv-2",
+                "lviv-3",
+            ],
+            link: "https://en.wikipedia.org/wiki/Armenian_Cathedral_of_Lviv", imageName: "churchPin"),
+        //Крым:
+        ChurchesLocations(
+            name: "Surp Khach Monastery",
+            cityName: "Crimea",
+            coordinates: CLLocationCoordinate2D(latitude: 45.000708, longitude: 35.062529),
+            description: "Surp Khach Monastery (Armenian: Սուրբ Խաչ վանք, meaning Monastery of the Holy Cross) is a medieval Armenian monastery located on the Crimean peninsula near Staryi Krym and founded in 1358. Before the USSR nationalized it, this monastery owned 4,000 acres of land, while during the Soviet period it served various functions from Pioneer Camp to tuberculosis clinic. It has been an Armenian spiritual center and a place of pilgrimage for centuries.",
+            imageNames: [
+                "crimea-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Surp_Khach_Monastery", imageName: "churchPin"),
         //Москва:
         ChurchesLocations(
             name: "Armenian Temple Complex",
@@ -478,6 +630,132 @@ class ChurchLocationsDataService {
                 "moscow_3",
             ],
             link: "https://museumstudiesabroad.org/armenian-temple-moscow/", imageName: "churchPin"),
-    
+        ChurchesLocations(
+            name: "Church of the Resurrection",
+            cityName: "Rostov-on-Don, Russia",
+            coordinates: CLLocationCoordinate2D(latitude: 47.2304828654252, longitude: 39.76557808385695),
+            description: "The Church of the Resurrection (Russian: Церковь Святого Воскресения, Armenian: Հայ Առաքելական Եկեղեցի) is an Armenian Apostolic church in the city of Rostov-on-Don, Russia.",
+            imageNames: [
+                "rostov-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Church_of_the_Resurrection,_Rostov-on-Don", imageName: "churchPin"),
+        //Казахстан:
+        ChurchesLocations(
+            name: "Church of St. Karapet",
+            cityName: "Alma-Ata, Kazakhstan",
+            coordinates: CLLocationCoordinate2D(latitude: 43.329712, longitude: 76.950589),
+            description: "St. Karapet Church (arm. Ալմաթիի Սուրբ Կարապետ եկեղեցի) — Armenian Church in Alma-Ata, Kazakhstan. This is the first Armenian parish in Kazakhstan. The community of Alma-Ata has a Sunday school, circles for the study of tradition, vocal and choreographic studios.",
+            imageNames: [
+                "kazakhstan-1",
+            ],
+            link: "https://hy.wikipedia.org/wiki/%D5%8D%D5%B8%D6%82%D6%80%D5%A2_%D4%BF%D5%A1%D6%80%D5%A1%D5%BA%D5%A5%D5%BF_%D5%A5%D5%AF%D5%A5%D5%B2%D5%A5%D6%81%D5%AB_(%D4%B1%D5%AC%D5%B4%D5%A1%D5%A9%D5%AB)", imageName: "churchPin"),
+        //Узбекистан:
+        ChurchesLocations(
+            name: "Church of the Holy Virgin",
+            cityName: "Samarkand, Uzbekistan",
+            coordinates: CLLocationCoordinate2D(latitude: 39.64896875124373, longitude: 66.95327955351472),
+            description: "The Church of the Holy Theotokos (arm. Սամարղանդի Սուրբ Աստվածածին եկեղեցի) - Armenian Church, 190 1903 at the expense of the local Armenian population. The first rector of the church of St. Astvatsatsin was the priest Father Ruben Bekgulyants.",
+            imageNames: [
+                "uzbekistan-1",
+            ],
+            link: "https://hy.wikipedia.org/wiki/%D5%8D%D5%B8%D6%82%D6%80%D5%A2_%D4%BF%D5%A1%D6%80%D5%A1%D5%BA%D5%A5%D5%BF_%D5%A5%D5%AF%D5%A5%D5%B2%D5%A5%D6%81%D5%AB_(%D4%B1%D5%AC%D5%B4%D5%A1%D5%A9%D5%AB)", imageName: "churchPin"),
+        //Индия:
+        ChurchesLocations(
+            name: "Church of the Holy Nazareth",
+            cityName: "Kolkata, India",
+            coordinates: CLLocationCoordinate2D(latitude: 22.57959, longitude: 88.351361),
+            description: "The Armenian Holy Church of Nazareth (Armenian: Սուրբ Նազարեթ եկեղեցի) is an 18th-century Armenian Apostolic church in Kolkata, India, serving as the centre of the Armenian Community in Kolkata and the seat of the Armenian Vicariate of India and the Far East. It is affiliated with the Mother See of Holy Etchmiadzin of the Armenian Apostolic Church. It was first built in the year 1688 and rebuilt in 1724 on the old cemetery of the Armenian community, through the efforts of Agha Nazar after the original wooden structure perished in a fire in 1707.",
+            imageNames: [
+                "india-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Armenian_Church_of_the_Holy_Nazareth", imageName: "churchPin"),
+        //Бангладеш:
+        ChurchesLocations(
+            name: "Church of the Holy Resurrection",
+            cityName: "Dhaka, Bangladesh",
+            coordinates: CLLocationCoordinate2D(latitude: 23.712493, longitude: 90.402087),
+            description: "The Armenian Church, also known as Armenian Apostolic Church of the Holy Resurrection (Armenian: Դաքքայի Սուրբ Յարութիւն Եկեղեցի), is a historically significant architectural monument situated in the Armanitola area of old Dhaka, Bangladesh. The church bears testimony to the existence of a significant Armenian community in the region in the 17th and 18th centuries.",
+            imageNames: [
+                "bangladesh-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Armenian_Church,_Dhaka", imageName: "churchPin"),
+        //Сингапур:
+        ChurchesLocations(
+            name: "Saint Gregory the Illuminator",
+            cityName: "Singapore",
+            coordinates: CLLocationCoordinate2D(latitude: 1.293056, longitude: 103.849306),
+            description: "The Armenian Church of Saint Gregory the Illuminator, referred to locally as the Armenian Church, is the oldest Christian church in Singapore, located at Hill Street in the Museum Planning Area, within the Central Area. The church was completed in 1835 and consecrated the next year. Originally a parish of the Armenian Apostolic Church, an Oriental Orthodox denomination, the last Armenian parish priest left in the late 1930s as Armenian population in Singapore dwindled. It was designated as a national monument in 1973. Armenian and Oriental Orthodox services are now regularly held at the church.",
+            imageNames: [
+                "singapoure-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Armenian_Church,_Singapore", imageName: "churchPin"),
+        //Австралия:
+        ChurchesLocations(
+            name: "Church of the Holy Resurrection",
+            cityName: "Sydney, Australia",
+            coordinates: CLLocationCoordinate2D(latitude: -33.79253499383863, longitude: 151.19144146963743),
+            description: "The Church of Holy Resurrection has been serving the Armenian Community of Sydney for the past 60 years providing religious services, scriptural teaching, spiritual guidance and pastoral care in the name of Our Lord Jesus Christ.",
+            imageNames: [
+                "australia-1",
+            ],
+            link: "https://armenianchurchsydney.org.au/", imageName: "churchPin"),
+        //Аргентина:
+        ChurchesLocations(
+            name: "Our Lady of Narek Cathedral",
+            cityName: "Buenos Aires, Argentina",
+            coordinates: CLLocationCoordinate2D(latitude: -34.58958132075418, longitude: -58.41498131699491),
+            description: "The Our Lady of Narek Cathedral (Spanish: Catedral de Nuestra Señora de Narek ) also called Armenian Cathedral of Our Lady of Narek (Catedral Armenia de Nuestra Señora de Narek) is an Armenian Catholic cathedral church that is located in the Charcas street in the city of Buenos Aires the capital of Argentina. The congregation follows the Armenian rite and is in full communion with the Pope. It is one of the five Catholic cathedrals in Buenos Aires, others following the Roman rite (Metropolitan Cathedral of the Holy Trinity and the Military Cathedral), Maronite Rite (Cathedral of St. Maron), Ukrainian rite (Our Lady of Patrocinio Cathedral). It should not be confused with the Armenian Cathedral of St. Gregory the Enlightener (Armenian Apostolic Church). ",
+            imageNames: [
+                "argentina-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/Our_Lady_of_Narek_Cathedral,_Buenos_Aires", imageName: "churchPin"),
+        //Венесуэла:
+        ChurchesLocations(
+            name: "Iglesia de San Gregorio",
+            cityName: "Caracas, Venezuela",
+            coordinates: CLLocationCoordinate2D(latitude: 10.50604944996626, longitude: -66.87245965875577),
+            description: "La Iglesia de San Gregorio el Iluminador o bien Iglesia Apostólica Armenia San Gregorio Iluminador de Caracas1​ (en armenio: Կարակասի Սուրբ Գրիգոր Լուսավորիչ եկեղեցի) es un edificio religioso de la Iglesia Apostólica Armenia en Caracas, la capital de Venezuela.",
+            imageNames: [
+                "karakas-1",
+            ],
+            link: "https://es.wikipedia.org/wiki/Iglesia_de_San_Gregorio_el_Iluminador_(Caracas)", imageName: "churchPin"),
+        //Канада:
+        ChurchesLocations(
+            name: "Vancouver St.Vartan Church",
+            cityName: "Vancouver, Canada",
+            coordinates: CLLocationCoordinate2D(latitude: 49.21067089774593, longitude: -123.13331689150893),
+            description: "Vancouver St.Vartan Armenian Apostolic Church of British Columbia, 1260 West 67th Avenue, Vancouver, B.C. Canada V6P 2T2, (604) 261-7411",
+            imageNames: [
+                "vancouver-1",
+            ],
+            link: "http://stvartanchurch.com/", imageName: "churchPin"),
+        ChurchesLocations(
+            name: "St. Mary Church",
+            cityName: "Toronto, Canada",
+            coordinates: CLLocationCoordinate2D(latitude: 43.770269202550644, longitude: -79.3214970725826),
+            description: "In 1979, Toronto’s Armenian Community Centre and A.R.S. Day School were opened in Toronto. The Catholicosate of the Great House of Cilicia had no Armenian Church situated in Toronto. After a petition in 1983, approval to found a new church was given by the Prelacy of Canada and Eastern United States under the blessings of His Holiness Karekin II, Catholicos of the Great House of Cilicia (then Karekin I of All Armenians) and under the direction of His Eminence Archbishop Mesrob Ashjian.",
+            imageNames: [
+                "toronto-1",
+            ],
+            link: "https://www.stmarytoronto.ca/about-us/", imageName: "churchPin"),
+        //США:
+        ChurchesLocations(
+            name: "St. Vartan Cathedral",
+            cityName: "New York City, United States",
+            coordinates: CLLocationCoordinate2D(latitude: 40.745131, longitude: -73.975252),
+            description: "St. Vartan Armenian Cathedral (Armenian: Սուրբ Վարդան Մայր Տաճար) in New York City is the first cathedral of the Armenian Apostolic Church to be constructed in North America. It is located in New York City on the corner of Second Avenue and Thirty-fourth street and was built to resemble the Saint Hripsime Church in Etchmiadzin (Vagharshapat). St. Vartan's was consecrated on April 28, 1968 by Vazgen I, Catholicos of Armenia and of All Armenians.",
+            imageNames: [
+                "usa-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/St._Vartan_Armenian_Cathedral", imageName: "churchPin"),
+        ChurchesLocations(
+            name: "St. Gregory the Illuminator",
+            cityName: "Glendale, United States",
+            coordinates: CLLocationCoordinate2D(latitude: 34.165284, longitude: -118.232949),
+            description: "St. Gregory the Illuminator Cathedral is an Armenian Catholic cathedral located in Glendale, California, United States. It is the seat for the Armenian Catholic Eparchy of Our Lady of Nareg in the United States of America and Canada.",
+            imageNames: [
+                "california-1",
+            ],
+            link: "https://en.wikipedia.org/wiki/St._Gregory_the_Illuminator_Cathedral_(Glendale,_California)", imageName: "churchPin"),
     ]
 }
