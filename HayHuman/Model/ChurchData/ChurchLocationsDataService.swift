@@ -568,7 +568,7 @@ class ChurchLocationsDataService {
             ],
             link: "https://en.wikipedia.org/wiki/San_Lazzaro_degli_Armeni", imageName: "churchPin"),
         ChurchesLocations(
-            name: "San Lazzaro degli Armeni",
+            name: "Holy Forty Martyrs",
             cityName: "Milan, Italy",
             coordinates: CLLocationCoordinate2D(latitude: 45.486842463853066, longitude: 9.225525764088282),
             description: "The Armenian Church of Italy is under the jurisdiction of the Catholicossate of all Armenians in the World Holy See of Echmiadzin. In Milan, Armenians began to have their religious services immediately after the first World War, first in the Evangelical Church of via Solferino and then, starting from 1958, in a church of their own, which stands in viaomm This church, dedicated to the Holy Forty Martyrs of Sebaste and built according to the canons of the most classic Armenian style, was commissioned by two brothers Onnik and Sarkis Diarbekirean, who lived in Milan in the 1920s fleeing the massacres. Then moved to Argentina, they provided for the construction of the Church of the milanese see. The Armenian community of Lombardy today consists of over 1000 people, mostly freelancers, industrialists, representatives, merchants, artists and some artisans.",

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "SHAUMIAN",
-    "imageName": "shaumian",
+    "imageName": "Shaumian",
     "name": "Calouste Gulbenkian",
     "city": "Constantinople, Ottoman Empire",
     "titleDetail": "Calouste Gulbenkian played a major role in making the petroleum reserves of the Middle East available to Western development and is credited with being the first person to exploit Iraqi oil.Gulbenkian travelled extensively and lived in a number of cities including Istanbul, London, Paris and Lisbon.",
@@ -14,9 +14,9 @@
   },
   {
     "id": 2,
-    "title": "SARKIS",
-    "imageName": "sarkis",
-    "name": "Dolores Zohrab Liebmann",
+    "title": "Sargsyan",
+    "imageName": "Sargsyan",
+    "name": "Vazgen Zaveni Sargsyan",
     "city": "Constantinople, Ottoman Empire",
     "titleDetail": "Dolores Zohrab Liebmann (January 13, 1896 in Istanbul, Ottoman Empire – September 15, 1991 in New York City, US) was an American philanthropist of Armenian descent born in the Ottoman Empire. She established the Dolores Zohrab Liebmann Fund, which distributes fellowships to graduate students.",
     "coordinates": {
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "title": "NUBAR",
-    "imageName": "nubar",
+    "imageName": "Nubar",
     "name": "Alexander Manoogian",
     "city": "Smyrna, Ottoman Empire",
     "titleDetail": "Alexander Manoogian (Armenian: Ալեք Մանուկեան; June 28, 1901 – July 10, 1996) was an Armenian-American industrial engineer, businessman, entrepreneur and philanthropist who spent most of his career in Detroit, Michigan. He was the founder of the Masco Corporation, which in 1969 was listed on the NYSE (XNYS:MAS). In 1954, he patented and brought to market the first successful washerless ball valve faucet, the Delta faucet, named for the faucet cam shaped like the fourth letter of the Greek alphabet.",
@@ -40,9 +40,9 @@
   },
   {
     "id": 4,
-    "title": "NORADUNKYAN",
-    "imageName": "noradunkyan",
-    "name": "Eduardo Eurnekian",
+    "title": "Diana Abgar",
+    "imageName": "Abgar",
+    "name": "Diana Abgar",
     "city": "Buenos Aires, Argentina",
     "titleDetail": "Eduardo Eurnekian (born 4 December 1932) is an Argentine billionaire businessman of Armenian descent. As of September 2021, he is the fifth richest person in Argentina, with an estimated net worth of US$1.4 billion.",
     "coordinates": {
@@ -53,9 +53,9 @@
   },
   {
     "id": 5,
-    "title": "MENEM",
-    "imageName": "menem",
-    "name": "Kirk Kerkorian",
+    "title": "Joseph Emin",
+    "imageName": "Emin",
+    "name": "Joseph Emin",
     "city": "Fresno, California, U.S.",
     "titleDetail": "Kerkor (Kirk) Kerkorian (June 6, 1917 – June 15, 2015) was an American businessman, investor, and philanthropist. He was the president and CEO of Tracinda Corporation, his private holding company based in Beverly Hills, California. Kerkorian was one of the important figures in the shaping of Las Vegas and, with architect Martin Stern Jr. described him as the (father of the mega-resort). He built the world's largest hotel in Las Vegas three times: the International Hotel (opened in 1969), the MGM Grand Hotel (1973) and the MGM Grand (1993). He purchased the Metro-Goldwyn-Mayer movie studio in 1979.",
     "coordinates": {
@@ -67,7 +67,7 @@
   {
     "id": 6,
     "title": "MARDIAN",
-    "imageName": "mardian",
+    "imageName": "Mardian",
     "name": "Ruben Karlenovich Vardanyan",
     "city": "Yerevan, Armenian SSR, Soviet Union",
     "titleDetail": "Ruben Karlenovich Vardanyan (Armenian: Ռուբեն Կառլենի Վարդանյան, Russian: Рубен Карленович Варданян; born May 25, 1968) is an Armenian-born Russian entrepreneur, venture philanthropist, and investor, co-founder of Aurora Prize for Awakening Humanity and Future Armenian public initiative, and UWC Dilijan College. Vardanyan initiated and co-founded Moscow School of Management SKOLKOVO, and held its president's seat in 2006–2010. He is the also founder of the (Philin) initiative (philanthropy infrastructure) and the co-founder of the family welfare service (Phoenix Advisors). He is the former CEO and major shareholder of (Troika Dialog) investment bank (1992—2012).",
@@ -80,7 +80,7 @@
   {
     "id": 7,
     "title": "LORIS-MELIKOV",
-    "imageName": "loris-melikov",
+    "imageName": "Loris-melikov",
     "name": "Noubar Afeyan",
     "city": "Beirut, Lebanon ",
     "titleDetail": "Noubar Afeyan (Western Armenian: Նուպար Աֆէեան; born in 1962) is an American-Canadian entrepreneur, inventor. and philanthropist of Armenian origin. He is best known for co-founding the biotechnology company Moderna, through his venture capital firm, Flagship Pioneering, and for co-founding humanitarian projects such as Aurora Prize and The Future Armenian. As of November 2021, his net worth is estimated at $3.3 billion.",
@@ -92,9 +92,9 @@
   },
   {
     "id": 8,
-    "title": "DEVEDJIAN",
-    "imageName": "devedjian",
-    "name": "Kevork S. Hovnanian",
+    "title": "Hrant Dink",
+    "imageName": "Dink",
+    "name": "Hrant Dink",
     "city": "Kirkuk, Iraq",
     "titleDetail": "Kevork S. Hovnanian (1923 – September 24, 2009) was an Armenian-American businessman and home builder, who founded Hovnanian Enterprises in 1959. He remained the president and chief executive officer of Hovnanian Enterprises until his retirement in 1997. Despite some recent financial difficulties due to the 2008-2009 recession and financial crisis, Hovnanian Enterprises remains the sixth largest American homebuilder and the largest homebuilder in New Jersey, as of September 2009.",
     "coordinates": {
@@ -106,7 +106,7 @@
   {
     "id": 9,
     "title": "DEUKMEJIAN",
-    "imageName": "deukmejian",
+    "imageName": "Deukmejian",
     "name": "Alexander Mantashev",
     "city": "Tiflis, Tiflis Governorate, Russian Empire",
     "titleDetail": "Alexander Mantashev (Armenian: Ալեքսանդր Մանթաշյանց, Aleksandr Mantashiants; Russian: Александр Иванович Манташев, Aleksandr Ivanovich Mantashev; 3 March 1842 – 19 April 1911) was a prominent Russian oil magnate, industrialist, financier, and a philanthropist of the Armenian origin. By the end of his life he had become one of the world's wealthiest individuals.",
@@ -118,9 +118,9 @@
   },
   {
     "id": 10,
-    "title": "DEROUNIAN",
-    "imageName": "derounian",
-    "name": "Gerard Leon Cafesjian",
+    "title": "Israel Ori",
+    "imageName": "Ory",
+    "name": "Israel Ori",
     "city": "Brooklyn, New York",
     "titleDetail": "Gerard Leon Cafesjian (26 April 1925 – 15 September 2013) was a businessman and philanthropist who founded the Cafesjian Family Foundation (CFF), the Cafesjian Museum Foundation (CMF) and the Cafesjian Center for the Arts.",
     "coordinates": {
@@ -132,7 +132,7 @@
   {
     "id": 11,
     "title": "DELYANOV",
-    "imageName": "delyanov",
+    "imageName": "Delyanov",
     "name": "Sir Catchick Paul Chater",
     "city": "Calcutta, India",
     "titleDetail": "Sir Catchick Paul Chater CMG (Armenian: Փոլ Չաթեր; Chinese: 遮打; 8 September 1846 – 27 May 1926) was a prominent British businessman of Armenian-Indian descent in colonial Hong Kong, whose family roots were in Calcutta, India.",
@@ -145,7 +145,7 @@
   {
     "id": 12,
     "title": "DARZI",
-    "imageName": "darzi",
+    "imageName": "Darzi",
     "name": "Mikael Aramyants",
     "city": "Kyatuk, Varanda, Artsakh",
     "titleDetail": "Mikael Aramyants (Armenian: Միքայել Արամյանց, May 4, 1843, Kyatuk, Varanda, Artsakh – 1923, Tiflis) was an Armenian oil magnate, industrialist, financier, and a philanthropist, and a founder and board member of the Tiflis National Charitable Society. He operated in the Russian Empire. He was a close friend of Alexander Mantashyants and his charitable contributions rivaled those of fellow oil magnate.",
@@ -158,7 +158,7 @@
   {
     "id": 13,
     "title": "BALLADUR",
-    "imageName": "balladur",
+    "imageName": "Balladur",
     "name": "Samvel Karapetyan",
     "city": "Kalinino (now Tashir), Soviet Armenia, USSR",
     "titleDetail": "Samvel Karapetyan (Armenian: Սամվել Սարգսի Կարապետյան; Russian: Самвел Саркисович Карапетян; born August 18, 1965) is a Russian-Armenian billionaire businessman who owns the Tashir Group conglomerate.",
@@ -170,9 +170,9 @@
   },
   {
     "id": 14,
-    "title": "AVANESOV",
-    "imageName": "avanesov",
-    "name": "Vardan Sirmakes",
+    "title": "Sian Elias",
+    "imageName": "Elias",
+    "name": "Sian Elias",
     "city": "Istanbul, Turkey",
     "titleDetail": "The brand of Swiss watches Frank Muller is known all over the world. Its co-founder and current head is the famous businessman of Armenian origin Vardan Sirmakes.",
     "coordinates": {
@@ -184,7 +184,7 @@
   {
     "id": 15,
     "title": "MIKOYAN",
-    "imageName": "amikoyan",
+    "imageName": "Amikoyan",
     "name": "Serge Tchuruk",
     "city": "Marseille, France",
     "titleDetail": "Serge Tchurukdichian (born 13 November 1937), known as Serge Tchuruk, is a French businessman of Armenian descent. He was the chief executive officer and chairman of Alcatel (a global telecommunications company) until the end of November 2006 and was the chairman of Alcatel-Lucent until his resignation in October 2008.",
@@ -196,9 +196,9 @@
   },
   {
     "id": 16,
-    "title": "AL-HAVEZ",
-    "imageName": "al-hafez",
-    "name": "Vatche Manoukian",
+    "title": "ASATRYAN",
+    "imageName": "Asatryan",
+    "name": "Hayk Asatryan",
     "city": "Lebanon, Beirut",
     "titleDetail": "Vatche Manukyan is an English businessman of Armenian descent, philanthropist, founder and president of the MARS holding company engaged in pharmaceutical business and biotechnology.",
     "coordinates": {
