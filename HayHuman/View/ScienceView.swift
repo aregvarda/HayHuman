@@ -23,6 +23,8 @@ struct ScienceView: View {
     @State var showSheetView = false
     @State var churchShowSheetView = false
     
+    @State var scale: CGFloat = 1.0
+    
     var body: some View {
         if scienceDetail.showingScienceProfile == false && scienceDetail.selectedScienceProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
@@ -50,6 +52,7 @@ struct ScienceView: View {
                     ForEach(0...5, id: \.self) { index in
                         Image("s\(index)")
                             .resizable()
+                            .scaleEffect(scale)
                         // adding animations
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width - 35)
@@ -60,6 +63,10 @@ struct ScienceView: View {
                             .padding(.horizontal)
                         // for identifying current index
                             .tag(index)
+                            .gesture(MagnificationGesture()
+                                        .onChanged { value in
+                                            self.scale = value.magnitude
+                                        })
                         
                         
                         

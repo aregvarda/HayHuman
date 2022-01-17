@@ -27,6 +27,8 @@ struct BusinessView: View {
     @State var showSheetView = false
     @State var churchShowSheetView = false
     
+    @State var scale: CGFloat = 1.0
+    
     
     var body: some View {
         if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
@@ -55,6 +57,7 @@ struct BusinessView: View {
                     ForEach(0...5, id: \.self) { index in
                         Image("b\(index)")
                             .resizable()
+                            .scaleEffect(scale)
                         // adding animations
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width - 35)
@@ -65,6 +68,10 @@ struct BusinessView: View {
                             .padding(.horizontal)
                         // for identifying current index
                             .tag(index)
+                            .gesture(MagnificationGesture()
+                                        .onChanged { value in
+                                            self.scale = value.magnitude
+                                        })
                         
                         
                         

@@ -22,6 +22,8 @@ struct MilitaryView: View {
     @State var showSheetView = false
     @State var churchShowSheetView = false
     
+    @State var scale: CGFloat = 1.0
+    
     var body: some View {
         if militaryDetail.showingMilitaryProfile == false && militaryDetail.selectedMilitaryProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
@@ -49,6 +51,7 @@ struct MilitaryView: View {
                     ForEach(0...5, id: \.self) { index in
                         Image("m\(index)")
                             .resizable()
+                            .scaleEffect(scale)
                         // adding animations
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width - 35)
@@ -59,6 +62,10 @@ struct MilitaryView: View {
                             .padding(.horizontal)
                         // for identifying current index
                             .tag(index)
+                            .gesture(MagnificationGesture()
+                                        .onChanged { value in
+                                            self.scale = value.magnitude
+                                        })
                         
                         
                         
