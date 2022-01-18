@@ -14,6 +14,9 @@ struct ScienceDetailList: View {
     let email = "HayHumanApp@gmail.com"
     @State private var isDarkMode = false
     
+    @State private var scrollViewHeight: CGFloat = 0
+    @State private var proportion: CGFloat = 0
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -97,6 +100,7 @@ struct ScienceDetailList: View {
 
                 
             }).preferredColorScheme(isDarkMode ? .dark : .light)
+        
         }
     }
 struct ScienceDetailList_Previews: PreviewProvider {
@@ -104,5 +108,13 @@ struct ScienceDetailList_Previews: PreviewProvider {
         ScienceDetailList(cardScience: cardScience[0])
             .environmentObject(ScienceDetail())
             .edgesIgnoringSafeArea(.top)
+    }
+}
+
+struct ScrollProportion: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
     }
 }
