@@ -68,10 +68,14 @@ extension ChurchLocationPreviewView {
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(location.name)
+                .foregroundColor(.black)
+
                 .font(.title2)
                 .fontWeight(.bold)
             
             Text(location.cityName)
+                .foregroundColor(.secondary)
+
                 .font(.subheadline)
         }
         .frame(maxWidth: .infinity, alignment: .leading)

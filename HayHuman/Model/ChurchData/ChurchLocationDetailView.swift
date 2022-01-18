@@ -58,6 +58,7 @@ extension ChurchLocationDetailView {
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(location.name)
+                .foregroundColor(.black)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             Text(location.cityName)

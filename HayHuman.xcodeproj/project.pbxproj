@@ -27,6 +27,8 @@
 		C863E95D2774C81E00411599 /* ScienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863E95C2774C81E00411599 /* ScienceView.swift */; };
 		C863E95F2774C83500411599 /* PoliticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863E95E2774C83500411599 /* PoliticsView.swift */; };
 		C863E9612774C84600411599 /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863E9602774C84600411599 /* BusinessView.swift */; };
+		C8756D7F2796D60700B849BE /* SheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8756D7E2796D60700B849BE /* SheetController.swift */; };
+		C8756D812796DB0600B849BE /* NavigationBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8756D802796DB0600B849BE /* NavigationBarItems.swift */; };
 		C882D3C9278C315B009E6309 /* ChurchKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C882D3C8278C315B009E6309 /* ChurchKeyboard.swift */; };
 		C88705C8277C947500B34922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705C7277C947500B34922 /* Constants.swift */; };
 		C88705CD277CB96B00B34922 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88705CC277CB96B00B34922 /* Detail.swift */; };
@@ -95,6 +97,8 @@
 		C863E95C2774C81E00411599 /* ScienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceView.swift; sourceTree = "<group>"; };
 		C863E95E2774C83500411599 /* PoliticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsView.swift; sourceTree = "<group>"; };
 		C863E9602774C84600411599 /* BusinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
+		C8756D7E2796D60700B849BE /* SheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetController.swift; sourceTree = "<group>"; };
+		C8756D802796DB0600B849BE /* NavigationBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItems.swift; sourceTree = "<group>"; };
 		C882D3C8278C315B009E6309 /* ChurchKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchKeyboard.swift; sourceTree = "<group>"; };
 		C88705C7277C947500B34922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C88705CC277CB96B00B34922 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				C863E95A2774C7E100411599 /* MilitaryView.swift */,
 				C863E95C2774C81E00411599 /* ScienceView.swift */,
 				C84625B9278856790066FECD /* Screens */,
+				C8756D802796DB0600B849BE /* NavigationBarItems.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			children = (
 				C863E9562774BB7D00411599 /* TabViewPlace.swift */,
 				C863E93C277487DB00411599 /* ContentView.swift */,
+				C8756D7E2796D60700B849BE /* SheetController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				C8DFDBA527830CA0000D6071 /* MilitaryDetailList.swift in Sources */,
 				C863E95D2774C81E00411599 /* ScienceView.swift in Sources */,
 				C8B01CCD2789A11E00590F72 /* ChurchLocationsView.swift in Sources */,
+				C8756D812796DB0600B849BE /* NavigationBarItems.swift in Sources */,
 				C8B01CD22789C64500590F72 /* ChurchLocationsListView.swift in Sources */,
 				C8B01CD42789DF1600590F72 /* ChurchLocationPreviewView.swift in Sources */,
 				C88705C8277C947500B34922 /* Constants.swift in Sources */,
@@ -513,6 +520,7 @@
 				C82C56BB2785FE07008E8E1D /* Keyboard.swift in Sources */,
 				C8EB12492786F7BA00A5E080 /* SheetSettings.swift in Sources */,
 				C8DFDB9C278305A3000D6071 /* PoliticsCircleImage.swift in Sources */,
+				C8756D7F2796D60700B849BE /* SheetController.swift in Sources */,
 				C8960B2B2778AD6D00942F90 /* BusinessDetailList.swift in Sources */,
 				C84625BF2788580B0066FECD /* ChurchesList.swift in Sources */,
 				C863E95F2774C83500411599 /* PoliticsView.swift in Sources */,

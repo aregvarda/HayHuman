@@ -20,6 +20,7 @@ struct ChurchLocationsListView: View {
                 } label: {
                     listRowView(location: location)
                 }
+                .foregroundColor(.black)
                 .padding(.vertical, 4)
                 .listRowBackground(Color(.clear))
             }

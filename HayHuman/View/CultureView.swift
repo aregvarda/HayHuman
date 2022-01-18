@@ -22,15 +22,16 @@ struct CultureView: View {
     @State var searching = false
     @State var index = 0
     
-    @State var showSheetView = false
-    @State var churchShowSheetView = false
+    @ObservedObject var sheetNavigator = SheetNavigator()
     
     @State var scale: CGFloat = 1.0
     
     
     var body: some View {
+        
         ZStack {
             if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
+                
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     SearchBar(searchText: $searchText, searching: $searching)
@@ -68,8 +69,8 @@ struct CultureView: View {
                                 .tag(index)
                                 .gesture(MagnificationGesture()
                                             .onChanged { value in
-                                                self.scale = value.magnitude
-                                            })
+                                    self.scale = value.magnitude
+                                })
                             
                             
                             
@@ -102,39 +103,20 @@ struct CultureView: View {
                     .padding()
                     
                 }
-                
                 .navigationBarItems(trailing: Button {
-                    self.showSheetView.toggle()
+                    
                 } label: {
-                    Image(systemName: "bubble.left.and.bubble.right")
-                        .resizable()
-                        .frame(width: 35, height: 30)
-                        .foregroundColor(.secondary)
-                        .font(.largeTitle.bold())
-                }).sheet(isPresented: $showSheetView, content: {
-                    About()
+                    NavigationBarItems()
                 })
                 
-            .navigationBarItems(trailing: Button {
-                
-                self.churchShowSheetView.toggle()
-            } label: {
-                Image("church")
-                    .resizable()
-                    .frame(width: 35, height: 35)
-                    .offset(x: 10)
-            }).sheet(isPresented: $churchShowSheetView, content: {
-                ChurchesList()
-            })
-                
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar(content: {
-                        ToolbarItem(placement: .navigationBarLeading, content: {
-                            Text(searching ? "Searching" : "Culture")
-                                .fontWeight(.bold)
-                                .font(.title)
-                            
-                        })})
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading, content: {
+                        Text(searching ? "Searching" : "Culture")
+                            .fontWeight(.bold)
+                            .font(.title)
+                        
+                    })})
             } else {
                 CultureDetailList(cardCulture: cardCulture[0])
                 

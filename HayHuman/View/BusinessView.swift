@@ -24,8 +24,6 @@ struct BusinessView: View {
     @State var searching = false
     @State var index = 0
     
-    @State var showSheetView = false
-    @State var churchShowSheetView = false
     
     @State var scale: CGFloat = 1.0
     
@@ -101,28 +99,9 @@ struct BusinessView: View {
                 
             }.navigationBarItems(trailing: Button {
                 
-                self.showSheetView.toggle()
             } label: {
-                Image(systemName: "bubble.left.and.bubble.right")
-                    .resizable()
-                    .frame(width: 35, height: 30)
-                    .foregroundColor(.secondary)
-                    .font(.largeTitle.bold())
-            }).sheet(isPresented: $showSheetView, content: {
-                About()
+                NavigationBarItems()
             })
-                
-            .navigationBarItems(trailing: Button {
-            
-            self.churchShowSheetView.toggle()
-        } label: {
-            Image("church")
-                .resizable()
-                .frame(width: 35, height: 35)
-                .offset(x: 10)
-        }).sheet(isPresented: $churchShowSheetView, content: {
-            ChurchesList()
-        })
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
