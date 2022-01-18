@@ -10,12 +10,10 @@ import SwiftUI
 
 struct BusinessDetailList: View {
     @EnvironmentObject var businessDetail: BusinessDetail
-    @State var theColorScheme: ColorScheme = .light
     var cardBusiness: CardBusiness
     
-    func toggleColorScheme() {
-        theColorScheme = (theColorScheme == .light) ? .dark : .light
-    }
+    let email = "HayHumanApp@gmail.com"
+    @State private var isDarkMode = false
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -63,15 +61,6 @@ struct BusinessDetailList: View {
             }
         }
         
-//        .navigationBarTitleDisplayMode(.inline)
-//            .toolbar(content: {
-//                ToolbarItem(placement: .principal, content: {
-//                 Text(businessDetail.selectedBusinessProfile?.title ?? businessCards.title)
-//                 .fontWeight(.bold)
-//                 .font(.title2)
-//                 .foregroundColor(.secondary)
-//
-//              })})
         .navigationBarTitle("")
             .navigationBarItems(leading: Button {
                 withAnimation(.easeIn(duration: 0.1)) {
@@ -80,23 +69,35 @@ struct BusinessDetailList: View {
                 businessDetail.selectedBusinessProfile = nil
                 businessDetail.showingBusinessProfile = false
             } label: {
-                Image(systemName: "arrow.backward.square.fill")
+                Image(systemName: "chevron.backward")
+                    .font(.title2.bold())
                     .foregroundColor(.secondary)
-                    .font(.title)
-//                    .shadow(color: .gray, radius: 5, x: 5, y: 5)
+            })
+            .navigationBarItems(trailing: Button {
+                if let url = URL(string: "mailto:\(email)") {
+                  if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(url)
+                  } else {
+                    UIApplication.shared.openURL(url)
+                  }
+                }
+            } label: {
+                Image(systemName: "envelope.open")
+                    .padding(.bottom, 5)
+                    .font(.title2.bold())
+                    .foregroundColor(.secondary)
             })
             
             .navigationBarItems(trailing: Button {
-                self.toggleColorScheme()
-                
             } label: {
-                Image(systemName: "moon.stars.fill")
+                Toggle(isOn: $isDarkMode, label: {
 
-                    .foregroundColor(.secondary)
-                    .font(.title)
-//                    .shadow(color: .gray, radius: 5, x: 0, y: 5)
+                    Text("")
+                        
+                }).toggleStyle(SwitchToggleStyle(tint: .green))
+
                 
-            }).preferredColorScheme(theColorScheme)
+            }).preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 

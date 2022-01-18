@@ -9,12 +9,10 @@ import SwiftUI
 
 struct PoliticsDetailList: View {
     @EnvironmentObject var politicsDetail: PoliticsDetail
-    @State var theColorScheme: ColorScheme = .light
     var cardPolitics: CardPolitics
     
-    func toggleColorScheme() {
-        theColorScheme = (theColorScheme == .light) ? .dark : .light
-    }
+    let email = "HayHumanApp@gmail.com"
+    @State private var isDarkMode = false
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -61,15 +59,7 @@ struct PoliticsDetailList: View {
                 
             }
         }
-//        .navigationBarTitleDisplayMode(.inline)
-//            .toolbar(content: {
-//                ToolbarItem(placement: .principal, content: {
-//                 Text(politicsDetail.selectedPoliticsProfile?.title ?? politicsCards.title)
-//                 .fontWeight(.bold)
-//                 .font(.title2)
-//                 .foregroundColor(.secondary)
-//                 
-//              })})
+
         .navigationBarTitle("")
             .navigationBarItems(leading: Button {
                 withAnimation(.easeIn(duration: 0.1)) {
@@ -78,22 +68,35 @@ struct PoliticsDetailList: View {
                 politicsDetail.selectedPoliticsProfile = nil
                 politicsDetail.showingPoliticsProfile = false
             } label: {
-                Image(systemName: "arrow.backward.square.fill")
+                Image(systemName: "chevron.backward")
+                    .font(.title2.bold())
                     .foregroundColor(.secondary)
-                    .font(.title)
-
+            })
+            .navigationBarItems(trailing: Button {
+                if let url = URL(string: "mailto:\(email)") {
+                  if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(url)
+                  } else {
+                    UIApplication.shared.openURL(url)
+                  }
+                }
+            } label: {
+                Image(systemName: "envelope.open")
+                    .padding(.bottom, 5)
+                    .font(.title2.bold())
+                    .foregroundColor(.secondary)
             })
             
             .navigationBarItems(trailing: Button {
-                self.toggleColorScheme()
-                
             } label: {
-                Image(systemName: "moon.stars.fill")
-                    .foregroundColor(.secondary)
-                    .font(.title)
+                Toggle(isOn: $isDarkMode, label: {
+
+                    Text("")
+                        
+                }).toggleStyle(SwitchToggleStyle(tint: .green))
 
                 
-            }).preferredColorScheme(theColorScheme)
+            }).preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 
