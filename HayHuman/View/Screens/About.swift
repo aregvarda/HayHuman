@@ -9,14 +9,39 @@ import SwiftUI
 
 struct About : View {
     
+    let email = "HayHumanApp@gmail.com"
+    
         var body: some View {
-            
-            VStack{
+
+            VStack(alignment: .leading) {
+                HStack(spacing: 185) {
                 Text("Информация")
-                    .font(.largeTitle.bold())
+                    .font(.title2.bold())
                     .foregroundColor(.secondary)
+                    .padding(.leading, 25)
                     .padding(.top, 25)
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 10)
+                    
+//                Toggle("", isOn: $isDarkMode)
+//                        .padding(.trailing, 20)
+                    
+                    Button {
+                        if let url = URL(string: "mailto:\(email)") {
+                          if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url)
+                          } else {
+                            UIApplication.shared.openURL(url)
+                          }
+                        }
+                    } label: {
+                        Image(systemName: "envelope.open")
+                            .padding(.trailing, 5)
+                            .padding(.top, 25)
+                            .padding(.bottom, 15)
+                            .font(.title2.bold())
+                            .foregroundColor(.secondary)
+                    }
+                }
                 ScrollView(.vertical, showsIndicators: false){
                     VStack(spacing: 30){
                         //

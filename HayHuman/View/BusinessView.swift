@@ -103,9 +103,11 @@ struct BusinessView: View {
                 
                 self.showSheetView.toggle()
             } label: {
-                Image(systemName: "info.circle")
+                Image(systemName: "bubble.left.and.bubble.right")
+                    .resizable()
+                    .frame(width: 35, height: 30)
                     .foregroundColor(.secondary)
-                    .font(.title)
+                    .font(.largeTitle.bold())
             }).sheet(isPresented: $showSheetView, content: {
                 About()
             })

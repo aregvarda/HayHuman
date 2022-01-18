@@ -32,6 +32,7 @@ struct LetterCardView: View{
             VStack(alignment: .leading, spacing: 12){
                 Text(letter.date)
                     .font(.title2.bold())
+                    .foregroundColor(.black)
                 Text(letter.title)
                     .font(.callout)
                     .foregroundColor(.gray)
