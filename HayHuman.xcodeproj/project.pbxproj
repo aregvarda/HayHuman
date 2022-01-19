@@ -85,6 +85,42 @@
 		C84625BE2788580B0066FECD /* ChurchesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesList.swift; sourceTree = "<group>"; };
 		C85B7EFB2780AB0000C77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C85E1414278B053C00A0401D /* ChurchLocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchLocationDetailView.swift; sourceTree = "<group>"; };
+		C862CA7B279846CA008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/business.json; sourceTree = "<group>"; };
+		C862CA7C279846CC008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/business.json; sourceTree = "<group>"; };
+		C862CA7D279846ED008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/culture.json; sourceTree = "<group>"; };
+		C862CA7E279846F0008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/culture.json; sourceTree = "<group>"; };
+		C862CA7F279846FB008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/politics.json; sourceTree = "<group>"; };
+		C862CA80279846FD008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/politics.json; sourceTree = "<group>"; };
+		C862CA8127984706008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/military.json; sourceTree = "<group>"; };
+		C862CA8227984709008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/military.json; sourceTree = "<group>"; };
+		C862CA8327984714008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/science.json; sourceTree = "<group>"; };
+		C862CA8427984717008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/science.json; sourceTree = "<group>"; };
+		C862CA85279847D9008AD925 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C862CA86279847DB008AD925 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C862CA8727984862008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C862CA8827984863008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/science.json; sourceTree = "<group>"; };
+		C862CA8927984863008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/military.json; sourceTree = "<group>"; };
+		C862CA8A27984863008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/politics.json; sourceTree = "<group>"; };
+		C862CA8B27984864008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/culture.json; sourceTree = "<group>"; };
+		C862CA8C27984864008AD925 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ar; path = ar.lproj/business.json; sourceTree = "<group>"; };
+		C862CA8D27984885008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C862CA8E27984885008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/science.json; sourceTree = "<group>"; };
+		C862CA8F27984886008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/military.json; sourceTree = "<group>"; };
+		C862CA9027984886008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/politics.json; sourceTree = "<group>"; };
+		C862CA9127984886008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/culture.json; sourceTree = "<group>"; };
+		C862CA9227984886008AD925 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/business.json; sourceTree = "<group>"; };
+		C862CA932798488C008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C862CA942798488D008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = el; path = el.lproj/science.json; sourceTree = "<group>"; };
+		C862CA952798488D008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = el; path = el.lproj/military.json; sourceTree = "<group>"; };
+		C862CA962798488D008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = el; path = el.lproj/politics.json; sourceTree = "<group>"; };
+		C862CA972798488D008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = el; path = el.lproj/culture.json; sourceTree = "<group>"; };
+		C862CA982798488D008AD925 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = el; path = el.lproj/business.json; sourceTree = "<group>"; };
+		C862CA9927984897008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C862CA9A27984897008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-PT"; path = "pt-PT.lproj/science.json"; sourceTree = "<group>"; };
+		C862CA9B27984898008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-PT"; path = "pt-PT.lproj/military.json"; sourceTree = "<group>"; };
+		C862CA9C27984898008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-PT"; path = "pt-PT.lproj/politics.json"; sourceTree = "<group>"; };
+		C862CA9D27984898008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-PT"; path = "pt-PT.lproj/culture.json"; sourceTree = "<group>"; };
+		C862CA9E27984898008AD925 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-PT"; path = "pt-PT.lproj/business.json"; sourceTree = "<group>"; };
 		C863E937277487DB00411599 /* HayHuman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HayHuman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C863E93A277487DB00411599 /* HayHumanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HayHumanApp.swift; sourceTree = "<group>"; };
 		C863E93C277487DB00411599 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,7 +222,6 @@
 		C863E939277487DB00411599 /* HayHuman */ = {
 			isa = PBXGroup;
 			children = (
-				C8CAB5DE2790433400635A9E /* Test */,
 				C882D3CC278C81B4009E6309 /* Onboarding */,
 				C85B7EFB2780AB0000C77555 /* Info.plist */,
 				C88705D9277CFB0F00B34922 /* Extensions */,
@@ -337,13 +372,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		C8CAB5DE2790433400635A9E /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		C8DFDB862782F495000D6071 /* CultureDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +467,10 @@
 				ru,
 				fr,
 				es,
+				ar,
+				it,
+				el,
+				"pt-PT",
 			);
 			mainGroup = C863E92E277487DB00411599;
 			packageReferences = (
@@ -539,6 +571,12 @@
 				C82C56BD2785FF1C008E8E1D /* en */,
 				C82C56CE2785FF66008E8E1D /* ru */,
 				C8F891B52795EB58008D8AEA /* Base */,
+				C862CA7D279846ED008AD925 /* fr */,
+				C862CA7E279846F0008AD925 /* es */,
+				C862CA8B27984864008AD925 /* ar */,
+				C862CA9127984886008AD925 /* it */,
+				C862CA972798488D008AD925 /* el */,
+				C862CA9D27984898008AD925 /* pt-PT */,
 			);
 			name = culture.json;
 			sourceTree = "<group>";
@@ -549,6 +587,12 @@
 				C82C56C02785FF2A008E8E1D /* en */,
 				C82C56CF2785FF66008E8E1D /* ru */,
 				C8F891B62795EB62008D8AEA /* Base */,
+				C862CA7B279846CA008AD925 /* fr */,
+				C862CA7C279846CC008AD925 /* es */,
+				C862CA8C27984864008AD925 /* ar */,
+				C862CA9227984886008AD925 /* it */,
+				C862CA982798488D008AD925 /* el */,
+				C862CA9E27984898008AD925 /* pt-PT */,
 			);
 			name = business.json;
 			path = ../../../../../Downloads;
@@ -560,6 +604,12 @@
 				C82C56C32785FF30008E8E1D /* en */,
 				C82C56CD2785FF65008E8E1D /* ru */,
 				C8F891B42795EB4E008D8AEA /* Base */,
+				C862CA7F279846FB008AD925 /* fr */,
+				C862CA80279846FD008AD925 /* es */,
+				C862CA8A27984863008AD925 /* ar */,
+				C862CA9027984886008AD925 /* it */,
+				C862CA962798488D008AD925 /* el */,
+				C862CA9C27984898008AD925 /* pt-PT */,
 			);
 			name = politics.json;
 			sourceTree = "<group>";
@@ -570,6 +620,12 @@
 				C82C56C62785FF37008E8E1D /* en */,
 				C82C56CC2785FF65008E8E1D /* ru */,
 				C8F891B22795EB03008D8AEA /* Base */,
+				C862CA8127984706008AD925 /* fr */,
+				C862CA8227984709008AD925 /* es */,
+				C862CA8927984863008AD925 /* ar */,
+				C862CA8F27984886008AD925 /* it */,
+				C862CA952798488D008AD925 /* el */,
+				C862CA9B27984898008AD925 /* pt-PT */,
 			);
 			name = military.json;
 			sourceTree = "<group>";
@@ -580,6 +636,12 @@
 				C82C56C92785FF3C008E8E1D /* en */,
 				C82C56CB2785FF64008E8E1D /* ru */,
 				C8F891B32795EB30008D8AEA /* Base */,
+				C862CA8327984714008AD925 /* fr */,
+				C862CA8427984717008AD925 /* es */,
+				C862CA8827984863008AD925 /* ar */,
+				C862CA8E27984885008AD925 /* it */,
+				C862CA942798488D008AD925 /* el */,
+				C862CA9A27984897008AD925 /* pt-PT */,
 			);
 			name = science.json;
 			sourceTree = "<group>";
@@ -589,6 +651,12 @@
 			children = (
 				C8D55DE72788BF08005D4C19 /* ru */,
 				C8D55DE92788BF66005D4C19 /* en */,
+				C862CA85279847D9008AD925 /* fr */,
+				C862CA86279847DB008AD925 /* es */,
+				C862CA8727984862008AD925 /* ar */,
+				C862CA8D27984885008AD925 /* it */,
+				C862CA932798488C008AD925 /* el */,
+				C862CA9927984897008AD925 /* pt-PT */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

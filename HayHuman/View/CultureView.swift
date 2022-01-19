@@ -31,6 +31,7 @@ struct CultureView: View {
         
         ZStack {
             if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
+
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
