@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct About : View {
+    @ScaledMetric var size: CGFloat = 1
     
     let email = "HayHumanApp@gmail.com"
     
@@ -15,12 +16,16 @@ struct About : View {
 
             VStack(alignment: .leading) {
                 HStack(spacing: 185) {
-                Text("Информация")
-                    .font(.title2.bold())
+                Text("Инфо")
+//                    .font(.title2.bold())
+                    .font(.system(size: 25 + size))
+                    .fontWeight(.bold)
                     .foregroundColor(.secondary)
+//                    .multilineTextAlignment(.leading)
                     .padding(.leading, 25)
-                    .padding(.top, 25)
-                    .padding(.bottom, 10)
+                    .lineLimit(0)
+//                    .padding(.top, 25)
+//                    .padding(.bottom, 10)
                     
 //                Toggle("", isOn: $isDarkMode)
 //                        .padding(.trailing, 20)

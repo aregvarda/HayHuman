@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TabBarIcon: View {
-    
+    @ScaledMetric var size: CGFloat = 1
+
     @StateObject var viewRouter: ViewRouter
     let assignedPage: Page  
     let width, height: CGFloat
@@ -22,7 +23,8 @@ struct TabBarIcon: View {
                 .frame(width: width, height: height)
                 .padding(.top, 10)
             Text(tabName)
-                .font(.footnote)
+//                .font(.footnote)
+                .font(.system(size: 11 + size))
                 .fontWeight(.bold)
             Spacer()
         }

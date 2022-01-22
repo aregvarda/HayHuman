@@ -1,210 +1,210 @@
 [
-  {
-    "id": 1,
-    "title": "VAKHTANGOV",
-    "imageName": "Vakhtangov",
-    "name": "Yevgeny Vakhtangov",
-    "city": "Vladikavkaz, Terek Oblast, Russian Empire",
-    "titleDetail": "Yevgeny Bagrationovich Vakhtangov (also spelled Evgeny or Eugene; Russian: Евге́ний Багратио́нович Вахта́нгов; 13 February 1883 – 29 May 1922) was a Russian-Armenian actor and theatre director who founded the Vakhtangov Theatre.[1] He was a friend and mentor of Michael Chekhov. He is known for his distinctive style of theatre, his most notable production being Princess Turandot in 1922.",
-    "coordinates": {
-      "latitude": 43.0367,
-      "longitude": 44.6678
+    {
+        "id": 1,
+        "title": "ABOVIAN",
+        "imageName": "Abovian",
+        "name": "Khachatur Abovian",
+        "city": "Kanaker, Erivan Khanate, Persian Empire",
+        "titleDetail": "Khachatur Abovian (or Abovyan; Armenian: Խաչատուր Աբովյան; October 15 [O.S. October 3] 1809 – April 14 [O.S. April 2] 1848 (disappeared)) was an Armenian writer and national public figure of the early 19th century who mysteriously vanished in 1848 and was eventually presumed dead. He was an educator, poet and an advocate of modernization.[2] Reputed as the father of modern Armenian literature, he is best remembered for his novel Wounds of Armenia.[3] Written in 1841 and published posthumously in 1858, it was the first novel published in the modern Armenian language, using Eastern Armenian based on the Yerevan dialect instead of Classical Armenian.",
+        "coordinates": {
+            "latitude": 40.2227609141498,
+            "longitude": 44.5400133694106
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 2,
-    "title": "TUMANIAN",
-    "imageName": "Tumanian",
-    "name": "Hovhannes Tumanyan",
-    "city": "Dsegh, Tiflis Governorate, Russian Empire",
-    "titleDetail": "Hovhannes Tumanyan (Armenian: Հովհաննես Թումանյան, classical spelling: Յովհաննէս Թումանեան, February 19 [O.S. February 7] 1869 – March 23, 1923) was an Armenian poet, writer, translator, and literary and public activist. He is the national poet of Armenia.\n\nTumanyan wrote poems, quatrains, ballads, novels, fables, and critical and journalistic articles. His work was mostly written in realistic form, that frequently revolves around everyday life of his time.[2] Born in the historical village of Dsegh in the Lori region, at a young age Tumanyan moved to Tiflis, which was the centre of Armenian culture under the Russian Empire during the 19th and early 20th centuries.[4] He soon became known to the wide Armenian society for his simple but very poetic works. ",
-    "coordinates": {
-      "latitude": 40.9601296,
-      "longitude": 44.6494609
+    {
+        "id": 2,
+        "title": "RAFFI",
+        "imageName": "Raffi",
+        "name": "Raffi",
+        "city": "Salmas, Qajar Persia",
+        "titleDetail": "Hakob Melik Hakobian (Armenian: Յակոբ Մելիք-Յակոբեան (classical); 1835 – 1888), better known by his pen name Raffi (Armenian: Րաֆֆի; Persian: رافی), was an Armenian author and leading figure in 19th-century Armenian literature",
+        "coordinates": {
+            "latitude": 38.35134624219963,
+            "longitude": 44.63329469248547
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 3,
-    "title": "Vazgen I",
-    "imageName": "Vazgen_1",
-    "name": "Vazgen I",
-    "city": "Bucharest, Kingdom of Romania",
-    "titleDetail": "Vazgen I also Vazken I of Bucharest, (Armenian: Վազգէն Ա Բուխարեստցի), born Levon Garabed Baljian (Armenian: Լևոն Կարապետ Աբրահամի Պալճյան; September 20, 1908 – August 18, 1994)[1] was the Catholicos of All Armenians between 1955 and 1994, for a total of 39 years, the 4th longest reign in the history of the Armenian Apostolic Church.",
-    "coordinates": {
-      "latitude": 44.437740157008975,
-      "longitude": 26.112481554724624
+    {
+        "id": 3,
+        "title": "KOMITAS",
+        "imageName": "Komitas",
+        "name": "Komitas",
+        "city": "Kütahya, Ottoman Empire",
+        "titleDetail": "Soghomon Soghomonian, ordained and commonly known as Komitas, (Armenian: Կոմիտաս; 8 October [O.S. 26 September] 1869 – 22 October 1935) was an Armenian priest, musicologist, composer, arranger, singer, and choirmaster, who is considered the founder of the Armenian national school of music. He is recognized as one of the pioneers of ethnomusicology.",
+        "coordinates": {
+            "latitude": 39.41858364694959,
+            "longitude": 29.97159088410969
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 4,
-    "title": "TERYAN",
-    "imageName": "Teryan",
-    "name": "Vahan Terian",
-    "city": "Gandzani, Tiflis Governorate, Russian Empire",
-    "titleDetail": "Vahan Terian (Armenian: Վահան Տերյան; February 9, 1885 – January 7, 1920) was an Armenian poet, lyrist and public activist. He is known for his sorrowful, romantic poems, the most famous of which are still read and sung in their musical versions.",
-    "coordinates": {
-      "latitude": 41.34827,
-      "longitude": 43.7515539
+    {
+        "id": 4,
+        "title": "TUMANIAN",
+        "imageName": "Tumanian",
+        "name": "Hovhannes Tumanyan",
+        "city": "Dsegh, Tiflis Governorate, Russian Empire",
+        "titleDetail": "Hovhannes Tumanyan (Armenian: Հովհաննես Թումանյան, classical spelling: Յովհաննէս Թումանեան, February 19 [O.S. February 7] 1869 – March 23, 1923) was an Armenian poet, writer, translator, and literary and public activist. He is the national poet of Armenia.\n\nTumanyan wrote poems, quatrains, ballads, novels, fables, and critical and journalistic articles. His work was mostly written in realistic form, that frequently revolves around everyday life of his time. Born in the historical village of Dsegh in the Lori region, at a young age Tumanyan moved to Tiflis, which was the centre of Armenian culture under the Russian Empire during the 19th and early 20th centuries.[4] He soon became known to the wide Armenian society for his simple but very poetic works. ",
+        "coordinates": {
+            "latitude": 40.9601296,
+            "longitude": 44.6494609
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 5,
-    "title": "SEVAK",
-    "imageName": "Sevak",
-    "name": "Paruyr Sevak",
-    "city": "Chanakhchi, Armenian SSR, Transcaucasian SFSR, Soviet Union",
-    "titleDetail": "Paruyr Sevak (Armenian: Պարույր Սևակ; January 24, 1924 – June 17, 1971) was an Armenian poet, translator and literary critic. He is considered one of the greatest Armenian poets of the 20th century.",
-    "coordinates": {
-      "latitude": 39.81971015470596,
-      "longitude": 45.038151707972
+    {
+        "id": 5,
+        "title": "ISAHAKYAN",
+        "imageName": "Isahakyan",
+        "name": "Avetik Isahakyan",
+        "city": "Alexandropol, Erivan Governorate, Russian Empire ",
+        "titleDetail": "Avetik Sahak Isahakyan (Armenian: Ավետիք Սահակ Իսահակյան; October 30, 1875 – October 17, 1957) was a prominent Armenian lyric poet, writer and public activist. ",
+        "coordinates": {
+            "latitude": 40.78666268442373,
+            "longitude": 43.84589678999678
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 6,
-    "title": "SAROIAN",
-    "imageName": "Saroian",
-    "name": "William Saroyan",
-    "city": "Fresno, California, U.S.",
-    "titleDetail": "William Saroyan (/səˈrɔɪən/; August 31, 1908 – May 18, 1981) was an Armenian-American novelist, playwright, and short story writer. He was awarded the Pulitzer Prize for Drama in 1940, and in 1943 won the Academy Award for Best Story for the film The Human Comedy. When the studio rejected his original 240-page treatment, he turned it into a novel, The Human Comedy. Saroyan is regarded as one of the greatest writers of the 20th century.",
-    "coordinates": {
-        "latitude": 36.7477,
-        "longitude": -119.772
+    {
+        "id": 6,
+        "title": "SARIAN",
+        "imageName": "Sarian",
+        "name": "Martiros Saryan",
+        "city": "Nakhichevan-on-Don, Don Voisko Oblast, Russian Empire",
+        "titleDetail": "Martiros Saryan (Armenian: Մարտիրոս Սարյան; Russian: Мартиро́с Сарья́н; 28 February [O.S. 16 February] 1880 – 5 May 1972) was a Soviet Armenian painter, the founder of a modern Armenian national school of painting.",
+        "coordinates": {
+            "latitude": 47.23058522845819,
+            "longitude": 39.76618799205222
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 7,
-    "title": "SARIAN",
-    "imageName": "Sarian",
-    "name": "Martiros Saryan",
-    "city": "Nakhichevan-on-Don, Don Voisko Oblast, Russian Empire",
-    "titleDetail": "Martiros Saryan (Armenian: Մարտիրոս Սարյան; Russian: Мартиро́с Сарья́н; 28 February [O.S. 16 February] 1880 – 5 May 1972) was a Soviet Armenian painter, the founder of a modern Armenian national school of painting.",
-    "coordinates": {
-      "latitude": 47.23058522845819,
-      "longitude": 39.76618799205222
+    {
+        "id": 7,
+        "title": "VAKHTANGOV",
+        "imageName": "Vakhtangov",
+        "name": "Yevgeny Vakhtangov",
+        "city": "Vladikavkaz, Terek Oblast, Russian Empire",
+        "titleDetail": "Yevgeny Bagrationovich Vakhtangov (also spelled Evgeny or Eugene; Russian: Евге́ний Багратио́нович Вахта́нгов; 13 February 1883 – 29 May 1922) was a Russian-Armenian actor and theatre director who founded the Vakhtangov Theatre. He was a friend and mentor of Michael Chekhov. He is known for his distinctive style of theatre, his most notable production being Princess Turandot in 1922.",
+        "coordinates": {
+            "latitude": 43.0367,
+            "longitude": 44.6678
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 8,
-    "title": "SAHYAN",
-    "imageName": "Sahyan",
-    "name": "Hamo Sahyan",
-    "city": "Lor, Syunik, Russian Empire",
-    "titleDetail": "Hamo Sahyan (Armenian: Համո Սահյան, also known as Hmayak Sahaki Grigoryan; April 14, 1914 – July 17, 1993) was an Armenian poet and translator.",
-    "coordinates": {
-      "latitude": 39.41348427589791,
-      "longitude": 46.12961762820065
+    {
+        "id": 8,
+        "title": "TERYAN",
+        "imageName": "Teryan",
+        "name": "Vahan Terian",
+        "city": "Gandzani, Tiflis Governorate, Russian Empire",
+        "titleDetail": "Vahan Terian (Armenian: Վահան Տերյան; February 9, 1885 – January 7, 1920) was an Armenian poet, lyrist and public activist. He is known for his sorrowful, romantic poems, the most famous of which are still read and sung in their musical versions.",
+        "coordinates": {
+            "latitude": 41.34827,
+            "longitude": 43.7515539
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 9,
-    "title": "RAFFI",
-    "imageName": "Raffi",
-    "name": "Raffi",
-    "city": "Salmas, Qajar Persia",
-    "titleDetail": "Hakob Melik Hakobian (Armenian: Յակոբ Մելիք-Յակոբեան (classical); 1835 – 1888), better known by his pen name Raffi (Armenian: Րաֆֆի; Persian: رافی), was an Armenian author and leading figure in 19th-century Armenian literature",
-    "coordinates": {
-      "latitude": 38.35134624219963,
-      "longitude": 44.63329469248547
+    {
+        "id": 9,
+        "title": "CHARENTS",
+        "imageName": "Charents",
+        "name": "Yeghishe Charents",
+        "city": "Kars, Kars Oblast, Russian Empire",
+        "titleDetail": "Yeghishe Charents (Armenian: Եղիշե Չարենց; March 13, 1897 – November 27, 1937) was an Armenian poet, writer and public activist. Charents' literary subject matter ranged from his experiences in the First World War, socialist revolution, and frequently Armenia and Armenians.[1] He is recognized as 'the main poet of the 20th century' in Armenia.",
+        "coordinates": {
+            "latitude": 40.60333897690397,
+            "longitude": 43.10110017002385
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 10,
-    "title": "KOMITAS",
-    "imageName": "Komitas",
-    "name": "Komitas",
-    "city": "Kütahya, Ottoman Empire",
-    "titleDetail": "Soghomon Soghomonian, ordained and commonly known as Komitas, (Armenian: Կոմիտաս; 8 October [O.S. 26 September] 1869 – 22 October 1935) was an Armenian priest, musicologist, composer, arranger, singer, and choirmaster, who is considered the founder of the Armenian national school of music. He is recognized as one of the pioneers of ethnomusicology.",
-    "coordinates": {
-      "latitude": 39.41858364694959,
-      "longitude": 29.97159088410969
+    {
+        "id": 10,
+        "title": "KHACHATURYAN",
+        "imageName": "Khachaturyan",
+        "name": "Aram Khachaturian",
+        "city": "Tiflis, Tiflis Governorate, Russian Empire",
+        "titleDetail": "Aram Ilyich Khachaturian (/ˈærəm ˌkɑːtʃəˈtʊəriən/; Russian: Арам Ильич Хачатурян, IPA: [ɐˈram ɨˈlʲjitɕ xətɕɪtʊˈrʲan] (audio speaker iconlisten); Armenian: Արամ Խաչատրյան, Aram Xačʿatryan; 6 June [O.S. 24 May] 1903 – 1 May 1978) was a Soviet and Armenian composer and conductor. He is considered one of the leading Soviet composers.",
+        "coordinates": {
+            "latitude": 41.66095140815684,
+            "longitude": 44.70036494941647
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 11,
-    "title": "KHACHATURYAN",
-    "imageName": "Khachaturyan",
-    "name": "Aram Khachaturian",
-    "city": "Tiflis, Tiflis Governorate, Russian Empire",
-    "titleDetail": "Aram Ilyich Khachaturian (/ˈærəm ˌkɑːtʃəˈtʊəriən/;[1] Russian: Арам Ильич Хачатурян, IPA: [ɐˈram ɨˈlʲjitɕ xətɕɪtʊˈrʲan] (audio speaker iconlisten); Armenian: Արամ Խաչատրյան, Aram Xačʿatryan;[A] 6 June [O.S. 24 May] 1903 – 1 May 1978) was a Soviet and Armenian composer and conductor. He is considered one of the leading Soviet composers.",
-    "coordinates": {
-      "latitude": 41.66095140815684,
-      "longitude": 44.70036494941647
+    {
+        "id": 11,
+        "title": "Vazgen I",
+        "imageName": "Vazgen_1",
+        "name": "Vazgen I",
+        "city": "Bucharest, Kingdom of Romania",
+        "titleDetail": "Vazgen I also Vazken I of Bucharest, (Armenian: Վազգէն Ա Բուխարեստցի), born Levon Garabed Baljian (Armenian: Լևոն Կարապետ Աբրահամի Պալճյան; September 20, 1908 – August 18, 1994) was the Catholicos of All Armenians between 1955 and 1994, for a total of 39 years, the 4th longest reign in the history of the Armenian Apostolic Church.",
+        "coordinates": {
+            "latitude": 44.437740157008975,
+            "longitude": 26.112481554724624
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 12,
-    "title": "KAPUTIKYAN",
-    "imageName": "Kaputikyan",
-    "name": "Silva Kaputikyan",
-    "city": "Yerevan, Armenia",
-    "titleDetail": "Silva Kaputikyan[a] (Armenian: audio speaker iconՍիլվա Կապուտիկյան) (20 January 1919 – 25 August 2006) was an Armenian poet and political activist. One of the best-known Armenian writers of the twentieth century, she is recognized as the leading poetess of Armenia'  and 'the grand lady of twentieth century Armenian poetry'. Although a member of the Communist Party, she was a noted advocate of Armenian national causes.",
-    "coordinates": {
-        "latitude": 40.1772,
-        "longitude": 44.50349
+    {
+        "id": 12,
+        "title": "SAROIAN",
+        "imageName": "Saroian",
+        "name": "William Saroyan",
+        "city": "Fresno, California, U.S.",
+        "titleDetail": "William Saroyan (/səˈrɔɪən/; August 31, 1908 – May 18, 1981) was an Armenian-American novelist, playwright, and short story writer. He was awarded the Pulitzer Prize for Drama in 1940, and in 1943 won the Academy Award for Best Story for the film The Human Comedy. When the studio rejected his original 240-page treatment, he turned it into a novel, The Human Comedy. Saroyan is regarded as one of the greatest writers of the 20th century.",
+        "coordinates": {
+            "latitude": 36.7477,
+            "longitude": -119.772
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 13,
-    "title": "ISAHAKYAN",
-    "imageName": "Isahakyan",
-    "name": "Avetik Isahakyan",
-    "city": "Alexandropol, Erivan Governorate, Russian Empire ",
-    "titleDetail": "Avetik Sahak Isahakyan (Armenian: Ավետիք Սահակ Իսահակյան; October 30, 1875 – October 17, 1957) was a prominent Armenian lyric poet, writer and public activist. ",
-    "coordinates": {
-      "latitude": 40.78666268442373,
-      "longitude": 43.84589678999678
+    {
+        "id": 13,
+        "title": "SAHYAN",
+        "imageName": "Sahyan",
+        "name": "Hamo Sahyan",
+        "city": "Lor, Syunik, Russian Empire",
+        "titleDetail": "Hamo Sahyan (Armenian: Համո Սահյան, also known as Hmayak Sahaki Grigoryan; April 14, 1914 – July 17, 1993) was an Armenian poet and translator.",
+        "coordinates": {
+            "latitude": 39.41348427589791,
+            "longitude": 46.12961762820065
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 14,
-    "title": "CHARENTS",
-    "imageName": "Charents",
-    "name": "Yeghishe Charents",
-    "city": "Kars, Kars Oblast, Russian Empire",
-    "titleDetail": "Yeghishe Charents (Armenian: Եղիշե Չարենց; March 13, 1897 – November 27, 1937) was an Armenian poet, writer and public activist. Charents' literary subject matter ranged from his experiences in the First World War, socialist revolution, and frequently Armenia and Armenians.[1] He is recognized as 'the main poet of the 20th century' in Armenia.",
-    "coordinates": {
-      "latitude": 40.60333897690397,
-      "longitude": 43.10110017002385
+    {
+        "id": 14,
+        "title": "KAPUTIKYAN",
+        "imageName": "Kaputikyan",
+        "name": "Silva Kaputikyan",
+        "city": "Yerevan, Armenia",
+        "titleDetail": "Silva Kaputikyan[a] (Armenian: audio speaker iconՍիլվա Կապուտիկյան) (20 January 1919 – 25 August 2006) was an Armenian poet and political activist. One of the best-known Armenian writers of the twentieth century, she is recognized as the leading poetess of Armenia'  and 'the grand lady of twentieth century Armenian poetry'. Although a member of the Communist Party, she was a noted advocate of Armenian national causes.",
+        "coordinates": {
+            "latitude": 40.1772,
+            "longitude": 44.50349
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 15,
-    "title": "Karekin II",
-    "imageName": "Garegin_2",
-    "name": "Karekin II",
-    "city": "Voskehat, Armenian SSR, Soviet Union",
-    "titleDetail": "Catholicos Karekin II (Armenian: Գարեգին Բ) (born August 21, 1951) is Catholicos of All Armenians, the supreme head of the Armenian Apostolic Church. In 2013 he was unanimously elected the Oriental Orthodox head of the World Council of Churches for the next eight years. ",
-    "coordinates": {
-      "latitude": 40.275939609875444,
-      "longitude": 44.275009644980095
+    {
+        "id": 15,
+        "title": "SEVAK",
+        "imageName": "Sevak",
+        "name": "Paruyr Sevak",
+        "city": "Chanakhchi, Armenian SSR, Transcaucasian SFSR, Soviet Union",
+        "titleDetail": "Paruyr Sevak (Armenian: Պարույր Սևակ; January 24, 1924 – June 17, 1971) was an Armenian poet, translator and literary critic. He is considered one of the greatest Armenian poets of the 20th century.",
+        "coordinates": {
+            "latitude": 39.81971015470596,
+            "longitude": 45.038151707972
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 16,
-    "title": "ABOVIAN",
-    "imageName": "Abovian",
-    "name": "Khachatur Abovian",
-    "city": "Kanaker, Erivan Khanate, Persian Empire",
-    "titleDetail": "Khachatur Abovian (or Abovyan; Armenian: Խաչատուր Աբովյան; October 15 [O.S. October 3] 1809 – April 14 [O.S. April 2] 1848 (disappeared)) was an Armenian writer and national public figure of the early 19th century who mysteriously vanished in 1848 and was eventually presumed dead. He was an educator, poet and an advocate of modernization.[2] Reputed as the father of modern Armenian literature, he is best remembered for his novel Wounds of Armenia.[3] Written in 1841 and published posthumously in 1858, it was the first novel published in the modern Armenian language, using Eastern Armenian based on the Yerevan dialect instead of Classical Armenian.",
-    "coordinates": {
-      "latitude": 40.2227609141498,
-      "longitude": 44.5400133694106
-    },
-    "description": ""
-  }
+    {
+        "id": 16,
+        "title": "Karekin II",
+        "imageName": "Garegin_2",
+        "name": "Karekin II",
+        "city": "Voskehat, Armenian SSR, Soviet Union",
+        "titleDetail": "Catholicos Karekin II (Armenian: Գարեգին Բ) (born August 21, 1951) is Catholicos of All Armenians, the supreme head of the Armenian Apostolic Church. In 2013 he was unanimously elected the Oriental Orthodox head of the World Council of Churches for the next eight years. ",
+        "coordinates": {
+            "latitude": 40.275939609875444,
+            "longitude": 44.275009644980095
+        },
+        "description": ""
+    }
 ]

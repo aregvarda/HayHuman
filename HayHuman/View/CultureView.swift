@@ -17,6 +17,10 @@ struct CultureView_Previews: PreviewProvider {
 
 struct CultureView: View {
     
+    
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    
     @EnvironmentObject var cultureDetail: CultureDetail
     @State var searchText = ""
     @State var searching = false
@@ -108,6 +112,8 @@ struct CultureView: View {
                     
                 } label: {
                     NavigationBarItems()
+                        
+                        
                 })
                 
                 .navigationBarTitleDisplayMode(.inline)
@@ -153,6 +159,9 @@ let cardCulture: [CultureCard] = Bundle.main.decode("culture.json")
 let cultureCards: CultureCard = cardCulture[0]
 
 struct CultureCardView: View {
+    
+    @ScaledMetric var size: CGFloat = 1
+    
     let card: CultureCard
     var body: some View {
         GeometryReader { proxy in
@@ -168,16 +177,24 @@ struct CultureCardView: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
                 Text(card.title.uppercased())
-                    .font(.title3)
+                
+                    .font(.system(size: 15 + size))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .padding(7)
                     .foregroundColor(.white)
                     .shadow(color: .gray, radius: 4, x: 0, y: 0)
+                    
             }
         }
     }
 }
 
-
+extension View {
+      func propotionalFrame(width: CGFloat, height: CGFloat, isSquared: Bool = false, alignment: Alignment = .center) -> some View {
+        let finalWidth = UIScreen.main.bounds.width * width
+        let finalHeight = isSquared ? finalWidth : UIScreen.main.bounds.height * height
+        return frame(width: finalWidth, height: finalHeight)
+      }
+    }
 

@@ -23,6 +23,7 @@ struct NavigationBarItems: View {
                         .resizable()
                         .frame(width: 35, height: 35)
                         .padding(.trailing, 4)
+                        
                     Button {
                         self.sheetNavigator.sheetDestination = .info
     //                    self.sheetNavigator.showSheet = true
@@ -32,6 +33,7 @@ struct NavigationBarItems: View {
                             .frame(width: 35, height: 30)
                             .foregroundColor(.secondary)
                             .font(.largeTitle.bold())
+                            
                     }
                 }.sheet(isPresented: self.$sheetNavigator.showSheet) {
                     self.sheetNavigator.sheetView()

@@ -143,6 +143,9 @@ let politicsCards: CardPolitics = cardPolitics[0]
 
 
 struct PoliticsCardView: View {
+    
+    @ScaledMetric var size: CGFloat = 1
+    
     let cardpol: CardPolitics
     var body: some View {
         GeometryReader { proxy in
@@ -158,7 +161,8 @@ struct PoliticsCardView: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
                 Text(cardpol.title.uppercased())
-                    .font(.title3)
+//                    .font(.title3)
+                    .font(.system(size: 15 + size))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .padding(7)

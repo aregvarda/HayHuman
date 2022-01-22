@@ -28,6 +28,7 @@ var intros : [Intro] = [
 
 
 struct Home: View {
+    @ScaledMetric var size: CGFloat = 1
     
     var screenSize: CGSize
     @State var offset: CGFloat = 0
@@ -41,7 +42,7 @@ struct Home: View {
                 shouldShowOnboarding.toggle()
             } label: {
                 Text("Skip")
-                    .foregroundColor(.white)
+                    .foregroundColor(.white).font(.system(size: 15 + size))
                     
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,9 +65,12 @@ struct Home: View {
                             VStack(alignment: .leading, spacing: 22) {
                                 
                                 Text(intro.title)
-                                    .font(.largeTitle.bold())
+//                                    .font(.largeTitle.bold())
+                                    .font(.system(size: 20 + size))
+                                    .fontWeight(.bold)
                                 
                                 Text(intro.description)
+                                    .font(.system(size: 15 + size))
                                     .fontWeight(.semibold)
                                     .foregroundColor(.secondary)
                             }
@@ -79,12 +83,13 @@ struct Home: View {
                                             shouldShowOnboarding.toggle()
                                         } label: {
                                             Text("Get Started")
-                                                .bold()
+                                                .font(.system(size: 15 + size))
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 150, height: 50)
                                                 .background(Color.orange)
                                                 .cornerRadius(6)
-                                                .offset(y: 50)
+//                                                .offset(y: 50)
+                                                .padding(.top, 50)
                                         }
                             
                                     }
@@ -92,6 +97,7 @@ struct Home: View {
                         .padding()
                         // setitng max Width..
                         .frame(width: screenSize.width)
+                        
                     }
                 }
             }

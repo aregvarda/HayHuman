@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChurchLocationPreviewView: View {
     
+    @ScaledMetric var size: CGFloat = 1
     @EnvironmentObject private var vm: ChurchLocationsViewModel
     let location: ChurchesLocations
     
@@ -69,14 +70,16 @@ extension ChurchLocationPreviewView {
         VStack(alignment: .leading, spacing: 4) {
             Text(location.name)
                 .foregroundColor(.black)
-
-                .font(.title2)
+//                .font(.title2)
+                .font(.system(size: 20 + size))
                 .fontWeight(.bold)
+                .multilineTextAlignment(.leading)
             
             Text(location.cityName)
                 .foregroundColor(.secondary)
-
+                .font(.system(size: 14 + size))
                 .font(.subheadline)
+                .multilineTextAlignment(.leading)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -86,7 +89,9 @@ extension ChurchLocationPreviewView {
             vm.sheetLocation = location
         } label: {
             Text("Learn more")
-                .font(.headline)
+//                .font(.headline)
+                .font(.system(size: 15 + size))
+                .fontWeight(.bold)
                 .frame(width: 125, height: 35)
         }.buttonStyle(.borderedProminent)
     }
@@ -95,7 +100,9 @@ extension ChurchLocationPreviewView {
             vm.nextButtonPressed()
         } label: {
             Text("Next")
-                .font(.headline)
+//                .font(.headline)
+                .font(.system(size: 15 + size))
+                .fontWeight(.bold)
                 .frame(width: 125, height: 35)
         }.buttonStyle(.bordered)
     }

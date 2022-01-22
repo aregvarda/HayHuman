@@ -10,6 +10,7 @@ import MapKit
 
 struct ChurchLocationDetailView: View {
     
+    @ScaledMetric var size: CGFloat = 1
     @EnvironmentObject private var vm: ChurchLocationsViewModel
     let location: ChurchesLocations
     var body: some View {
@@ -59,11 +60,15 @@ extension ChurchLocationDetailView {
         VStack(alignment: .leading, spacing: 8) {
             Text(location.name)
                 .foregroundColor(.black)
-                .font(.largeTitle)
+//                .font(.largeTitle)
+                .font(.system(size: 32 + size))
                 .fontWeight(.semibold)
+                .multilineTextAlignment(.leading)
             Text(location.cityName)
-                .font(.title3)
+//                .font(.title3)
+                .font(.system(size: 20 + size))
                 .foregroundColor(.secondary)
+                .multilineTextAlignment(.leading)
         }
     }
     private var descriptionSection: some View {
@@ -71,11 +76,13 @@ extension ChurchLocationDetailView {
             Text(location.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                .multilineTextAlignment(.leading)
             
             if let url = URL(string: location.link) {
                 Link("Read more on Wikipedia", destination: url)
                     .font(.headline)
                     .tint(.blue)
+                    .multilineTextAlignment(.leading)
             }
         }
     }

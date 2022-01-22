@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Mantashev.jpg",
+      "filename" : "post-31580-1319294440.txt.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "compression-type" : "gpu-optimized-smallest"
   }
 }

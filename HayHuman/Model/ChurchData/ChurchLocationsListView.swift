@@ -10,6 +10,7 @@ import SwiftUI
 struct ChurchLocationsListView: View {
     
     @EnvironmentObject private var vm: ChurchLocationsViewModel
+    @ScaledMetric var size: CGFloat = 1
     
     var body: some View {
         List {
@@ -37,6 +38,7 @@ struct ChurchLocationsListView_Previews: PreviewProvider {
 }
 
 extension ChurchLocationsListView {
+    
     private func listRowView(location: ChurchesLocations) -> some View {
         HStack {
             if let imageName = location.imageNames.first {
@@ -49,8 +51,12 @@ extension ChurchLocationsListView {
             VStack(alignment: .leading) {
                 Text(location.name)
                     .font(.headline)
+                    .font(.system(size: 13 + size))
+                    .multilineTextAlignment(.leading)
                 Text(location.cityName)
                     .font(.subheadline)
+                    .font(.system(size: 10 + size))
+                    .multilineTextAlignment(.leading)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }

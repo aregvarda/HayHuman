@@ -1,210 +1,210 @@
 [
-  {
-    "id": 1,
-    "title": "SHAUMIAN",
-    "imageName": "Shaumian",
-    "name": "Stepan Shaumian",
-    "city": "Tiflis, Russian Empire ",
-    "titleDetail": "Stepan Georgevich Shaumian (Russian: Степан Георгиевич Шаумян; Armenian: Ստեփան Գևորգի Շահումյան, Step’an Ge'vorgi Shahumyan; 1 October 1878 – 20 September 1918) was a Bolshevik revolutionary and politician active throughout the Caucasus. Shahumyan was an ethnic Armenian and his role as a leader of the Russian revolution in the Caucasus earned him the nickname of the 'Caucasian Lenin', a reference to the leader of the Russian Revolution, Vladimir Lenin.",
-    "coordinates": {
-      "latitude": 41.70449951284798,
-      "longitude": 44.80134365493026
+    {
+        "id": 1,
+        "title": "Israel Ori",
+        "imageName": "Ory",
+        "name": "Israel Ori",
+        "city": "Sisian, Safavid Armenia",
+        "titleDetail": "Israel Ori (Armenian: Իսրայել Օրի) (1658–1711) was a prominent figure of the Armenian national liberation movement and a diplomat that sought the liberation of Armenia from Persia and the Ottoman Empire.",
+        "coordinates": {
+            "latitude": 39.52449056839858,
+            "longitude": 46.02754297805523
+        },
+        "description": ""
     },
-    "description": "The founder and editor of several newspapers and journals, Shaumian is best known as the head of the Baku Commune, a short lived committee appointed by Lenin in March 1918 with the task of leading the revolution in the Caucasus and West Asia. His tenure as leader of the Baku Commune was marred with numerous problems including ethnic violence between Baku's Armenian and Azerbaijani populations, attempting to defend the city against an advancing Turkish army, all the while attempting to spread the cause of the revolution throughout the region. Unlike many of the other Bolsheviks at the time however, he preferred to resolve many of the conflicts he faced peacefully, rather than with force and terror.\n\nShaumian was known by various aliases, including 'Suren', 'Surenin' and 'Ayaks'. As the Baku Commune was voted out of power in July 1918, he and his followers, known as the 26 Baku Commissars abandoned the city, fleeing across the Caspian Sea. He and the rest of the Commissars were captured and executed by anti-Bolshevik forces on 20 September 1918."
-  },
-  {
-    "id": 2,
-    "title": "Sargsyan",
-    "imageName": "Sargsyan",
-    "name": "Vazgen Sargsyan",
-    "city": "Yerevan, Armenia",
-    "titleDetail": "Vazgen Zaveni Sargsyan[1] (Armenian: Վազգեն Զավենի Սարգսյան, pronounced [vɑzˈɡɛn sɑɾkʰsˈjɑn]; 5 March 1959 – 27 October 1999) was an Armenian military commander and politician. He was the first Defence Minister of Armenia from 1991 to 1992 and then from 1995 to 1999. He served as Armenia's Prime Minister from 11 June 1999 until his assassination on 27 October of that year. He rose to prominence during the mass movement for the unification of Nagorno-Karabakh with Armenia in the late 1980s and led Armenian volunteer groups during the early clashes with Azerbaijani forces. Appointed defence minister by President Levon Ter-Petrosyan soon after Armenia's independence from the Soviet Union in late 1991, Sargsyan became the most prominent commander of Armenian forces during the First Nagorno-Karabakh War.[2] In different positions, he regulated the military operations in the war area until 1994, when a ceasefire was reached ending the war with Armenian forces controlling almost all of Nagorno-Karabakh and seven surrounding districts.",
-    "coordinates": {
-      "latitude": 39.84992699464248,
-      "longitude": 44.69634167211335
+    {
+        "id": 2,
+        "title": "Joseph Emin",
+        "imageName": "Emin",
+        "name": "Joseph Emin",
+        "city": "Hamadan, Iran",
+        "titleDetail": "Joseph Emin (Armenian: Յովսէփ Էմին, Hovsep Emin) (August 2, 1726 - August 2, 1809, Calcutta), was a prominent figure of the Armenian national liberation movement who travelled to various European countries and Russia in order to secure support for the liberation of Armenia from Persia and the Ottoman Empire. He married Thangoom-Khatoon (1748 - 14 September 1843) in 1776, whose grave lies next to his.",
+        "coordinates": {
+            "latitude": 34.795840490290715,
+            "longitude": 48.50846434374368
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 3,
-    "title": "NUBAR",
-    "imageName": "Nubar",
-    "name": "Nubar Pasha",
-    "city": "Smyrna, Ottoman Empire",
-    "titleDetail": "Nubar Pasha (Arabic: نوبار باشا Armenian: Նուպար Փաշա (January 1825, Smyrna, Ottoman Empire - 14 January 1899, Paris) was an Egyptian-Armenian politician and the first Prime Minister of Egypt. He served as Prime Minister three times during his career. His first term was between August 1878 and 23 February 1879. His second term was served from 10 January 1884 to 9 June 1888. His final term was between 16 April 1894 and 12 November 1895.",
-    "coordinates": {
-      "latitude": 38.428888570059016,
-      "longitude": 27.153178556000952
+    {
+        "id": 3,
+        "title": "DELYANOV",
+        "imageName": "Delyanov",
+        "name": "Ivan Delyanov",
+        "city": "Moscow, Russian Empire",
+        "titleDetail": "Count Ivan Davidovich Delyanov (Russian: Ива́н Давы́дович Деля́нов) (December 12, 1818 in Moscow – January 10, 1898) was a Russian statesman of Armenian descent and a son of Delyanov David Artemyevich, a Major-General of the Russian Imperial Army.",
+        "coordinates": {
+            "latitude": 55.75733336721782,
+            "longitude": 37.61613012386857
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 4,
-    "title": "Diana Abgar",
-    "imageName": "Abgar",
-    "name": "Diana Abgar",
-    "city": "Rangoon, British Burma",
-    "titleDetail": "Diana Abgar (or Apcar; Armenian: Դիանա Աբգար, 17 October 1859 – 8 July 1937) was a diaspora Armenian writer and humanitarian, who was appointed Honorary Consul to Japan of the short-lived First Republic of Armenia (1918-1920).[1] She is the first Armenian woman diplomat and one of the first women to have ever been appointed in any diplomatic post in the twentieth century.",
-    "coordinates": {
-      "latitude": 16.852096216120895,
-      "longitude": 96.1691668963366
+    {
+        "id": 4,
+        "title": "LORIS-MELIKOV",
+        "imageName": "Loris-melikov",
+        "name": "Mikhail Loris-Melikov",
+        "city": "Tiflis, Russian Empire",
+        "titleDetail": "Count Mikhail Tarielovich Loris-Melikov (Russian: Граф Михаил Тариелович Лорис-Меликов, Armenian: Միքայել Լորիս-Մելիքյան; October 21 [O.S. November 2] 1824 – 24 December 1888) was a Russian-Armenian statesman, General of the Cavalry, and Adjutant General of H. I. M. Retinue.",
+        "coordinates": {
+            "latitude": 41.70449951284798,
+            "longitude": 44.80134365493026
+        },
+        "description": "The Princes of Lori - Loris-Melikovs are the representatives of an old noble family whose ancestors in the 14th century owned the town of Lori and the province of the same name. They belonged to the top aristocratic society of Georgia. In Russian nobility the princely family of the Loris-Melikovs (is translated from Georgian as “The Princes of Lori”) was approved in 1832."
     },
-    "description": ""
-  },
-  {
-    "id": 5,
-    "title": "Joseph Emin",
-    "imageName": "Emin",
-    "name": "Joseph Emin",
-    "city": "Hamadan, Iran",
-    "titleDetail": "Joseph Emin (Armenian: Յովսէփ Էմին, Hovsep Emin) (August 2, 1726 - August 2, 1809, Calcutta), was a prominent figure of the Armenian national liberation movement who travelled to various European countries and Russia in order to secure support for the liberation of Armenia from Persia and the Ottoman Empire. He married Thangoom-Khatoon (1748 - 14 September 1843) in 1776, whose grave lies next to his.",
-    "coordinates": {
-      "latitude": 34.795840490290715,
-      "longitude": 48.50846434374368
+    {
+        "id": 5,
+        "title": "NUBAR",
+        "imageName": "Nubar",
+        "name": "Nubar Pasha",
+        "city": "Smyrna, Ottoman Empire",
+        "titleDetail": "Nubar Pasha (Arabic: نوبار باشا Armenian: Նուպար Փաշա (January 1825, Smyrna, Ottoman Empire - 14 January 1899, Paris) was an Egyptian-Armenian politician and the first Prime Minister of Egypt. He served as Prime Minister three times during his career. His first term was between August 1878 and 23 February 1879. His second term was served from 10 January 1884 to 9 June 1888. His final term was between 16 April 1894 and 12 November 1895.",
+        "coordinates": {
+            "latitude": 38.428888570059016,
+            "longitude": 27.153178556000952
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 6,
-    "title": "MARDIAN",
-    "imageName": "Mardian",
-    "name": "Robert Mardian",
-    "city": "Pasadena, California",
-    "titleDetail": "Robert Charles Mardian (October 23, 1923 – July 17, 2006) was a United States Republican party official who served in the administration of Richard Nixon, and was embroiled in the Watergate scandal as one of the Watergate Seven who were indicted by a grand jury for campaign violations. His conviction for conspiracy was overturned because of procedural unfairness and he was not subsequently retried.",
-    "coordinates": {
-      "latitude": 34.14782927157261,
-      "longitude": -118.14607888578695
+    {
+        "id": 6,
+        "title": "Abragamovich",
+        "imageName": "Abragamovich",
+        "name": "Dawid Abrahamowicz",
+        "city": "Torhovytsya, Austrian Empire",
+        "titleDetail": "Dawid Abrahamowicz (Armenian: Դավիթ Աբրահամովիչ, Polish: Dawid Abrahamowicz, Ukrainian: Давид Абрагамович; 1839–1926) was a Polish conservative politician and social activist of Armenian descent. Brother of Adolf Abrahamowicz, from 1863–1918 he was a member of the Diet of Galicia and Lodomeria, from 1875–1918 a member of the Imperial Council, and from 1881–1909 a member of the Chamber of Deputies.",
+        "coordinates": {
+            "latitude": 48.652917965310436,
+            "longitude": 30.78147832319734
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 7,
-    "title": "LORIS-MELIKOV",
-    "imageName": "Loris-melikov",
-    "name": "Mikhail Loris-Melikov",
-    "city": "Tiflis, Russian Empire",
-    "titleDetail": "Count Mikhail Tarielovich Loris-Melikov (Russian: Граф Михаил Тариелович Лорис-Меликов, Armenian: Միքայել Լորիս-Մելիքյան; October 21 [O.S. November 2] 1824 – 24 December 1888) was a Russian-Armenian statesman, General of the Cavalry, and Adjutant General of H. I. M. Retinue.",
-    "coordinates": {
-        "latitude": 41.70449951284798,
-        "longitude": 44.80134365493026
+    {
+        "id": 7,
+        "title": "Diana Abgar",
+        "imageName": "Abgar",
+        "name": "Diana Abgar",
+        "city": "Rangoon, British Burma",
+        "titleDetail": "Diana Abgar (or Apcar; Armenian: Դիանա Աբգար, 17 October 1859 – 8 July 1937) was a diaspora Armenian writer and humanitarian, who was appointed Honorary Consul to Japan of the short-lived First Republic of Armenia (1918-1920).[1] She is the first Armenian woman diplomat and one of the first women to have ever been appointed in any diplomatic post in the twentieth century.",
+        "coordinates": {
+            "latitude": 16.852096216120895,
+            "longitude": 96.1691668963366
+        },
+        "description": ""
     },
-    "description": "The Princes of Lori - Loris-Melikovs are the representatives of an old noble family whose ancestors in the 14th century owned the town of Lori and the province of the same name. They belonged to the top aristocratic society of Georgia. In Russian nobility the princely family of the Loris-Melikovs (is translated from Georgian as “The Princes of Lori”) was approved in 1832."
-  },
-  {
-    "id": 8,
-    "title": "Hrant Dink",
-    "imageName": "Dink",
-    "name": "Hrant Dink",
-    "city": "Malatya, Turkey",
-    "titleDetail": "Hrant Dink (Armenian: Հրանդ Տինք; Western Armenian pronunciation: [ˈhɾantʰ ˈdiŋkʰ]; 15 September 1954 – 19 January 2007) was a Turkish-Armenian intellectual, editor-in-chief of Agos, journalist and columnist.",
-    "coordinates": {
-      "latitude": 38.34804083008919,
-      "longitude": 38.274925184956295
+    {
+        "id": 8,
+        "title": "SHAUMIAN",
+        "imageName": "Shaumian",
+        "name": "Stepan Shaumian",
+        "city": "Tiflis, Russian Empire ",
+        "titleDetail": "Stepan Georgevich Shaumian (Russian: Степан Георгиевич Шаумян; Armenian: Ստեփան Գևորգի Շահումյան, Step’an Ge'vorgi Shahumyan; 1 October 1878 – 20 September 1918) was a Bolshevik revolutionary and politician active throughout the Caucasus. Shahumyan was an ethnic Armenian and his role as a leader of the Russian revolution in the Caucasus earned him the nickname of the 'Caucasian Lenin', a reference to the leader of the Russian Revolution, Vladimir Lenin.",
+        "coordinates": {
+            "latitude": 41.70449951284798,
+            "longitude": 44.80134365493026
+        },
+        "description": "The founder and editor of several newspapers and journals, Shaumian is best known as the head of the Baku Commune, a short lived committee appointed by Lenin in March 1918 with the task of leading the revolution in the Caucasus and West Asia. His tenure as leader of the Baku Commune was marred with numerous problems including ethnic violence between Baku's Armenian and Azerbaijani populations, attempting to defend the city against an advancing Turkish army, all the while attempting to spread the cause of the revolution throughout the region. Unlike many of the other Bolsheviks at the time however, he preferred to resolve many of the conflicts he faced peacefully, rather than with force and terror.\n\nShaumian was known by various aliases, including 'Suren', 'Surenin' and 'Ayaks'. As the Baku Commune was voted out of power in July 1918, he and his followers, known as the 26 Baku Commissars abandoned the city, fleeing across the Caspian Sea. He and the rest of the Commissars were captured and executed by anti-Bolshevik forces on 20 September 1918."
     },
-    "description": "As editor-in-chief of the bilingual Turkish-Armenian newspaper Agos, Dink was a prominent member of the Armenian minority in Turkey. Dink was best known for advocating Turkish–Armenian reconciliation and human and minority rights in Turkey; he was often critical of both Turkey's denial of the Armenian genocide, and of the Armenian diaspora's campaign for its international recognition. Dink was prosecuted three times for denigrating Turkishness, while receiving numerous death threats from Turkish nationalists.\n\nDink was assassinated in Istanbul on 19 January 2007 by Ogün Samast, a 17-year-old Turkish nationalist. Dink was shot three times in the head and died instantly. Photographs of the assassin flanked by smiling Turkish police and gendarmerie, posing with the killer side by side in front of the Turkish flag, surfaced. The photos sparked a scandal in Turkey, prompting a spate of investigations and the removal from office of those involved. Samast was later sentenced to 22 years in prison by a Turkish court; he remains incarcerated.\n\nAt Dink's funeral, over one hundred thousand mourners marched in protest of the assassination, chanting, 'We are all Armenians' and 'We are all Hrant Dink'. Criticism of Article 301 became increasingly vocal after his death, leading to parliamentary proposals for repeal. The 2007–2008 academic year at the College of Europe was named in his honour. "
-  },
-  {
-    "id": 9,
-    "title": "DEUKMEJIAN",
-    "imageName": "Deukmejian",
-    "name": "George Deukmejian",
-    "city": "Menands, New York",
-    "titleDetail": "Courken George Deukmejian Jr. (/djuːkˈmeɪdʒən/;[4] June 6, 1928 – May 8, 2018) was an Armenian-American politician who served as the 35th governor of California from 1983 to 1991. Deukmejian was a member of the Republican Party and he also served as the attorney general of California from 1979 to 1983.",
-    "coordinates": {
-      "latitude": 42.693333,
-      "longitude": -73.726944
+    {
+        "id": 9,
+        "title": "MIKOYAN",
+        "imageName": "Amikoyan",
+        "name": "Anastas Mikoyan",
+        "city": "Sanahin, Russian Empire",
+        "titleDetail": "Anastas Ivanovich Mikoyan (English: /miːkoʊˈjɑːn/; Russian: Анаста́с Ива́нович Микоя́н; Armenian: Անաստաս Հովհաննեսի Միկոյան; 25 November 1895 – 21 October 1978) was an Armenian Communist revolutionary, Old Bolshevik and Soviet statesman during the mandates of Lenin, Stalin, Khrushchev and Brezhnev. He was the only Soviet politician who managed to remain at the highest levels of power within the Communist Party of the Soviet Union, as that power oscillated between the Central Committee and the Politburo, from the latter days of Lenin's rule, throughout the eras of Stalin and Khrushchev, until his peaceful retirement after the first months of Brezhnev's rule.",
+        "coordinates": {
+            "latitude": 41.091741,
+            "longitude": 44.655127,
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 10,
-    "title": "Israel Ori",
-    "imageName": "Ory",
-    "name": "Israel Ori",
-    "city": "Sisian, Safavid Armenia",
-    "titleDetail": "Israel Ori (Armenian: Իսրայել Օրի) (1658–1711) was a prominent figure of the Armenian national liberation movement and a diplomat that sought the liberation of Armenia from Persia and the Ottoman Empire.",
-    "coordinates": {
-      "latitude": 39.52449056839858,
-      "longitude": 46.02754297805523
+    {
+        "id": 10,
+        "title": "ASATRYAN",
+        "imageName": "Asatryan",
+        "name": "Hayk Asatryan",
+        "city": "Alashkert, Ottoman Empire",
+        "titleDetail": "Hayk Asatryan (Armenian: Հայկ Ասատրյան; 5 February 1900 – 13 January 1956) was an Armenian political theorist, an associate and close friend of Garegin Nzhdeh, and one of the founders of Tseghakronism and Taronism. He authored several books and articles on the history of Armenia.",
+        "coordinates": {
+            "latitude": 39.79570640730072,
+            "longitude": 42.67763544371968
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 11,
-    "title": "DELYANOV",
-    "imageName": "Delyanov",
-    "name": "Ivan Delyanov",
-    "city": "Moscow, Russian Empire",
-    "titleDetail": "Count Ivan Davidovich Delyanov (Russian: Ива́н Давы́дович Деля́нов) (December 12, 1818 in Moscow – January 10, 1898) was a Russian statesman of Armenian descent and a son of Delyanov David Artemyevich, a Major-General of the Russian Imperial Army.",
-    "coordinates": {
-      "latitude": 55.75733336721782,
-      "longitude": 37.61613012386857
+    {
+        "id": 11,
+        "title": "MARDIAN",
+        "imageName": "Mardian",
+        "name": "Robert Mardian",
+        "city": "Pasadena, California",
+        "titleDetail": "Robert Charles Mardian (October 23, 1923 – July 17, 2006) was a United States Republican party official who served in the administration of Richard Nixon, and was embroiled in the Watergate scandal as one of the Watergate Seven who were indicted by a grand jury for campaign violations. His conviction for conspiracy was overturned because of procedural unfairness and he was not subsequently retried.",
+        "coordinates": {
+            "latitude": 34.14782927157261,
+            "longitude": -118.14607888578695
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 12,
-    "title": "Abragamovich",
-    "imageName": "Abragamovich",
-    "name": "Dawid Abrahamowicz",
-    "city": "Torhovytsya, Austrian Empire",
-    "titleDetail": "Dawid Abrahamowicz (Armenian: Դավիթ Աբրահամովիչ, Polish: Dawid Abrahamowicz, Ukrainian: Давид Абрагамович; 1839–1926) was a Polish conservative politician and social activist of Armenian descent. Brother of Adolf Abrahamowicz, from 1863–1918 he was a member of the Diet of Galicia and Lodomeria, from 1875–1918 a member of the Imperial Council, and from 1881–1909 a member of the Chamber of Deputies.",
-    "coordinates": {
-      "latitude": 48.652917965310436,
-      "longitude": 30.78147832319734
+    {
+        "id": 12,
+        "title": "DEUKMEJIAN",
+        "imageName": "Deukmejian",
+        "name": "George Deukmejian",
+        "city": "Menands, New York",
+        "titleDetail": "Courken George Deukmejian Jr. (/djuːkˈmeɪdʒən/;[4] June 6, 1928 – May 8, 2018) was an Armenian-American politician who served as the 35th governor of California from 1983 to 1991. Deukmejian was a member of the Republican Party and he also served as the attorney general of California from 1979 to 1983.",
+        "coordinates": {
+            "latitude": 42.693333,
+            "longitude": -73.726944
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 13,
-    "title": "BALLADUR",
-    "imageName": "Balladur",
-    "name": "Édouard Balladur",
-    "city": "Izmir, Turkey",
-    "titleDetail": "Édouard Balladur (French: [edwaʁ baladyʁ]; born 2 May 1929)[1] is a French politician who served as Prime Minister of France under François Mitterrand from 29 March 1993 to 17 May 1995. He unsuccessfully ran for president in the 1995 French presidential election, coming in third place. At age 92, Balladur is currently the oldest living former French Prime Minister.",
-    "coordinates": {
-        "latitude": 38.428888570059016,
-        "longitude": 27.153178556000952
+    {
+        "id": 13,
+        "title": "BALLADUR",
+        "imageName": "Balladur",
+        "name": "Édouard Balladur",
+        "city": "Izmir, Turkey",
+        "titleDetail": "Édouard Balladur (French: [edwaʁ baladyʁ]; born 2 May 1929) is a French politician who served as Prime Minister of France under François Mitterrand from 29 March 1993 to 17 May 1995. He unsuccessfully ran for president in the 1995 French presidential election, coming in third place. At age 92, Balladur is currently the oldest living former French Prime Minister.",
+        "coordinates": {
+            "latitude": 38.428888570059016,
+            "longitude": 27.153178556000952
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 14,
-    "title": "Sian Elias",
-    "imageName": "Elias",
-    "name": "Sian Elias",
-    "city": "London, England",
-    "titleDetail": "Dame Sian Seerpoohi Elias GNZM PC QC (born 13 March 1949) is a New Zealand former Government official, who served as the 12th Chief Justice of New Zealand, and was therefore the most senior member of the country's judiciary. She was the presiding judge of the Supreme Court of New Zealand and on several occasions acted as Administrator of the Government. ",
-    "coordinates": {
-      "latitude": 51.51232255723903,
-      "longitude": -0.12495232925271459
+    {
+        "id": 14,
+        "title": "Sian Elias",
+        "imageName": "Elias",
+        "name": "Sian Elias",
+        "city": "London, England",
+        "titleDetail": "Dame Sian Seerpoohi Elias GNZM PC QC (born 13 March 1949) is a New Zealand former Government official, who served as the 12th Chief Justice of New Zealand, and was therefore the most senior member of the country's judiciary. She was the presiding judge of the Supreme Court of New Zealand and on several occasions acted as Administrator of the Government. ",
+        "coordinates": {
+            "latitude": 51.51232255723903,
+            "longitude": -0.12495232925271459
+        },
+        "description": ""
     },
-    "description": ""
-  },
-  {
-    "id": 15,
-    "title": "MIKOYAN",
-    "imageName": "Amikoyan",
-    "name": "Anastas Mikoyan",
-    "city": "Sanahin, Russian Empire",
-    "titleDetail": "Anastas Ivanovich Mikoyan (English: /miːkoʊˈjɑːn/; Russian: Анаста́с Ива́нович Микоя́н; Armenian: Անաստաս Հովհաննեսի Միկոյան; 25 November 1895 – 21 October 1978) was an Armenian Communist revolutionary, Old Bolshevik and Soviet statesman during the mandates of Lenin, Stalin, Khrushchev and Brezhnev. He was the only Soviet politician who managed to remain at the highest levels of power within the Communist Party of the Soviet Union, as that power oscillated between the Central Committee and the Politburo, from the latter days of Lenin's rule, throughout the eras of Stalin and Khrushchev, until his peaceful retirement after the first months of Brezhnev's rule.",
-    "coordinates": {
-        "latitude": 41.091741,
-        "longitude": 44.655127,
+    {
+        "id": 15,
+        "title": "Hrant Dink",
+        "imageName": "Dink",
+        "name": "Hrant Dink",
+        "city": "Malatya, Turkey",
+        "titleDetail": "Hrant Dink (Armenian: Հրանդ Տինք; Western Armenian pronunciation: [ˈhɾantʰ ˈdiŋkʰ]; 15 September 1954 – 19 January 2007) was a Turkish-Armenian intellectual, editor-in-chief of Agos, journalist and columnist.",
+        "coordinates": {
+            "latitude": 38.34804083008919,
+            "longitude": 38.274925184956295
+        },
+        "description": "As editor-in-chief of the bilingual Turkish-Armenian newspaper Agos, Dink was a prominent member of the Armenian minority in Turkey. Dink was best known for advocating Turkish–Armenian reconciliation and human and minority rights in Turkey; he was often critical of both Turkey's denial of the Armenian genocide, and of the Armenian diaspora's campaign for its international recognition. Dink was prosecuted three times for denigrating Turkishness, while receiving numerous death threats from Turkish nationalists.\n\nDink was assassinated in Istanbul on 19 January 2007 by Ogün Samast, a 17-year-old Turkish nationalist. Dink was shot three times in the head and died instantly. Photographs of the assassin flanked by smiling Turkish police and gendarmerie, posing with the killer side by side in front of the Turkish flag, surfaced. The photos sparked a scandal in Turkey, prompting a spate of investigations and the removal from office of those involved. Samast was later sentenced to 22 years in prison by a Turkish court; he remains incarcerated.\n\nAt Dink's funeral, over one hundred thousand mourners marched in protest of the assassination, chanting, 'We are all Armenians' and 'We are all Hrant Dink'. Criticism of Article 301 became increasingly vocal after his death, leading to parliamentary proposals for repeal. The 2007–2008 academic year at the College of Europe was named in his honour. "
     },
-    "description": ""
-  },
-  {
-    "id": 16,
-    "title": "ASATRYAN",
-    "imageName": "Asatryan",
-    "name": "Hayk Asatryan",
-    "city": "Alashkert, Ottoman Empire",
-    "titleDetail": "Hayk Asatryan (Armenian: Հայկ Ասատրյան; 5 February 1900 – 13 January 1956) was an Armenian political theorist, an associate and close friend of Garegin Nzhdeh, and one of the founders of Tseghakronism and Taronism. He authored several books and articles on the history of Armenia.",
-    "coordinates": {
-      "latitude": 39.79570640730072,
-      "longitude": 42.67763544371968
-    },
-    "description": ""
-  }
+    {
+        "id": 16,
+        "title": "Sargsyan",
+        "imageName": "Sargsyan",
+        "name": "Vazgen Sargsyan",
+        "city": "Yerevan, Armenia",
+        "titleDetail": "Vazgen Zaveni Sargsyan (Armenian: Վազգեն Զավենի Սարգսյան, pronounced [vɑzˈɡɛn sɑɾkʰsˈjɑn]; 5 March 1959 – 27 October 1999) was an Armenian military commander and politician. He was the first Defence Minister of Armenia from 1991 to 1992 and then from 1995 to 1999. He served as Armenia's Prime Minister from 11 June 1999 until his assassination on 27 October of that year. He rose to prominence during the mass movement for the unification of Nagorno-Karabakh with Armenia in the late 1980s and led Armenian volunteer groups during the early clashes with Azerbaijani forces. Appointed defence minister by President Levon Ter-Petrosyan soon after Armenia's independence from the Soviet Union in late 1991, Sargsyan became the most prominent commander of Armenian forces during the First Nagorno-Karabakh War.[2] In different positions, he regulated the military operations in the war area until 1994, when a ceasefire was reached ending the war with Armenian forces controlling almost all of Nagorno-Karabakh and seven surrounding districts.",
+        "coordinates": {
+            "latitude": 39.84992699464248,
+            "longitude": 44.69634167211335
+        },
+        "description": ""
+    }
 ]

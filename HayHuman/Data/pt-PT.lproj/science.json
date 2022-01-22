@@ -5,7 +5,7 @@
     "imageName": "Adamian",
     "name": "Hovannes Adamian",
     "city": "Baku, Russian Empire",
-    "titleDetail": "Hovhannes (Ivan) Abgari Adamian (5 February 1879 – 12 September 1932) was an Armenian engineer, an author of more than 20 inventions. The first experimental color television was shown in London in 1928 based on Adamian's tricolor principle,[1] and he is recognized as one of the founders of color television.",
+    "titleDetail": "Hovhannes (Ivan) Abgari Adamian (5 February 1879 – 12 September 1932) was an Armenian engineer, an author of more than 20 inventions. The first experimental color television was shown in London in 1928 based on Adamian's tricolor principle, and he is recognized as one of the founders of color television.",
     "coordinates": {
       "latitude": 40.409264,
       "longitude": 49.867092
@@ -14,97 +14,6 @@
   },
   {
     "id": 2,
-    "title": "ALIKHANIAN",
-    "imageName": "Alikhanian",
-    "name": "Abram Alikhanov",
-    "city": "Elisabethpol, Elisabethpol Governorate, Russian Empire",
-    "titleDetail": "Abram Isaakovich Alikhanov (Russian: Абрам Исаакович Алиханов, born Alikhanian; 4 March [O.S. 20 February] 1904 – 8 December 1970) was a Soviet Armenian experimental physicist[3] who specialized in particle and nuclear physics. He was one of the Soviet Union's leading physicists.",
-    "coordinates": {
-        "latitude": 41.716667,
-        "longitude": 44.783333
-    },
-    "description": "Alikhanov studied X-rays and cosmic rays before joining the Soviet atomic bomb project. Between 1945 and 1968 he directed the Institute for Theoretical and Experimental Physics (ITEP) in Moscow, which was named after him in 2004. He led the development of both the first research and the first industrial heavy water reactors in the Soviet Union. They were commissioned in 1949 and 1951, respectively. He was also a pioneer in Soviet accelerator technology. In 1934 he and Igor Kurchatov created a 'baby cyclotron', the first 'cyclotron' operating outside of Berkeley, California. He was the driving force behind the construction of the 70 GeV synchrotron in Serpukhov (1967), the largest in the world at the time. "
-  },
-  {
-    "id": 3,
-    "title": "AMBARTSUMIAN",
-    "imageName": "Ambartsumian",
-    "name": "Viktor Ambartsumian",
-    "city": "Tiflis, Russian Empire",
-    "titleDetail": "Viktor Amazaspovich Ambartsumian (Russian: Виктор Амазаспович Амбарцумян; Armenian: Վիկտոր Համազասպի Համբարձումյան, Viktor Hamazaspi Hambardzumyan; 18 September [O.S. 5 September] 1908 – 12 August 1996) was a Soviet Armenian[8] astrophysicist and science administrator. One of the 20th century's top astronomers, he is widely regarded as the founder of theoretical astrophysics in the Soviet Union.",
-    "coordinates": {
-        "latitude": 41.716667,
-        "longitude": 44.783333
-    },
-    "description": "Educated at Leningrad State University (LSU) and the Pulkovo Observatory, Ambartsumian taught at LSU and founded the Soviet Union's first department of astrophysics there in 1934. He subsequently moved to Soviet Armenia, where he founded the Byurakan Observatory in 1946. It became his institutional base for the decades to come and a major center of astronomical research. He also co-founded the Armenian Academy of Sciences and led it for almost half a century—the entire post-war period. One commentator noted that 'science in Armenia was synonymous with the name Ambartsumian.' In 1965 Ambartsumian founded the journal Astrofizika and served as its editor for over 20 years.\n\nAmbartsumian began retiring from the various positions he held only from the age of 80. He died at his house in Byurakan and was buried on the grounds of the observatory. He was declared a National Hero of Armenia in 1994. "
-  },
-  {
-    "id": 4,
-    "title": "ARTIN",
-    "imageName": "Artin",
-    "name": "Emil Artin",
-    "city": "Vienna, Austria-Hungary",
-    "titleDetail": "Emil Artin (German: [ˈaʁtiːn]; March 3, 1898 – December 20, 1962) was an Austrian mathematician of Armenian descent.",
-    "coordinates": {
-      "latitude": 48.2085,
-      "longitude": 16.3721
-    },
-    "description": "Artin was one of the leading mathematicians of the twentieth century. He is best known for his work on algebraic number theory, contributing largely to class field theory and a new construction of L-functions. He also contributed to the pure theories of rings, groups and fields.\n\nAlong with Emmy Noether, he is considered the founder of modern abstract algebra."
-  },
-  {
-    "id": 5,
-    "title": "BABAYAN",
-    "imageName": "Babayan",
-    "name": "Boris Babayan",
-    "city": "Baku, Soviet Union",
-    "titleDetail": "Boris Artashesovich Babayan (Russian: Борис Арташеcович Бабаян; Armenian: Բորիս Արտաշեսի Բաբայան; born Baku, 20 December 1933) is an Armenian computer scientist, notable as the pioneering creator of supercomputers in the former Soviet Union and Russia. ",
-    "coordinates": {
-        "latitude": 40.409264,
-        "longitude": 49.867092
-    },
-    "description": "Babayan was awarded the two highest honors in the former Soviet Union: the USSR State Prize for his achievements in 1974 in the field of computer-aided design, and the Lenin Prize in 1987 for the Elbrus-2 supercomputer design. Since 1984, he has been a corresponding member of the USSR Academy of Sciences (later - Russian Academy of Sciences). As of 2007, he serves as a professor at the Moscow Institute of Physics and Technology and holds the Microprocessor Technology chair in Moscow based R&D center of Intel Corporation."
-  },
-  {
-    "id": 6,
-    "title": "BAGIAN",
-    "imageName": "Bagian",
-    "name": "James P. Bagian",
-    "city": "Philadelphia, Pennsylvania",
-    "titleDetail": "James Philip Bagian, MD, PE (born 22 February 1952), is an American physician, engineer, and former NASA astronaut of Armenian descent.",
-    "coordinates": {
-      "latitude": 39.9523,
-      "longitude": -75.1638
-    },
-    "description": "During his career as an astronaut, he logged 337 hours of space-flight, over two missions, STS-29 (in 1989) and STS-40 (in 1991). After leaving NASA in 1995, Bagian was elected as a member of the Institute of Medicine. He was also elected as member into the National Academy of Engineering in 2000 for the integration of engineering and medical knowledge in applications to aerospace systems, environmental technology, and patient safety.\n\nBagian is currently the Director of the Center for Healthcare Engineering and Patient Safety at the University of Michigan.\n\nBagian is the only person of Armenian descent to have been in space."
-  },
-  {
-    "id": 7,
-    "title": "BAROIAN",
-    "imageName": "Baroian",
-    "name": "Hovhannes Baroyan",
-    "city": "Erivan, The Russian Empire",
-    "titleDetail": "Hovhannes Baroyan (December 24, 1906, Erivan — September 27, 1985, Moscow) was a Soviet microbiologist and epidemiologist of Armenian origin, academician of the USSR Academy of Medical Sciences (1965).",
-    "coordinates": {
-        "latitude": 40.1772,
-        "longitude": 44.50349
-    },
-    "description": "He is the author of 22 monographs, including two joint ones with leading foreign specialists - P. Lepin and D. Porter, more than 300 scientific publications and a large list of methodological and instructional documents for practical healthcare. The main scientific works are devoted to the theory and practice of epidemiology, as well as issues of nosogeography, health care organization. One of the first microbiologists and epidemiologists in the USSR who used computers in research. He has trained 20 doctors and 34 candidates of sciences, including from foreign countries (India, Yemen, Vietnam)."
-  },
-  {
-    "id": 8,
-    "title": "DAMADIAN",
-    "imageName": "Damadian",
-    "name": "Raymond Damadian",
-    "city": "New York City, New York, United States",
-    "titleDetail": "Raymond Vahan Damadian (born March 16, 1936) is an American physician of Armenian descent, medical practitioner, and inventor of the first MR (Magnetic Resonance) Scanning Machine.",
-    "coordinates": {
-      "latitude": 40.7934300,
-      "longitude": -73.4151200
-    },
-    "description": "Damadian's research into sodium and potassium in living cells led him to his first experiments with nuclear magnetic resonance (NMR) which caused him to first propose the MR body scanner in 1969. Damadian discovered that tumors and normal tissue can be distinguished in vivo by nuclear magnetic resonance (NMR) because of their prolonged relaxation times, both T1 (spin-lattice relaxation) or T2 (spin-spin relaxation). Damadian was the first to perform a full-body scan of a human being in 1977 to diagnose cancer. Damadian invented an apparatus and method to use NMR safely and accurately to scan the human body, a method now well known as magnetic resonance imaging (MRI).\n\nDamadian has received several prizes. In 2001, the Lemelson-MIT Prize Program bestowed its $100,000 Lifetime Achievement Award on Damadian as 'the man who invented the MRI scanner.'[5] He went on to collaborate with Wilson Greatbach, one early developer of the implantable pacemaker, to develop an MRI-compatible pacemaker. The Franklin Institute in Philadelphia gave its recognition of Damadian's work on MRI with the Bower Award in Business Leadership.[6] He was also named Knights of Vartan 2003 'Man of the Year'.[7] He received a National Medal of Technology in 1988 and was inducted in the National Inventors Hall of Fame in 1989."
-  },
-  {
-    "id": 9,
     "title": "GAZANDIAN",
     "imageName": "Gazandyan",
     "name": "Varaztad Kazanjian",
@@ -117,46 +26,7 @@
     "description": "Kazanjian graduated from Harvard School of Dental Medicine in 1905. He served as professor of oral surgery from 1922 to 1939 and he was the first to hold the title of Professor of plastic surgery at Harvard Medical School. He also co-authored the first concise book on plastic surgery.\n\nDr. Kazanjian's brother's daughter was actress and television celebrity Arlene Francis (Kazanjian-Gabel). "
   },
   {
-    "id": 10,
-    "title": "IOSIFYAN",
-    "imageName": "Iosifyan",
-    "name": "Andronik Iosifyan",
-    "city": "Bazarkand, Kalbajar, Karabakh",
-    "titleDetail": "Andranik Gevondovich Iosifyan (Russian: Андроник Гевондович Иосифьян; born 21 July 1905 in Bazarkand, Kalbajar, Karabakh, died 13 April 1993 in Moscow, Russia) was a Soviet Armenian scientist in the field of electrical and aerospace engineering.",
-    "coordinates": {
-      "latitude": 40.05832,
-      "longitude": 46.5851
-    },
-    "description": "He is known as one of the founders of Soviet missilery and cosmonautics, the chief constructor of the first Soviet Meteor weather satellites, and the father of electromechanics in USSR. Iosifyan is the founder and the first director of the All-Union Scientific Research Institute of Electromechanics (VNIIEM) – the USSR's largest scientific research institute of electromechanics.\n\nBeing one of the most outstanding figures in the field of military and rocket production, Andranik Iosifyan for about thirty years was the USSR's classified chief constructor of electrical equipment of ballistic rockets, nuclear submarines and spacecraft, including the R-7 Semyorka by Sergei Korolev and the Vostok spacecraft. One of Iosifyan's most important inventions, noncontact synchronized transmissions, considered a revolution in technology.\n\nUnder the leadership of Iosifyan, practically the entire electrical part of the Soyuz spacecraft, automatic transport cargo ships of the Progress spacecraft and Salyut and Mir space stations were developed.\n\nSergei Korolev called him the 'chief electrician' of missile technology."
-  },
-  {
-    "id": 11,
-    "title": "MIKOYAN",
-    "imageName": "Mikoyan",
-    "name": "Artem Mikoyan",
-    "city": "Sanahin, Elisabethpol Governorate, Russian Empire ",
-    "titleDetail": "Artem (Artyom) Ivanovich Mikoyan (Russian: Артём Ива́нович Микоя́н; Armenian: Արտյոմ (Անուշավան) Հովհաննեսի Միկոյան, romanized: Artyom (Anushavan) Hovhannesi Mikoyan; 5 August [O.S. 23 July] 1905 – 9 December 1970) was a Soviet Armenian aircraft designer, who cofounded the Mikoyan-Gurevich design bureau along with Mikhail Gurevich.",
-    "coordinates": {
-      "latitude": 41.091741,
-      "longitude": 44.655127,
-    },
-    "description": ""
-  },
-  {
-    "id": 12,
-    "title": "OGANESSIAN",
-    "imageName": "Oganessian",
-    "name": "Yuri Oganessian",
-    "city": "Rostov-on-Don, Russian SFSR,",
-    "titleDetail": "Yuri Tsolakovich Oganessian (Russian: Юрий Цолакович Оганесян [ˈjʉrʲɪj t͡sɐˈlakəvʲɪt͡ɕ ɐgənʲɪˈsʲan]; born 14 April 1933) is a Russian-Armenian nuclear physicist who is considered the world's leading researcher in superheavy chemical elements.",
-    "coordinates": {
-      "latitude": 47.2313,
-      "longitude": 39.7233
-    },
-    "description": "He led the discovery of these elements in the periodic table. He succeeded Georgy Flyorov as director of the Flerov Laboratory of Nuclear Reactions at the Joint Institute for Nuclear Research in 1989 and is now its scientific leader.[10] The heaviest element known in the periodic table, oganesson, is named after him, only the second time that an element was named after a living scientist (the other being seaborgium)."
-  },
-  {
-    "id": 13,
+    "id": 3,
     "title": "ORBELI",
     "imageName": "Orbeli",
     "name": "Joseph Orbeli",
@@ -169,7 +39,7 @@
     "description": ""
   },
   {
-    "id": 14,
+    "id": 4,
     "title": "RAFAELANTS",
     "imageName": "Rafaelants",
     "name": "Rafaeliants, Aram",
@@ -180,6 +50,136 @@
         "longitude": 44.783333
     },
     "description": ""
+  },
+  {
+    "id": 5,
+    "title": "ARTIN",
+    "imageName": "Artin",
+    "name": "Emil Artin",
+    "city": "Vienna, Austria-Hungary",
+    "titleDetail": "Emil Artin (German: [ˈaʁtiːn]; March 3, 1898 – December 20, 1962) was an Austrian mathematician of Armenian descent.",
+    "coordinates": {
+      "latitude": 48.2085,
+      "longitude": 16.3721
+    },
+    "description": "Artin was one of the leading mathematicians of the twentieth century. He is best known for his work on algebraic number theory, contributing largely to class field theory and a new construction of L-functions. He also contributed to the pure theories of rings, groups and fields.\n\nAlong with Emmy Noether, he is considered the founder of modern abstract algebra."
+  },
+  {
+    "id": 6,
+    "title": "ALIKHANIAN",
+    "imageName": "Alikhanian",
+    "name": "Abram Alikhanov",
+    "city": "Elisabethpol, Elisabethpol Governorate, Russian Empire",
+    "titleDetail": "Abram Isaakovich Alikhanov (Russian: Абрам Исаакович Алиханов, born Alikhanian; 4 March [O.S. 20 February] 1904 – 8 December 1970) was a Soviet Armenian experimental physicist[3] who specialized in particle and nuclear physics. He was one of the Soviet Union's leading physicists.",
+    "coordinates": {
+        "latitude": 41.716667,
+        "longitude": 44.783333
+    },
+    "description": "Alikhanov studied X-rays and cosmic rays before joining the Soviet atomic bomb project. Between 1945 and 1968 he directed the Institute for Theoretical and Experimental Physics (ITEP) in Moscow, which was named after him in 2004. He led the development of both the first research and the first industrial heavy water reactors in the Soviet Union. They were commissioned in 1949 and 1951, respectively. He was also a pioneer in Soviet accelerator technology. In 1934 he and Igor Kurchatov created a 'baby cyclotron', the first 'cyclotron' operating outside of Berkeley, California. He was the driving force behind the construction of the 70 GeV synchrotron in Serpukhov (1967), the largest in the world at the time. "
+  },
+  {
+    "id": 7,
+    "title": "IOSIFYAN",
+    "imageName": "Iosifyan",
+    "name": "Andronik Iosifyan",
+    "city": "Bazarkand, Kalbajar, Karabakh",
+    "titleDetail": "Andranik Gevondovich Iosifyan (Russian: Андроник Гевондович Иосифьян; born 21 July 1905 in Bazarkand, Kalbajar, Karabakh, died 13 April 1993 in Moscow, Russia) was a Soviet Armenian scientist in the field of electrical and aerospace engineering.",
+    "coordinates": {
+      "latitude": 40.05832,
+      "longitude": 46.5851
+    },
+    "description": "He is known as one of the founders of Soviet missilery and cosmonautics, the chief constructor of the first Soviet Meteor weather satellites, and the father of electromechanics in USSR. Iosifyan is the founder and the first director of the All-Union Scientific Research Institute of Electromechanics (VNIIEM) – the USSR's largest scientific research institute of electromechanics.\n\nBeing one of the most outstanding figures in the field of military and rocket production, Andranik Iosifyan for about thirty years was the USSR's classified chief constructor of electrical equipment of ballistic rockets, nuclear submarines and spacecraft, including the R-7 Semyorka by Sergei Korolev and the Vostok spacecraft. One of Iosifyan's most important inventions, noncontact synchronized transmissions, considered a revolution in technology.\n\nUnder the leadership of Iosifyan, practically the entire electrical part of the Soyuz spacecraft, automatic transport cargo ships of the Progress spacecraft and Salyut and Mir space stations were developed.\n\nSergei Korolev called him the 'chief electrician' of missile technology."
+  },
+  {
+    "id": 8,
+    "title": "MIKOYAN",
+    "imageName": "Mikoyan",
+    "name": "Artem Mikoyan",
+    "city": "Sanahin, Elisabethpol Governorate, Russian Empire ",
+    "titleDetail": "Artem (Artyom) Ivanovich Mikoyan (Russian: Артём Ива́нович Микоя́н; Armenian: Արտյոմ (Անուշավան) Հովհաննեսի Միկոյան, romanized: Artyom (Anushavan) Hovhannesi Mikoyan; 5 August [O.S. 23 July] 1905 – 9 December 1970) was a Soviet Armenian aircraft designer, who cofounded the Mikoyan-Gurevich design bureau along with Mikhail Gurevich.",
+    "coordinates": {
+      "latitude": 41.091741,
+      "longitude": 44.655127,
+    },
+    "description": ""
+  },
+  {
+    "id": 9,
+    "title": "BAROIAN",
+    "imageName": "Baroian",
+    "name": "Hovhannes Baroyan",
+    "city": "Erivan, The Russian Empire",
+    "titleDetail": "Hovhannes Baroyan (December 24, 1906, Erivan — September 27, 1985, Moscow) was a Soviet microbiologist and epidemiologist of Armenian origin, academician of the USSR Academy of Medical Sciences (1965).",
+    "coordinates": {
+        "latitude": 40.1772,
+        "longitude": 44.50349
+    },
+    "description": "He is the author of 22 monographs, including two joint ones with leading foreign specialists - P. Lepin and D. Porter, more than 300 scientific publications and a large list of methodological and instructional documents for practical healthcare. The main scientific works are devoted to the theory and practice of epidemiology, as well as issues of nosogeography, health care organization. One of the first microbiologists and epidemiologists in the USSR who used computers in research. He has trained 20 doctors and 34 candidates of sciences, including from foreign countries (India, Yemen, Vietnam)."
+  },
+  {
+    "id": 10,
+    "title": "AMBARTSUMIAN",
+    "imageName": "Ambartsumian",
+    "name": "Viktor Ambartsumian",
+    "city": "Tiflis, Russian Empire",
+    "titleDetail": "Viktor Amazaspovich Ambartsumian (Russian: Виктор Амазаспович Амбарцумян; Armenian: Վիկտոր Համազասպի Համբարձումյան, Viktor Hamazaspi Hambardzumyan; 18 September [O.S. 5 September] 1908 – 12 August 1996) was a Soviet Armenian[8] astrophysicist and science administrator. One of the 20th century's top astronomers, he is widely regarded as the founder of theoretical astrophysics in the Soviet Union.",
+    "coordinates": {
+        "latitude": 41.716667,
+        "longitude": 44.783333
+    },
+    "description": "Educated at Leningrad State University (LSU) and the Pulkovo Observatory, Ambartsumian taught at LSU and founded the Soviet Union's first department of astrophysics there in 1934. He subsequently moved to Soviet Armenia, where he founded the Byurakan Observatory in 1946. It became his institutional base for the decades to come and a major center of astronomical research. He also co-founded the Armenian Academy of Sciences and led it for almost half a century—the entire post-war period. One commentator noted that 'science in Armenia was synonymous with the name Ambartsumian.' In 1965 Ambartsumian founded the journal Astrofizika and served as its editor for over 20 years.\n\nAmbartsumian began retiring from the various positions he held only from the age of 80. He died at his house in Byurakan and was buried on the grounds of the observatory. He was declared a National Hero of Armenia in 1994. "
+  },
+  {
+    "id": 11,
+    "title": "Ter-Pogossian",
+    "imageName": "Ter-Pogossian",
+    "name": "Michel Ter-Pogossian",
+    "city": "Berlin, Weimar Republic",
+    "titleDetail": "Michel Matthew Ter-Pogossian (April 21, 1925 – June 19, 1996) was an American medical physicist.[3] He was professor of radiology at the Washington University School of Medicine for over 30 years. A pioneer in nuclear medicine,[4] he is best known for his research on the positron emission tomography (PET). He is considered one of its creators and often referred to as the 'father of PET.'",
+    "coordinates": {
+      "latitude": 52.52437,
+      "longitude": 13.41053
+    },
+    "description": ""
+  },
+  {
+    "id": 12,
+    "title": "BABAYAN",
+    "imageName": "Babayan",
+    "name": "Boris Babayan",
+    "city": "Baku, Soviet Union",
+    "titleDetail": "Boris Artashesovich Babayan (Russian: Борис Арташеcович Бабаян; Armenian: Բորիս Արտաշեսի Բաբայան; born Baku, 20 December 1933) is an Armenian computer scientist, notable as the pioneering creator of supercomputers in the former Soviet Union and Russia. ",
+    "coordinates": {
+        "latitude": 40.409264,
+        "longitude": 49.867092
+    },
+    "description": "Babayan was awarded the two highest honors in the former Soviet Union: the USSR State Prize for his achievements in 1974 in the field of computer-aided design, and the Lenin Prize in 1987 for the Elbrus-2 supercomputer design. Since 1984, he has been a corresponding member of the USSR Academy of Sciences (later - Russian Academy of Sciences). As of 2007, he serves as a professor at the Moscow Institute of Physics and Technology and holds the Microprocessor Technology chair in Moscow based R&D center of Intel Corporation."
+  },
+  {
+    "id": 13,
+    "title": "OGANESSIAN",
+    "imageName": "Oganessian",
+    "name": "Yuri Oganessian",
+    "city": "Rostov-on-Don, Russian SFSR,",
+    "titleDetail": "Yuri Tsolakovich Oganessian (Russian: Юрий Цолакович Оганесян [ˈjʉrʲɪj t͡sɐˈlakəvʲɪt͡ɕ ɐgənʲɪˈsʲan]; born 14 April 1933) is a Russian-Armenian nuclear physicist who is considered the world's leading researcher in superheavy chemical elements.",
+    "coordinates": {
+      "latitude": 47.2313,
+      "longitude": 39.7233
+    },
+    "description": "He led the discovery of these elements in the periodic table. He succeeded Georgy Flyorov as director of the Flerov Laboratory of Nuclear Reactions at the Joint Institute for Nuclear Research in 1989 and is now its scientific leader.[10] The heaviest element known in the periodic table, oganesson, is named after him, only the second time that an element was named after a living scientist (the other being seaborgium)."
+  },
+  {
+    "id": 14,
+    "title": "DAMADIAN",
+    "imageName": "Damadian",
+    "name": "Raymond Damadian",
+    "city": "New York City, New York, United States",
+    "titleDetail": "Raymond Vahan Damadian (born March 16, 1936) is an American physician of Armenian descent, medical practitioner, and inventor of the first MR (Magnetic Resonance) Scanning Machine.",
+    "coordinates": {
+      "latitude": 40.7934300,
+      "longitude": -73.4151200
+    },
+    "description": "Damadian's research into sodium and potassium in living cells led him to his first experiments with nuclear magnetic resonance (NMR) which caused him to first propose the MR body scanner in 1969. Damadian discovered that tumors and normal tissue can be distinguished in vivo by nuclear magnetic resonance (NMR) because of their prolonged relaxation times, both T1 (spin-lattice relaxation) or T2 (spin-spin relaxation). Damadian was the first to perform a full-body scan of a human being in 1977 to diagnose cancer. Damadian invented an apparatus and method to use NMR safely and accurately to scan the human body, a method now well known as magnetic resonance imaging (MRI).\n\nDamadian has received several prizes. In 2001, the Lemelson-MIT Prize Program bestowed its $100,000 Lifetime Achievement Award on Damadian as 'the man who invented the MRI scanner.'[5] He went on to collaborate with Wilson Greatbach, one early developer of the implantable pacemaker, to develop an MRI-compatible pacemaker. The Franklin Institute in Philadelphia gave its recognition of Damadian's work on MRI with the Bower Award in Business Leadership.[6] He was also named Knights of Vartan 2003 'Man of the Year'.[7] He received a National Medal of Technology in 1988 and was inducted in the National Inventors Hall of Fame in 1989."
   },
   {
     "id": 15,
@@ -196,15 +196,15 @@
   },
   {
     "id": 16,
-    "title": "Ter-Pogossian",
-    "imageName": "Ter-Pogossian",
-    "name": "Michel Ter-Pogossian",
-    "city": "Berlin, Weimar Republic",
-    "titleDetail": "Michel Matthew Ter-Pogossian (April 21, 1925 – June 19, 1996) was an American medical physicist.[3] He was professor of radiology at the Washington University School of Medicine for over 30 years. A pioneer in nuclear medicine,[4] he is best known for his research on the positron emission tomography (PET). He is considered one of its creators and often referred to as the 'father of PET.'",
+    "title": "BAGIAN",
+    "imageName": "Bagian",
+    "name": "James P. Bagian",
+    "city": "Philadelphia, Pennsylvania",
+    "titleDetail": "James Philip Bagian, MD, PE (born 22 February 1952), is an American physician, engineer, and former NASA astronaut of Armenian descent.",
     "coordinates": {
-      "latitude": 52.52437,
-      "longitude": 13.41053
+      "latitude": 39.9523,
+      "longitude": -75.1638
     },
-    "description": ""
+    "description": "During his career as an astronaut, he logged 337 hours of space-flight, over two missions, STS-29 (in 1989) and STS-40 (in 1991). After leaving NASA in 1995, Bagian was elected as a member of the Institute of Medicine. He was also elected as member into the National Academy of Engineering in 2000 for the integration of engineering and medical knowledge in applications to aerospace systems, environmental technology, and patient safety.\n\nBagian is currently the Director of the Center for Healthcare Engineering and Patient Safety at the University of Michigan.\n\nBagian is the only person of Armenian descent to have been in space."
   }
 ]

@@ -17,8 +17,7 @@ struct Letter: Identifiable, Hashable{
 
 var letters: [Letter] = [
     Letter(date: "Main", title: "Main information", descript: "This application was created under the patronage of the Russian and New Nakhichevan Diocese of the Holy Armenian Apostolic Church. The purpose of the product: To get acquainted with the Armenian historical heritage and biographies of outstanding ethnic Armenians who have made a contribution to the history of Armenia and the World. The application does not aim to offend any social group, all information was collected from open sources. If you like the HayHuman project and would like to support us, then you can rate our application in the AppStore or contact us by the email listed below."),
-    Letter(date: "Additionally", title: "Additional information", descript: "Most of the biographies were taken from the Internet encyclopedia Wikipedia, as well as from publicly available articles and books. If you think that it is necessary to add any person or church to HayHuman, then please contact us by the email below."),
-    Letter(date: "Data Usage Policy", title: "", descript: "We need to process information about your location to improve the localization quality of our product in order to make our project more accessible.")
+    Letter(date: "Additionally", title: "Additional information", descript: "Most of the biographies were taken from the Internet encyclopedia Wikipedia, as well as from publicly available articles and books. If you think that it is necessary to add any person or church to HayHuman, then please contact us by the email below.")
 ]
 
 struct LetterCardView: View{

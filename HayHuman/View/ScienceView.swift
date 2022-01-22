@@ -142,6 +142,9 @@ let scienceCards: CardScience = cardScience[0]
 
 
 struct ScienceCardView: View {
+    
+    @ScaledMetric var size: CGFloat = 1
+    
     let cardsci: CardScience
     var body: some View {
         GeometryReader { proxy in
@@ -157,7 +160,8 @@ struct ScienceCardView: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
                 Text(cardsci.title.uppercased())
-                    .font(.title3)
+//                    .font(.title3)
+                    .font(.system(size: 15 + size))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .padding(7)

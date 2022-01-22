@@ -140,6 +140,9 @@ let cardMilitary: [CardMilitary] = Bundle.main.decode("military.json")
 let militaryCards: CardMilitary = cardMilitary[0]
 
 struct MilitaryCardView: View {
+    
+    @ScaledMetric var size: CGFloat = 1
+    
     let cardmil: CardMilitary
     var body: some View {
         GeometryReader { proxy in
@@ -155,7 +158,8 @@ struct MilitaryCardView: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
                 Text(cardmil.title.uppercased())
-                    .font(.title3)
+//                    .font(.title3)
+                    .font(.system(size: 15 + size))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .padding(7)
