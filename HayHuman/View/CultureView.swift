@@ -17,6 +17,7 @@ struct CultureView_Previews: PreviewProvider {
 
 struct CultureView: View {
     
+    @State var columns = Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
     
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
@@ -25,6 +26,7 @@ struct CultureView: View {
     @State var searchText = ""
     @State var searching = false
     @State var index = 0
+    
     
     @ObservedObject var sheetNavigator = SheetNavigator()
     
@@ -35,7 +37,7 @@ struct CultureView: View {
         
         ZStack {
             if cultureDetail.showingCultureProfile == false && cultureDetail.selectedCultureProfile == nil {
-
+                
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
@@ -76,9 +78,6 @@ struct CultureView: View {
                                             .onChanged { value in
                                     self.scale = value.magnitude
                                 })
-                            
-                            
-                            
                         }
                     }
                     .frame(height: UIDevice.current.userInterfaceIdiom == .pad ? 400 :  230)
@@ -86,11 +85,37 @@ struct CultureView: View {
                     .tabViewStyle(PageTabViewStyle())
                     .animation(.easeOut, value: 1)
                     
+                    HStack {
+                        Text("Searching")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            // reducing to row
+                            withAnimation(.easeOut) {
+                                if columns.count == 2 {
+                                    columns.removeLast()
+                                } else {
+                                    columns.append(GridItem(.flexible(), spacing: 15))
+                                }
+                            }
+                        }) {
+                            Image(systemName: columns.count == 2 ? "rectangle.grid.1x2": "square.grid.2x2")
+                                .font(.system(size: 24))
+                                .foregroundColor(.black)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 25)
                     
-                    LazyVGrid(columns: gridLayout, spacing: 25) {
+                    
+                    LazyVGrid(columns: columns, spacing: 25) {
                         ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in
                             VStack {
-                                CultureCardView(card: card)
+                                //                                CultureCardView(card: card)
+                                GridView(card: card, columns: $columns)
                                     .onTapGesture {
                                         withAnimation(.easeOut(duration: 0.1)) {
                                             feedback.impactOccurred()
@@ -112,14 +137,14 @@ struct CultureView: View {
                     
                 } label: {
                     NavigationBarItems()
-                        
-                        
+                    
+                    
                 })
                 
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
-                        Text(searching ? "Searching" : "Culture")
+                        Text("Culture")
                             .fontWeight(.bold)
                             .font(.title)
                         
@@ -184,17 +209,88 @@ struct CultureCardView: View {
                     .padding(7)
                     .foregroundColor(.white)
                     .shadow(color: .gray, radius: 4, x: 0, y: 0)
-                    
+                
             }
         }
     }
 }
 
 extension View {
-      func propotionalFrame(width: CGFloat, height: CGFloat, isSquared: Bool = false, alignment: Alignment = .center) -> some View {
+    func propotionalFrame(width: CGFloat, height: CGFloat, isSquared: Bool = false, alignment: Alignment = .center) -> some View {
         let finalWidth = UIScreen.main.bounds.width * width
         let finalHeight = isSquared ? finalWidth : UIScreen.main.bounds.height * height
         return frame(width: finalWidth, height: finalHeight)
-      }
     }
+}
 
+struct GridView: View {
+    var card: CultureCard
+    @Binding var columns: [GridItem]
+    @Namespace var namespace
+    @ScaledMetric var size: CGFloat = 1
+    
+    var body: some View {
+        GeometryReader { proxy in
+            VStack(spacing: 15) {
+                if columns.count == 2 {
+//                    VStack(spacing: 15) {
+                        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+                            Image(card.imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(
+                                    width: proxy.size.width,
+                                    height: proxy.size.height
+                                )
+                                .clipped()
+                                .cornerRadius(10)
+                                .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
+                            Text(card.title.uppercased())
+                            
+                                .font(.system(size: 15 + size))
+                                .fontWeight(.heavy)
+                                .multilineTextAlignment(.center)
+                                .padding(7)
+                                .foregroundColor(.white)
+                                .shadow(color: .gray, radius: 4, x: 0, y: 0)
+                        }
+                    
+//                    }
+                } else {
+                    HStack(spacing: 15) {
+                        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+                            Image(card.imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 170 + size, height: 185 + size)
+                                .clipped()
+                                .cornerRadius(10)
+                                .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
+                        }
+                        
+                        VStack(alignment: .trailing, spacing: 10) {
+                            Text(card.titleDetail)
+                                .font(.system(size: 15 + size))
+                                .fontWeight(.bold)
+                                .lineLimit(nil)
+                                
+                            
+                            // Rating Bar
+//                            HStack(spacing: 10) {
+//                                ForEach(cardCulture) { card in
+//                                    Text(card.titleDetail)
+//                                        .lineLimit(nil)
+//                                }
+                                
+//                                Spacer(minLength: 0)
+                            }
+                        }
+                    }
+//                    .padding(.trailing)
+//                    .background(Color.white)
+//                    .cornerRadius(15)
+                }
+            }
+        }
+    }
+//}
