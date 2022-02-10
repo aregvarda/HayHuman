@@ -240,7 +240,7 @@ struct BusGridView: View {
                             Image(cardbus.imageName)
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 185 + size, height: 180 + size)
+                                .frame(width: 185 + size, height: 175 + size)
                                 .clipped()
                                 .cornerRadius(10)
                                 .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
