@@ -17,5 +17,4 @@ enum Page {
      case science
      case politics
      case business
-     case sport
  }
