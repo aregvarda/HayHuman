@@ -32,24 +32,6 @@ struct BusinessView: View {
         if businessDetail.showingBusinessProfile == false && businessDetail.selectedBusinessProfile == nil {
             ScrollView(.vertical, showsIndicators: false) {
                 
-                SearchBar(searchText: $searchText, searching: $searching)
-                    .toolbar {
-                        if searching {
-                            Button("Cancel") {
-                                searchText = ""
-                                withAnimation {
-                                    searching = false
-                                    UIApplication.shared.dismissKeyboard()
-                                }
-                            }
-                        }
-                    }
-                    .gesture(DragGesture()
-                                .onChanged({ _ in
-                        UIApplication.shared.dismissKeyboard()
-                    })
-                    )
-                
                 // Carousel List
                 TabView(selection: $index) {
                     ForEach(0...5, id: \.self) { index in
@@ -79,10 +61,24 @@ struct BusinessView: View {
                     .tabViewStyle(PageTabViewStyle())
                     .animation(.easeInOut, value: 1)
                 
-                HStack {
-                    Text("Searching")
-                        .font(.title)
-                        .fontWeight(.bold)
+                HStack(spacing: 10) {
+                    SearchBar(searchText: $searchText, searching: $searching)
+                        .toolbar {
+                            if searching {
+                                Button("Cancel") {
+                                    searchText = ""
+                                    withAnimation {
+                                        searching = false
+                                        UIApplication.shared.dismissKeyboard()
+                                    }
+                                }
+                            }
+                        }
+                        .gesture(DragGesture()
+                                    .onChanged({ _ in
+                            UIApplication.shared.dismissKeyboard()
+                        })
+                        )
                     
                     Spacer()
                     

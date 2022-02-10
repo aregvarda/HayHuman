@@ -38,23 +38,23 @@ struct CultureView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
-                    SearchBar(searchText: $searchText, searching: $searching)
-                        .toolbar {
-                            if searching {
-                                Button("Cancel") {
-                                    searchText = ""
-                                    withAnimation {
-                                        searching = false
-                                        UIApplication.shared.dismissKeyboard()
-                                    }
-                                }
-                            }
-                        }
-                        .gesture(DragGesture()
-                                    .onChanged({ _ in
-                            UIApplication.shared.dismissKeyboard()
-                        })
-                        )
+//                    SearchBar(searchText: $searchText, searching: $searching)
+//                        .toolbar {
+//                            if searching {
+//                                Button("Cancel") {
+//                                    searchText = ""
+//                                    withAnimation {
+//                                        searching = false
+//                                        UIApplication.shared.dismissKeyboard()
+//                                    }
+//                                }
+//                            }
+//                        }
+//                        .gesture(DragGesture()
+//                                    .onChanged({ _ in
+//                            UIApplication.shared.dismissKeyboard()
+//                        })
+//                        )
                     // Carousel List
                     TabView(selection: $index) {
                         ForEach(0...5, id: \.self) { index in
@@ -82,10 +82,24 @@ struct CultureView: View {
                     .tabViewStyle(PageTabViewStyle())
                     .animation(.easeInOut, value: 1)
                     
-                    HStack {
-                        Text("Searching")
-                            .font(.title)
-                            .fontWeight(.bold)
+                    HStack(spacing: 10) {
+                        SearchBar(searchText: $searchText, searching: $searching)
+                            .toolbar {
+                                if searching {
+                                    Button("Cancel") {
+                                        searchText = ""
+                                        withAnimation {
+                                            searching = false
+                                            UIApplication.shared.dismissKeyboard()
+                                        }
+                                    }
+                                }
+                            }
+                            .gesture(DragGesture()
+                                        .onChanged({ _ in
+                                UIApplication.shared.dismissKeyboard()
+                            })
+                            )
                         
                         Spacer()
                         
@@ -106,7 +120,6 @@ struct CultureView: View {
                     }
                     .padding(.horizontal)
                     .padding(.top, 25)
-                    
                     
                     LazyVGrid(columns: columns, spacing: 25) {
                         ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in

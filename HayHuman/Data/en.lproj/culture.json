@@ -14,6 +14,19 @@
     },
     {
         "id": 2,
+        "title": "Aivazovsky",
+        "imageName": "Aivazovsky",
+        "name": "Ivan Aivazovsky",
+        "city": "Feodosia, Taurida (Crimea), Russian Empire",
+        "titleDetail": "Ivan Konstantinovich Aivazovsky (Russian: Иван Константинович Айвазовский; 29 July 1817 – 2 May 1900) was a Russian Romantic painter who is considered one of the greatest masters of marine art. Baptized as Hovhannes Aivazian,[a] he was born into an Armenian family in the Black Sea port of Feodosia in Crimea and was mostly based there.",
+        "coordinates": {
+            "latitude": 45.045209125151885,
+            "longitude": 35.36867247624561
+        },
+        "description": ""
+    },
+    {
+        "id": 3,
         "title": "RAFFI",
         "imageName": "Raffi",
         "name": "Raffi",
@@ -26,7 +39,7 @@
         "description": ""
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "KOMITAS",
         "imageName": "Komitas",
         "name": "Komitas",
@@ -39,7 +52,7 @@
         "description": ""
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "TUMANIAN",
         "imageName": "Tumanian",
         "name": "Hovhannes Tumanyan",
@@ -52,7 +65,7 @@
         "description": ""
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "ISAHAKYAN",
         "imageName": "Isahakyan",
         "name": "Avetik Isahakyan",
@@ -65,7 +78,7 @@
         "description": ""
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "SARIAN",
         "imageName": "Sarian",
         "name": "Martiros Saryan",
@@ -78,7 +91,7 @@
         "description": ""
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "VAKHTANGOV",
         "imageName": "Vakhtangov",
         "name": "Yevgeny Vakhtangov",
@@ -91,7 +104,7 @@
         "description": ""
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "TERYAN",
         "imageName": "Teryan",
         "name": "Vahan Terian",
@@ -104,7 +117,7 @@
         "description": ""
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "CHARENTS",
         "imageName": "Charents",
         "name": "Yeghishe Charents",
@@ -117,7 +130,7 @@
         "description": ""
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "KHACHATURYAN",
         "imageName": "Khachaturyan",
         "name": "Aram Khachaturian",
@@ -130,7 +143,7 @@
         "description": ""
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Vazgen I",
         "imageName": "Vazgen_1",
         "name": "Vazgen I",
@@ -143,7 +156,7 @@
         "description": ""
     },
     {
-        "id": 12,
+        "id": 13,
         "title": "SAROIAN",
         "imageName": "Saroian",
         "name": "William Saroyan",
@@ -156,7 +169,7 @@
         "description": ""
     },
     {
-        "id": 13,
+        "id": 14,
         "title": "SAHYAN",
         "imageName": "Sahyan",
         "name": "Hamo Sahyan",
@@ -169,7 +182,7 @@
         "description": ""
     },
     {
-        "id": 14,
+        "id": 15,
         "title": "KAPUTIKYAN",
         "imageName": "Kaputikyan",
         "name": "Silva Kaputikyan",
@@ -182,7 +195,20 @@
         "description": ""
     },
     {
-        "id": 15,
+        "id": 16,
+        "title": "Parajanov",
+        "imageName": "Parajanov",
+        "name": "Sergei Parajanov",
+        "city": "Tbilisi, Georgian SSR, Soviet Union",
+        "titleDetail": "Serhii Parajanov (Armenian: Սերգեյ Փարաջանով; Russian: Серге́й Ио́сифович Параджа́нов; Georgian: სერგო ფარაჯანოვი; Ukrainian: Сергій Йо́сипович Параджа́нов; sometimes spelled Paradzhanov or Paradjanov; January 9, 1924 – July 20, 1990) was a Soviet Armenian film director, screenwriter and artist who made seminal contribution to world cinema with his films Shadows of Forgotten Ancestors and The Color of Pomegranates. Parajanov is regarded by film critics, film historians, and filmmakers to be one of the greatest and most influential filmmakers in cinema history.",
+        "coordinates": {
+            "latitude": 41.72929961880473,
+            "longitude": 44.78940523808958
+        },
+        "description": ""
+    },
+    {
+        "id": 17,
         "title": "SEVAK",
         "imageName": "Sevak",
         "name": "Paruyr Sevak",
@@ -195,7 +221,7 @@
         "description": ""
     },
     {
-        "id": 16,
+        "id": 18,
         "title": "Karekin II",
         "imageName": "Garegin_2",
         "name": "Karekin II",

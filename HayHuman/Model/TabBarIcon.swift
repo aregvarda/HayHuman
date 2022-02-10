@@ -24,7 +24,7 @@ struct TabBarIcon: View {
                 .padding(.top, 10)
             Text(tabName)
 //                .font(.footnote)
-                .font(.system(size: 11 + size))
+                .font(.system(size: 9 + size))
                 .fontWeight(.bold)
             Spacer()
         }
