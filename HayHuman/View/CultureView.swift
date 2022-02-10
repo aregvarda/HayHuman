@@ -19,9 +19,6 @@ struct CultureView: View {
     
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
     
-    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
-    
     @EnvironmentObject var cultureDetail: CultureDetail
     @State var searchText = ""
     @State var searching = false
@@ -70,7 +67,7 @@ struct CultureView: View {
                             //.frame(width: self.index == index ? 350 : 350, height: self.index == index ? 230 : 180)
                                 .cornerRadius(15)
                                 .overlay(RoundedRectangle(cornerRadius: 15).fill(Color(.gray).opacity(0.4)))
-                                .scaleEffect(self.index == index ? 1.0 : 0.85)
+                                .scaleEffect(self.index == index ? 1.0 : 0.95)
                                 .padding(.horizontal)
                             // for identifying current index
                                 .tag(index)
@@ -83,7 +80,7 @@ struct CultureView: View {
                     .frame(height: UIDevice.current.userInterfaceIdiom == .pad ? 400 :  230)
                     .padding(.top, 25)
                     .tabViewStyle(PageTabViewStyle())
-                    .animation(.easeOut, value: 1)
+                    .animation(.easeInOut, value: 1)
                     
                     HStack {
                         Text("Searching")
@@ -114,8 +111,7 @@ struct CultureView: View {
                     LazyVGrid(columns: columns, spacing: 25) {
                         ForEach(cardCulture.filter({ "\($0)".contains(searchText) || searchText.isEmpty})) { card in
                             VStack {
-                                //                                CultureCardView(card: card)
-                                GridView(card: card, columns: $columns)
+                                CultureGridView(card: card, columns: $columns)
                                     .onTapGesture {
                                         withAnimation(.easeOut(duration: 0.1)) {
                                             feedback.impactOccurred()
@@ -144,7 +140,7 @@ struct CultureView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
-                        Text("Culture")
+                        Text(searching ? "Searching" : "Culture")
                             .fontWeight(.bold)
                             .font(.title)
                         
@@ -202,7 +198,6 @@ struct CultureCardView: View {
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
                 Text(card.title.uppercased())
-                
                     .font(.system(size: 15 + size))
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
@@ -215,16 +210,8 @@ struct CultureCardView: View {
     }
 }
 
-extension View {
-    func propotionalFrame(width: CGFloat, height: CGFloat, isSquared: Bool = false, alignment: Alignment = .center) -> some View {
-        let finalWidth = UIScreen.main.bounds.width * width
-        let finalHeight = isSquared ? finalWidth : UIScreen.main.bounds.height * height
-        return frame(width: finalWidth, height: finalHeight)
-    }
-}
-
-struct GridView: View {
-    var card: CultureCard
+struct CultureGridView: View {
+    let card: CultureCard
     @Binding var columns: [GridItem]
     @Namespace var namespace
     @ScaledMetric var size: CGFloat = 1
@@ -233,7 +220,6 @@ struct GridView: View {
         GeometryReader { proxy in
             VStack(spacing: 15) {
                 if columns.count == 2 {
-//                    VStack(spacing: 15) {
                         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
                             Image(card.imageName)
                                 .resizable()
@@ -255,14 +241,13 @@ struct GridView: View {
                                 .shadow(color: .gray, radius: 4, x: 0, y: 0)
                         }
                     
-//                    }
                 } else {
                     HStack(spacing: 15) {
                         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
                             Image(card.imageName)
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 170 + size, height: 185 + size)
+                                .frame(width: 185 + size, height: 180 + size)
                                 .clipped()
                                 .cornerRadius(10)
                                 .overlay(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.4)))
@@ -273,24 +258,12 @@ struct GridView: View {
                                 .font(.system(size: 15 + size))
                                 .fontWeight(.bold)
                                 .lineLimit(nil)
-                                
-                            
-                            // Rating Bar
-//                            HStack(spacing: 10) {
-//                                ForEach(cardCulture) { card in
-//                                    Text(card.titleDetail)
-//                                        .lineLimit(nil)
-//                                }
-                                
-//                                Spacer(minLength: 0)
+
                             }
                         }
                     }
-//                    .padding(.trailing)
-//                    .background(Color.white)
-//                    .cornerRadius(15)
                 }
             }
         }
     }
-//}
+
